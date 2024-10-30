@@ -1,0 +1,3078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Kim - Trung tâm mua sắm</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- file -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://kit.fontawesome.com/db7ebb0f3d.js" crossorigin="anonymous"></script>
+    <script src="js/slide.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png">
+    <!-- owl caurosel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar__list">
+                        <li class="header__navbar__logo">
+                            <a href="index.html">
+                                <img src="img/nguyenkimlogo.png" alt="" width="242px" height="42px">
+                            </a>
+                        </li>
+                        <li class="header__navbar__located">
+                            <i class="header__navbar__located__point fa-solid fa-location-dot"></i>
+                            <div class="header__navbar__located__content">
+                                <span class="header__navbar__located__TP">
+                                    Xem giá tại <br> <button class="choose-btn" onclick="openPopup()">TP.HCM  </button><i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="popup" id="popup" onclick="closePopupOnOutsideClick(event)">
+                                <div class="header__navbar__located__address__content">
+                                    <div class="popup_title">
+                                        <div class="popup_title_left"><h2>Chọn tỉnh thành để xem đúng giá & khuyến mãi:</h2></div>
+                                        <button class="popup_title_right" onclick="closePopup()">X</button>
+                                    </div>
+                                    <div class="popup_find-locate">
+                                        <div>
+                                            <input type="text" placeholder=" Tìm kiếm tỉnh thành"> <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="popup_locate">
+                                        <button onclick="chooseOption('TP.HCM')">TP.HCM</button>
+                                        <button onclick="chooseOption('Hà Nội')">Hà Nội</button>
+                                        <button onclick="chooseOption('Đà Nẵng')">Đà Nẵng</button>
+                                        <button onclick="chooseOption('Hải Phòng')">Hải Phòng</button>
+                                        <button onclick="chooseOption('Cần Thơ')">Cần Thơ</button>
+                                        <button onclick="chooseOption('An Giang')">An Giang</button>
+                                        <button onclick="chooseOption('Bà Rịa - Vũng Tàu')">Bà Rịa - Vũng Tàu</button>
+                                        <button onclick="chooseOption('Bắc Giang')">Bắc Giang</button>
+                                        <button onclick="chooseOption('Bắc Kạn')">Bắc Kạn</button>
+                                        <button onclick="chooseOption('Bạc Liêu')">Bạc Liêu</button>
+                                        <button onclick="chooseOption('Bắc Ninh')">Bắc Ninh</button>
+                                        <button onclick="chooseOption('Bến Tre')">Bến Tre</button>
+                                        <button onclick="chooseOption('Bình Định')">Bình Định</button>
+                                        <button onclick="chooseOption('Bình Dương')">Bình Dương</button>
+                                        <button onclick="chooseOption('Bình Phước')">Bình Phước</button>
+                                        <button onclick="chooseOption('Bình Thuận')">Bình Thuận</button>
+                                        <button onclick="chooseOption('Cà Mau')">Cà Mau</button>
+                                        <button onclick="chooseOption('Cao Bằng')">Cao Bằng</button>
+                                        <button onclick="chooseOption('Đắk Lắk')">Đắk Lắk</button>
+                                        <button onclick="chooseOption('Đắk Nông')">Đắk Nông</button>
+                                        <button onclick="chooseOption('Điện Biên')">Điện Biên</button>
+                                        <button onclick="chooseOption('Đồng Nai')">Đồng Nai</button>
+                                        <button onclick="chooseOption('Đồng Tháp')">Đồng Tháp</button>
+                                        <button onclick="chooseOption('Gia Lai')">Gia Lai</button>
+                                        <button onclick="chooseOption('Hà Giang')">Hà Giang</button>
+                                        <button onclick="chooseOption('Hà Nam')">Hà Nam</button>
+                                        <button onclick="chooseOption('Hà Tĩnh')">Hà Tĩnh</button>
+                                        <button onclick="chooseOption('Hải Dương')">Hải Dương</button>
+                                        <button onclick="chooseOption('Hậu Giang')">Hậu Giang</button>
+                                        <button onclick="chooseOption('Hòa Bình')">Hòa Bình</button>
+                                        <button onclick="chooseOption('Hưng Yên')">Hưng Yên</button>
+                                        <button onclick="chooseOption('Khánh Hòa')">Khánh Hòa</button>
+                                        <button onclick="chooseOption('Kiên Giang')">Kiên Giang</button>
+                                        <button onclick="chooseOption('Kon Tum')">Kon Tum</button>
+                                        <button onclick="chooseOption('Lai Châu')">Lai Châu</button>
+                                        <button onclick="chooseOption('Lâm Đồng')">Lâm Đồng</button>
+                                        <button onclick="chooseOption('Lạng Sơn')">Lạng Sơn</button>
+                                        <button onclick="chooseOption('Lào Cai')">Lào Cai</button>
+                                        <button onclick="chooseOption('Long An')">Long An</button>
+                                        <button onclick="chooseOption('Nam Định')">Nam Định</button>
+                                        <button onclick="chooseOption('Nghệ An')">Nghệ An</button>
+                                        <button onclick="chooseOption('Ninh Bình')">Ninh Bình</button>
+                                        <button onclick="chooseOption('Ninh Thuận')">Ninh Thuận</button>
+                                        <button onclick="chooseOption('Phú Thọ')">Phú Thọ</button>
+                                        <button onclick="chooseOption('Quảng Bình')">Quảng Bình</button>
+                                        <button onclick="chooseOption('Quảng Nam')">Quảng Nam</button>
+                                        <button onclick="chooseOption('Quảng Ngãi')">Quảng Ngãi</button>
+                                        <button onclick="chooseOption('Quảng Ninh')">Quảng Ninh</button>
+                                        <button onclick="chooseOption('Quảng Trị')">Quảng Trị</button>
+                                        <button onclick="chooseOption('Sóc Trăng')">Sóc Trăng</button>
+                                        <button onclick="chooseOption('Sơn La')">Sơn La</button>
+                                        <button onclick="chooseOption('Tây Ninh')">Tây Ninh</button>
+                                        <button onclick="chooseOption('Thái Bình')">Thái Bình</button>
+                                        <button onclick="chooseOption('Thái Nguyên')">Thái Nguyên</button>
+                                        <button onclick="chooseOption('Thanh Hóa')">Thanh Hóa</button>
+                                        <button onclick="chooseOption('Thừa Thiên Huế')">Thừa Thiên Huế</button>
+                                        <button onclick="chooseOption('Tiền Giang')">Tiền Giang</button>
+                                        <button onclick="chooseOption('Trà Vinh')">Trà Vinh</button>
+                                        <button onclick="chooseOption('Tuyên Quang')">Tuyên Quang</button>
+                                        <button onclick="chooseOption('Vĩnh Long')">Vĩnh Long</button>
+                                        <button onclick="chooseOption('Vĩnh Phúc')">Vĩnh Phúc</button>
+                                        <button onclick="chooseOption('Yên Bái')">Yên Bái</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar__find">
+                            <div class="header__navbar__find__input" onclick="showFind()">
+                                <input type="text" placeholder="  Bạn cần tìm gì hôm nay? ">
+                                </span>
+                                <div id="popup-find-all">
+                                    <div class="danhmuc-timkiem">
+                                        <div class="danhmuc-timkiem1">
+                                            <div class="danhmuc-timkiem1_title">
+                                                <h2>Từ khóa nổi bật</h2>
+                                            </div>
+                                            <ul class="danhmuc-timkiem1_list">
+                                                <li><a href="#">Dyson</a></li>
+                                                <li><a href="#">Samsung</a></li>
+                                                <li><a href="#">Apple</a></li>
+                                                <li><a href="#">LG</a></li>
+                                                <li><a href="#">HP</a></li>
+                                                <li><a href="#">Sony</a></li>
+                                                <li><a href="#">Dell</a></li>
+                                                <li><a href="#">Panasonic</a></li>
+                                                <li><a href="#">iPhone</a></li>
+                                                <li><a href="#">Asus</a></li>
+                                                <li><a href="#">Philips</a></li>                                                
+                                            </ul>
+                                        </div>
+                                        <div class="danhmuc-timkiem1">
+                                            <div class="danhmuc-timkiem1_title">
+                                                <h2>Sản phẩm bán chạy nhất</h2>
+                                            </div>
+                                            <ul class="danhmuc-timkiem1_list-product">
+                                                <li>
+                                                    <div class="danhmuc-timkiem1_list-product_left">
+                                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1.jpg" alt="">
+                                                        <div class="giamgia">-45%</div>
+                                                    </div>
+                                                    <div class="danhmuc-timkiem1_list-product_right">
+                                                        <a href="#">
+                                                            <div class="danhmuc-timkiem1_list-product_right_tensp">
+                                                                Máy xay thịt Bear 2 lít QSJ-C03B1
+                                                            </div>
+                                                            <div class="danhmuc-timkiem1_list-product_right_gia">
+                                                                <span class="color_red">439.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">799.000đ</del>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="danhmuc-timkiem1_list-product_left">
+                                                        <img src="img/10055447-quat-dieu-hoa-rapido-lucky-6000m-1.jpg" alt="">
+                                                        <div class="giamgia">-59%</div>
+                                                    </div>
+                                                    <div class="danhmuc-timkiem1_list-product_right">
+                                                        <a href="#">
+                                                            <div class="danhmuc-timkiem1_list-product_right_tensp">
+                                                                Quạt điều hòa Rapido Lucky 6000M
+                                                            </div>
+                                                            <div class="danhmuc-timkiem1_list-product_right_gia">
+                                                                <span class="color_red">1.990.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">4.990.000đ</del>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="danhmuc-timkiem1_list-product_left">
+                                                        <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1.jpg" alt="">
+                                                        <div class="giamgia">-30%</div>
+                                                    </div>
+                                                    <div class="danhmuc-timkiem1_list-product_right">
+                                                        <a href="#">
+                                                            <div class="danhmuc-timkiem1_list-product_right_tensp">
+                                                                Bình đun siêu tốc Elmich 1.7 lít KEE 1774 B
+                                                            </div>
+                                                            <div class="danhmuc-timkiem1_list-product_right_gia">
+                                                                <span class="color_red">619.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">889.000đ</del>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="danhmuc-timkiem1_list-product_left">
+                                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1.jpg" alt="">
+                                                        <div class="giamgia">-45%</div>
+                                                    </div>
+                                                    <div class="danhmuc-timkiem1_list-product_right">
+                                                        <a href="#">
+                                                            <div class="danhmuc-timkiem1_list-product_right_tensp">
+                                                                Máy xay thịt Bear 2 lít QSJ-C03B1
+                                                            </div>
+                                                            <div class="danhmuc-timkiem1_list-product_right_gia">
+                                                                <span class="color_red">439.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">799.000đ</del>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="danhmuc-timkiem1">
+                                            <div class="danhmuc-timkiem1_content">
+                                                <div class="danhmuc-timkiem1_title">
+                                                    <h2>Sản phẩm đã xem</h2>
+                                                </div>
+                                                <ul class="danhmuc-timkiem1_content_product">
+                                                    <li>
+                                                        <div class="danhmuc-timkiem1_list-product_left">
+                                                            <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1.jpg" alt="">
+                                                            <div class="giamgia">-30%</div>
+                                                        </div>
+                                                        <div class="danhmuc-timkiem1_list-product_right">
+                                                            <a href="#">
+                                                                <div class="danhmuc-timkiem1_list-product_right_tensp">
+                                                                    Bình đun siêu tốc Elmich 1.7 lít KEE 1774 B
+                                                                </div>
+                                                                <div class="danhmuc-timkiem1_list-product_right_gia">
+                                                                    <span class="color_red">619.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">889.000đ</del>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="danhmuc-timkiem1_list-product_left">
+                                                            <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1.jpg" alt="">
+                                                            <div class="giamgia">-45%</div>
+                                                        </div>
+                                                        <div class="danhmuc-timkiem1_list-product_right">
+                                                            <a href="#">
+                                                                <div class="danhmuc-timkiem1_list-product_right_tensp">
+                                                                    Máy xay thịt Bear 2 lít QSJ-C03B1
+                                                                </div>
+                                                                <div class="danhmuc-timkiem1_list-product_right_gia">
+                                                                    <span class="color_red">439.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">799.000đ</del>
+                                                                </div>
+                                                            </a>
+                                                        </div> 
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="danhmuc-timkiem1_content">
+                                                <div class="danhmuc-timkiem1_title">
+                                                    <h2>Bài viết gợi ý</h2>
+                                                </div>
+                                                <ul class="danhmuc-timkiem1_content_product">
+                                                    <li>
+                                                        <div class="danhmuc-timkiem1_content_product_left">
+                                                            <img src="img/KV-SN-28-1162x652.jpg" alt="">
+                                                        </div>
+                                                        <div class="danhmuc-timkiem1_content_product_right">
+                                                            <a href="#">NGUYỄN KIM MỪNG SINH NHẬT 28 NĂM - MỘT LẦN MUA SẮM VẠN LẦN TRI...</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="danhmuc-timkiem1_content_product_left">
+                                                            <img src="img/Thang-Panasonic-MDA-1200x628__2_.jpg" alt="">
+                                                        </div>
+                                                        <div class="danhmuc-timkiem1_content_product_right">
+                                                            <a href="#">THÁNG PANASONIC SĂN GIÁ TỐT - TRÚNG QUÀ TO...</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button onclick="hideFind()"><i class="header__navbar__find__seach fa-solid fa-magnifying-glass"></i></button>
+                        </li>
+                        <li class="header__navbar__shoppingcart">
+                            <div class="header__cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="header__cart__cartshopping">
+                                    <a href="giohang.html" class="classa">Giỏ hàng</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="header__navbar__ordertracking">
+                            <i class="header__navbar__ordertracking__clock fa-solid fa-clock-rotate-left"></i>
+                            <div class="header__navbar__ordertracking__content">
+                                <a href="tracuu.html" class="classa">Tra cứu <br> đơn hàng</a>
+                            </div>
+                        </li>
+                        <li class="header__navbar__account">
+                            <i class="header__navbar__account__icon fa-solid fa-user"></i>
+                            <a href="#" class="classa">Tài khoản</a>
+                        </li>
+                        <li class="header__navbar__hotline">
+                            <i class="header__navbar__hotline__phone fa-solid fa-phone-volume"></i>
+                            <div class="header__navbar__hotline__content">
+                                <a href="#" class="classa">Gọi mua 1800.6800 <br> (Miễn phí)</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <!-- danh muc san pham -->
+            <div class="container__category">
+               <div class="container__category__left">
+                    <ul class="container__category__left__title">
+                        <li class="container__category__left__title__fist">
+                            <i class="container__category__left__title__fist__icon fa-solid fa-table-list"></i>
+                            <div class="container__category__left__title__fist__content">
+                                Danh mục sản phẩm
+                            </div>
+                        </li>
+                        <li class="container__category__left__title__list fist">
+                            <i class="fa-solid fa-tv"></i>
+                            <a href="#">
+                                <span class="changecolor">Ti vi,</span>
+                                <span class="changecolor">Loa,</span>
+                                <span class="changecolor">Karaoke</span>
+                            </a>
+                            <div class="submenu1">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li>
+                                            <a href="#">Tivi</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li>
+                                            <a href="#">Thương hiệu</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li>
+                                            <a href="#">Samsung</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sony</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">LG</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">TCL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Toshiba</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Hisense</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sharp</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Casper</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Philips</a>
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                                <div class="submenu_two">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Kích thước</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Từ 43" trở xuống</a></li>
+                                        <li><a href="#">Từ 43" - 55"</a></li>
+                                        <li><a href="#">Từ 55" - 65"</a></li>
+                                        <li><a href="#">Từ 65" - 75"</a></li>
+                                        <li><a href="#">Trên 75"</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Loại Tivi</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Tivi QLED</a></li>
+                                        <li><a href="#">Tivi OLED</a></li>
+                                        <li><a href="#">Tivi NanoCell</a></li>
+                                        <li><a href="#">Tivi 8K</a></li>
+                                        <li><a href="#">Google/Android Tivi</a></li>
+                                        <li><a href="#">Tivi Mini LED/QNED</a></li>
+                                        <li><a href="#">Lifestyle Tivi</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_three">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Loa - Âm thanh</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Loa</a></li>
+                                        <li><a href="#">Micro</a></li>
+                                        <li><a href="#">Amply</a></li>
+                                        <li><a href="#">Dàn âm thanh</a></li>
+                                        <li><a href="#">Loa thanh (Soundbar)</a></li>
+                                        <li><a href="#">Loa kéo</a></li>
+                                        <li><a href="#">Loa Bluetooth</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_four">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Phụ kiện cho Tivi và Âm Thanh</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Cáp HDMI - Cáp...</a></li>
+                                        <li><a href="#">Giá treo tivi</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Kỹ thuật số</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Máy ảnh</a></li>
+                                        <li><a href="#">Ống kính máy ảnh</a></li>
+                                        <li><a href="#">Camera quan sát</a></li>
+                                    </ul>
+                                </div>                                
+                                <div class="submenu_five">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Máy chơi game</a></li>
+                                        <hr>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-snowflake"></i>
+                            <a href="#">
+                                <span class="changecolor"><a href="#">Tủ lạnh</a>,</span>
+                                <span class="changecolor"><a href="#">Tủ đông</a>,</span>
+                                <span class="changecolor"><a href="#">Tủ mát</a></span>
+                            </a>
+                            <div class="submenu2">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Tủ lạnh</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Thương hiệu</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Panasonic</a></li>
+                                        <li><a href="#">Sharp</a></li>
+                                        <li><a href="#">AQUA</a></li>
+                                        <li><a href="#">Toshiba</a></li>
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">Hitachi</a></li>
+                                        <li><a href="#">Electrolux</a></li>
+                                        <li><a href="#">Mitsubishi</a></li>
+                                        <li><a href="#">Casper</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_two">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Loại tủ lạnh</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Multi doors</a></li>
+                                        <li><a href="#">Side by side</a></li>
+                                        <li><a href="#">Ngăn đá trên</a></li>
+                                        <li><a href="#">Ngăn đá dưới</a></li>
+                                        <li><a href="#">Mini</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Dung tích</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Dưới 150 lít</a></li>
+                                        <li><a href="#">151 - 200 lít</a></li>
+                                        <li><a href="#">201 - 300 lít</a></li>
+                                        <li><a href="#">301 - 400 lít</a></li>
+                                        <li><a href="#">401 - 500 lít</a></li>
+                                        <li><a href="#">Trên 500 lít</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_three">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Tủ đông</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Sanaky</a></li>
+                                        <li><a href="#">Alaska</a></li>
+                                        <li><a href="#">Kangaroo</a></li>
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">AQUA</a></li>
+                                        <li><a href="#">Sunhouse</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Tủ mát</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Sanaky</a></li>
+                                        <li><a href="#">Alaska</a></li>
+                                        <li><a href="#">Kangaroo</a></li>
+                                        <li><a href="#">AQUA</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>                        
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-fan"></i>
+                            <span class="changecolor"><a href="#">Máy giặt</a>,</span>
+                            <span class="changecolor"><a href="#">Máy sấy</a>,</span>
+                            <span class="changecolor"><a href="#">Máy nước nóng</a></span>
+                            <div class="submenu3">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Máy giặt</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Thương hiệu</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">Electrolux</a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Toshiba</a></li>
+                                        <li><a href="#">Panasonic</a></li>
+                                        <li><a href="#">AQUA</a></li>
+                                        <li><a href="#">Hitachi</a></li>
+                                        <li><a href="#">Casper</a></li>
+                                        <li><a href="#">Sharp</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_two">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Loại máy giặt</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Cửa trước</a></li>
+                                        <li><a href="#">Cửa trên</a></li>
+                                        <li><a href="#">Lồng đôi</a></li>
+                                        <li><a href="#">Tủ chăm sóc quần áo</a></li>
+                                        <li><a href="#">Tháp giặt sấy</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Khối lượng</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Trên 10kg</a></li>
+                                        <li><a href="#">Từ 9kg đến 10kg</a></li>
+                                        <li><a href="#">Từ 8kg đến 9kg</a></li>
+                                        <li><a href="#">Dưới 8kg</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_three">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Máy sấy</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Electrolux</a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">AQUA</a></li>
+                                        <li><a href="#">Casper</a></li>
+                                        <li><a href="#">Candy</a></li>
+                                        <li><a href="#">Whirlpool</a></li>
+                                        <li><a href="#">Máy sấy 8-10kg</a></li>
+                                        <li><a href="#">Máy sấy trên 10kg</a></li>
+                                        <li><a href="#">Máy sấy dưới 10 triệu</a></li>
+                                        <li><a href="#">Máy sấy trên 10 triệu</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_four">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Máy nước nóng</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Ariston</a></li>
+                                        <li><a href="#">Panasonic</a></li>
+                                        <li><a href="#">Ferroli</a></li>
+                                        <li><a href="#">Centon</a></li>
+                                        <li><a href="#">Electrolux</a></li>
+                                        <li><a href="#">Legend</a></li>
+                                        <li><a href="#">Anpha</a></li>
+                                        <li><a href="#">Casper</a></li>
+                                        <li><a href="#">Trực tiếp không bơm</a></li>
+                                        <li><a href="#">Trực tiếp có bơm trợ lực</a></li>
+                                        <li><a href="#">Gián tiếp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>                        
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-temperature-arrow-down"></i>
+                            <span class="changecolor"><a href="#">Máy lạnh</a>,</span>
+                            <span class="changecolor"><a href="#">Quạt</a>,</span>
+                            <span class="changecolor"><a href="#">Lọc khí</a></span>
+                            <div class="submenu4">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Máy lạnh</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Thương hiệu</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Panasonic</a></li>
+                                        <li><a href="#">Daikin</a></li>
+                                        <li><a href="#">Toshiba</a></li>
+                                        <li><a href="#">Casper</a></li>
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Sharp</a></li>
+                                        <li><a href="#">Mitsubishi Electric</a></li>
+                                        <li><a href="#">AQUA</a></li>
+                                        <li><a href="#">Midea</a></li>
+                                        <li><a href="#">Xem thêm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_two">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Công suất làm lạnh</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">1 HP</a></li>
+                                        <li><a href="#">1.5 HP</a></li>
+                                        <li><a href="#">2 HP</a></li>
+                                        <li><a href="#">2.5 HP</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Giá bán</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Dưới 7 triệu</a></li>
+                                        <li><a href="#">Từ 7 - 10 triệu</a></li>
+                                        <li><a href="#">Từ 10 - 15 triệu</a></li>
+                                        <li><a href="#">Trên 15 triệu</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_three">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Quạt - sưởi</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Quạt điều hòa</a></li>
+                                        <li><a href="#">Quạt đứng</a></li>
+                                        <li><a href="#">Quạt bàn</a></li>
+                                        <li><a href="#">Quạt lửng</a></li>
+                                        <li><a href="#">Quạt tháp</a></li>
+                                        <li><a href="#">Quạt trần</a></li>
+                                        <li><a href="#">Quạt sạc</a></li>
+                                        <li><a href="#">Máy/Đèn sưởi</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Máy hút ẩm</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_four">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Máy lọc không khí</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">Dyson</a></li>
+                                        <li><a href="#">Sharp</a></li>
+                                        <li><a href="#">Hitachi</a></li>
+                                        <li><a href="#">Coway</a></li>
+                                        <li><a href="#">Daikin</a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Electrolux</a></li>
+                                        <li><a href="#">Xiaomi</a></li>
+                                        <li><a href="#">Panasonic</a></li>
+                                        <li><a href="#">Xem thêm</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-broom"></i>
+                            <span class="changecolor"><a href="#">Điện gia dụng</a>,</span>
+                            <span class="changecolor"><a href="#">Hút bụi</a>,</span>
+                            <span class="changecolor"><a href="#">Nồi chiên</a></span>
+                            <div class="submenu5">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Nồi chiên không dầu...</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Thương hiệu</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Nồi chiên không dầu...</a></li>
+                                        <li><a href="#">Nồi chiên không dầu...</a></li>
+                                        <li><a href="#">Nồi chiên không dầu...</a></li>
+                                        <li><a href="#">Nồi chiên không dầu...</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Robot hút bụi</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Cầm tay</a></li>
+                                        <li><a href="#">Dạng hộp</a></li>
+                                        <li><a href="#">Công nghiệp</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_two">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Bàn ủi</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Bàn ủi hơi nước</a></li>
+                                        <li><a href="#">Bàn ủi khô</a></li>
+                                        <li><a href="#">Bàn ủi hơi nước</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Cải thiện nhà cửa</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Đèn điện</a></li>
+                                        <li><a href="#">Máy phun áp lực</a></li>
+                                        <li><a href="#">Máy bơm nước</a></li>
+                                        <li><a href="#">Máy phát điện</a></li>
+                                        <li><a href="#">Máy khoan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>                        
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-kitchen-set"></i>
+                            <span class="changecolor"><a href="#">Đồ dùng bếp</a>,</span>
+                            <span class="changecolor"><a href="#">Bếp điện</a>,</span>
+                            <span class="changecolor"><a href="#">Nồi cơm</a></span>
+                            <div class="submenu6">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Đồ dùng nhà bếp</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Nồi cơm điện</a></li>
+                                        <li><a href="#">Lò vi sóng</a></li>
+                                        <li><a href="#">Nồi chiên không dầu</a></li>
+                                        <li><a href="#">Bếp từ</a></li>
+                                        <li><a href="#">Bếp hồng ngoại</a></li>
+                                        <li><a href="#">Bếp gas</a></li>
+                                        <li><a href="#">Máy hút mùi</a></li>
+                                        <li><a href="#">Nồi áp suất</a></li>
+                                        <li><a href="#">Thiết bị nướng</a></li>
+                                        <li><a href="#">Lẩu điện</a></li>
+                                        <li><a href="#">Bình đun siêu tốc</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_two">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Đồ dùng nhà bếp</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Bình thủy điện</a></li>
+                                        <li><a href="#">Máy rửa chén</a></li>
+                                        <li><a href="#">Máy sấy chén</a></li>
+                                        <li><a href="#">Máy xay đậu nành</a></li>
+                                        <li><a href="#">Máy làm bánh mì</a></li>
+                                        <li><a href="#">Máy nướng bánh</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Dụng cụ nhà bếp</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Bộ nồi, nồi</a></li>
+                                        <li><a href="#">Chảo chống dính</a></li>
+                                        <li><a href="#">Bình giữ nhiệt</a></li>
+                                        <li><a href="#">Dụng cụ trong bếp</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_three">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Đồ dùng gia đình</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Đèn bắt muỗi</a></li>
+                                        <li><a href="#">Vợt muỗi</a></li>
+                                        <li><a href="#">Ổ cắm điện</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-droplet"></i>
+                            <span class="changecolor"><a href="#">Lọc nước</a>,</span>
+                            <span class="changecolor"><a href="#">Sinh tố</a>,</span>
+                            <span class="changecolor"><a href="#">Xay ép</a></span>
+                            <div class="submenu7">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Lọc nước</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Lõi lọc - Bình lọc</a></li>
+                                        <li><a href="#">Máy lọc nước ion kiềm</a></li>
+                                        <li><a href="#">Máy lọc nước nóng lạnh</a></li>
+                                        <li><a href="#">Máy lọc nước để bàn</a></li>
+                                        <li><a href="#">Cây nước nóng lạnh</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Sinh tố - Xay ép</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Máy xay sinh tố</a></li>
+                                        <li><a href="#">Máy ép trái cây</a></li>
+                                        <li><a href="#">Máy vắt cam</a></li>
+                                        <li><a href="#">Máy xay - pha cà phê</a></li>
+                                        <li><a href="#">Máy đánh trứng</a></li>
+                                        <li><a href="#">Máy xay thịt</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </li>
+                        
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="changecolor"><a href="#">Sức khỏe</a>,</span>
+                            <span class="changecolor"><a href="#">Làm đẹp</a></span>
+                            <div class="submenu8">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Làm đẹp</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Máy sấy tóc</a></li>
+                                        <li><a href="#">Máy cạo râu/Tông đơ</a></li>
+                                        <li><a href="#">Bàn chải đánh răng điện</a></li>
+                                        <li><a href="#">Máy tăm nước</a></li>
+                                        <li><a href="#">Máy làm sạch lông</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_two">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Sức khỏe</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Cân sức khỏe</a></li>
+                                        <li><a href="#">Đo huyết áp/Nhiệt kế</a></li>
+                                        <li><a href="#">Máy massage</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>                        
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <span class="changecolor"><a href="#">Điện thoại</a></span>,
+                            <span class="changecolor"><a href="#">Tablet</a></span>,
+                            <span class="changecolor"><a href="#">Phụ kiện</a></span>
+                            <div class="submenu9">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Điện thoại</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">iPhone</a></li>
+                                        <li><a href="#">OPPO</a></li>
+                                        <li><a href="#">Vivo</a></li>
+                                        <li><a href="#">Realme</a></li>
+                                        <li><a href="#">Nokia</a></li>
+                                        <li><a href="#">Xiaomi</a></li>
+                                        <li><a href="#">TCL</a></li>
+                                        <li><a href="#">Điện thoại 2 sim 2 sóng</a></li>
+                                        <li><a href="#">Màn hình tràn viền</a></li>
+                                        <li><a href="#">Camera kép</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_two">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Tablet</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">iPad</a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Tablet trả góp 0%</a></li>
+                                        <li><a href="#">Màn hình lớn</a></li>
+                                        <li><a href="#">Bộ nhớ khủng</a></li>
+                                        <li><a href="#">Máy tính bảng giá rẻ</a></li>
+                                        <li><a href="#">Máy tính bảng cao cấp</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_three">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Phụ kiện điện thoại</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Bao da, ốp lưng</a></li>
+                                        <li><a href="#">Miếng dán điện thoại</a></li>
+                                        <li><a href="#">Cáp, cổng kết nối</a></li>
+                                        <li><a href="#">Củ sạc</a></li>
+                                        <li><a href="#">Pin sạc dự phòng</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Phụ kiện laptop</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Chuột</a></li>
+                                        <li><a href="#">Bàn phím</a></li>
+                                        <li><a href="#">Đế laptop</a></li>
+                                        <li><a href="#">Balo, túi chống sốc</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_four">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Thiết bị âm thanh</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Loa bluetooth</a></li>
+                                        <li><a href="#">Tai nghe</a></li>
+                                        <li><a href="#">Micro Bluetooth</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Phụ kiện Apple</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Apple watch</a></li>
+                                        <li><a href="#">Chuột Apple</a></li>
+                                        <li><a href="#">Bàn phím Apple</a></li>
+                                        <li><a href="#">Tai nghe iPhone</a></li>
+                                        <li><a href="#">Ốp lưng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_five">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Đồng hồ thông minh</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><a href="#">Oppo</a></li>
+                                        <li><a href="#">Garmin</a></li>
+                                    </ul>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Thiết bị lưu trữ</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">USB</a></li>
+                                        <li><a href="#">Ổ cứng di động</a></li>
+                                        <li><a href="#">Thẻ nhớ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>                        
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-laptop"></i>
+                            <a href="#"><span class="changecolor">Laptop,</span></a>
+                            <a href="#"><span class="changecolor">PC,</span></a>
+                            <a href="#"><span class="changecolor">Thiết bị văn phòng</span></a>
+                            <div class="submenu10">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Laptop</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Asus</a></li>
+                                        <li><a href="#">HP</a></li>
+                                        <li><a href="#">Dell</a></li>
+                                        <li><a href="#">Apple</a></li>
+                                        <li><a href="#">Fujitsu</a></li>
+                                        <li><a href="#">Lenovo</a></li>
+                                        <li><a href="#">Acer</a></li>
+                                        <li><a href="#">MSI</a></li>
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">Chơi game</a></li>
+                                        <li><a href="#">Đồ họa</a></li>
+                                        <li><a href="#">Thiết kế mỏng nhẹ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_two">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Máy tính bản</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Apple</a></li>
+                                        <li><a href="#">DELL</a></li>
+                                        <li><a href="#">Acer</a></li>
+                                        <li><a href="#">ASUS</a></li>
+                                        <li><a href="#">HP</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Màn hình LCD</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">DELL</a></li>
+                                        <li><a href="#">HP</a></li>
+                                        <li><a href="#">ASUS</a></li>
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_three">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Máy in</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Canon</a></li>
+                                        <li><a href="#">HP</a></li>
+                                        <li><a href="#">Brother</a></li>
+                                        <li><a href="#">Epson</a></li>
+                                        <li><a href="#">Máy in trả góp 0%</a></li>
+                                        <li><a href="#">Máy in laser</a></li>
+                                        <li><a href="#">Máy in phun</a></li>
+                                        <li><a href="#">Máy in 2 mặt tự động</a></li>
+                                        <li><a href="#">Máy in dưới 5 triệu</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_four">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Phụ kiện máy tính</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Loa vi tính</a></li>
+                                        <li><a href="#">Chuột máy tính</a></li>
+                                        <li><a href="#">Bàn phím</a></li>
+                                        <li><a href="#">USB</a></li>
+                                        <li><a href="#">Ổ cứng di động</a></li>
+                                        <li><a href="#">Tai nghe vi tính</a></li>
+                                        <li><a href="#">Đế tản nhiệt</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Phần mềm</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Microsoft Office</a></li>
+                                        <li><a href="#">Microsoft Windows</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_five">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Phụ kiện văn ph...</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Mực in</a></li>
+                                        <li><a href="#">Giấy in</a></li>
+                                    </ul>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Máy chiếu</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-gear"></i>
+                            <a href="#"><span class="changecolor">Dịch vụ hỗ trợ,</span></a>
+                            <a href="#"><span class="changecolor">Hệ thống siêu thị</span></a>
+                            <div class="submenu11">
+                                <div class="submenu_one">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Dịch vụ</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Dịch Vụ Vệ Sinh M...</a></li>
+                                        <li><a href="#">Đăng Kí Yêu Cầu ...</a></li>
+                                        <li><a href="#">Bảng Giá Dịch Vụ...</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Hỗ trợ</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Chính Sách và Qu...</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_two">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Hệ thống cửa hàng</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Các Cửa Hàng Điệ...</a></li>
+                                    </ul>
+                                    <hr>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="container__category__left__title__list">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            <a href="#"><span class="changecolor">Thông tin hữu ích</span></a>
+                            <div class="submenu12">
+                                <div class="submenu_left">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Tư vấn - Đánh giá</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Nhập Full Code Play Together VNG miễn phí 21/8/2024</a></li>
+                                        <li><a href="#">Thất tích là ngày gì? Chi tiết về nguồn gốc, ý nghĩa lễ thất...</a></li>
+                                        <li><a href="#">Hướng dẫn tính điểm tốt nghiệp THPT 2024 chính xác nhất</a></li>
+                                        <li><a href="#">50+ Phim hành động Mỹ, Hàn Quốc hay bùng nổ, mới nhất...</a></li>
+                                        <li><a href="#">80+ Phim Hàn Quốc hay mới nhất 2024 đủ thể loại</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Kinh nghiệm - Mẹo vặt</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">Tải Garena Free Fire: Game bắn súng sinh tồn chiến thuật</a></li>
+                                        <li><a href="#">Cách tải và cài đặt Minecraft 1.21.1 apk tiếng Việt miễn phí</a></li>
+                                        <li><a href="#">Tải Minecraft PE miễn phí cho Android, iOS và PC</a></li>
+                                        <li><a href="#">Cách tải Roblox miễn phí trên máy tính, PC, laptop bản...</a></li>
+                                        <li><a href="#">Code Anime Fighters Simulator hôm nay 21/8/2024</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu_right">
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Top sản phẩm</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">TOP 10 máy sấy quần áo bán chạy nhất hiện nay tại Nguy...</a></li>
+                                        <li><a href="#">TOP 5 máy giặt tốt nhất 2024 mà bạn nên mua</a></li>
+                                        <li><a href="#">TOP 3 máy scan tiện ích cho văn phòng</a></li>
+                                        <li><a href="#">Nên mua ấm siêu tốc loại nào tốt? Top 10 bình đun nước...</a></li>
+                                        <li><a href="#">5 Máy Lọc Không Khí Dành Cho Phòng Ngủ Tốt Nhất</a></li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="submenu_title">
+                                        <li><a href="#">Khuyến mãi - Dịch vụ</a></li>
+                                    </ul>
+                                    <ul class="submenu_content">
+                                        <li><a href="#">MUA DELONGHI NGAY - VẬN MAY BẤT NGỜ</a></li>
+                                        <li><a href="#">Nguyễn Kim v PNJ tặng voucher ưu đãi dành cho khách...</a></li>
+                                        <li><a href="#">VNPay - Nhập mã NKIP16, nhận ngay ưu đãi giảm 1.000...</a></li>
+                                        <li><a href="#">Ưu đãi iPhone 16 cùng ngân hàng Sacombank</a></li>
+                                        <li><a href="#">Giảm Ngay 200.000đ Cho Điện Thoại Từ 5 Triệu Qua Th...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="container__category__left__title__list">
+                            <i class="fa-solid fa-gem"></i>
+                            <a href="#"><span class="changecolor">Bán hàng doanh nghiệp</span></a>
+                        </li>                        
+               </div> 
+               <div class="container__category__right">
+                    <div class="container__category__right__top">
+                        <ul class="container__category__right__list">
+                            <li class="container__category__right__list__content container__category__right__list__content--fist">
+                                <i class="container__category__right__list__content__icon fa-solid fa-book-bookmark"></i>
+                                <div class="container__category__right__list__content__word ">
+                                    <a href="#">
+                                        Cẩm nang khuyến mãi
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="container__category__right__list__content">
+                                <i class="container__category__right__list__content__icon fa-solid fa-truck-fast"></i>
+                                <div class="container__category__right__list__content__word">
+                                    <a href="#">
+                                        Giao lắp bảo hành chuyên nghiệp
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="container__category__right__list__content">
+                                <i class="container__category__right__list__content__icon fa-solid fa-book-bookmark"></i>
+                                <div class="container__category__right__list__content__word">
+                                    <a href="#">
+                                        Tổng hợp khuyến mãi
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="container__category__right__list__content">
+                                <i class="container__category__right__list__content__icon fa-solid fa-gem"></i>
+                                <div class="container__category__right__list__content__word">
+                                    <a href="#">
+                                        Bán hàng doanh nghiệp
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="container__category__right__bottom">
+                            <div class="slidebig">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/quangcao1.png" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/quangcao2.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/quangcaocuoitrang.png" alt="Third slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/quangcaodautrang1.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/quangcaodautraang2.png" alt="Third slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/quangcaodautrang3.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/quangcao7.jpg" alt="Third slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/quangcao8.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/quangcao9.jpg" alt="Third slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/quangcao10.jpg" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/quangcao11.jpg" alt="Third slide">
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+                            </div>
+                            <div class="slidesmall">
+                                <div class="slidesmall_top">
+                                    <img src="img/quoangcaosmall1.png" alt="">
+                                </div>
+                                <div class="slidesmall_bottom">
+                                    <img src="img/quangcaosmall2.jpg" alt="">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            <!-- sap pham noi bat -->
+            <div class="container__outstanding">
+                <div class="outstanding_baner">
+                    <img class="outstanding_baner-img" src="img/topsanphamnoibat.jpg" alt="">
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>      
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Bình đun siêu tốc 1.7 lít</h3>
+                                    <h4 class="color_red">430.000đ</h4>
+                                    <h4><del class="modidel">889.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Bình đun siêu tốc 1.7 lít</h3>
+                                    <h4 class="color_red">430.000đ</h4>
+                                    <h4><del class="modidel">889.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Bình đun siêu tốc 1.7 lít</h3>
+                                    <h4 class="color_red">430.000đ</h4>
+                                    <h4><del class="modidel">889.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- deal ngon -->
+            <div class="container__deal-very">
+                <div class="container__deal-very_banner">
+                    <div class="deal-very_banner_left">
+                        <div class="deal-very_banner_left-one">
+                            DEAL VERY NGON
+                        </div>
+                        <div class="deal-very_banner_left-two">
+                            <i class="fa-solid fa-bolt-lightning"></i>
+                        </div>
+                        <div class="deal-very_banner_left-three">
+                            HÔM NAY
+                        </div>
+                    </div>
+                    <div class="container__deal-very_item">
+                        <div class="slide5 owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="sanpham.html">
+                                    <div class="itemscaiquat">
+                                        <div class="imgitemscaiquat">
+                                            <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                        </div>
+                                        <div class="thongsocaiquat">
+                                            <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                            <h4 class="color_red">1.990.000đ</h4>
+                                            <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                            <h5>Nhà sản xuất: Rapido</h5>
+                                            <h5>Xuất xứ: Việt Nam</h5>
+                                            <h5>Thời gian bảo hành: 12 tháng</h5>
+                                        </div>
+                                        <div class="sosanhcaiquat">
+                                            <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                        </div>
+                                        <div class="magiamgia">
+                                            <div class="magiamgia_content">
+                                                Nhập mã SNxx giảm đến 2.000.000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>      
+                            <div class="item">
+                                <a href="sanpham.html">
+                                    <div class="itemscaiquat">
+                                        <div class="imgitemscaiquat">
+                                            <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                        </div>
+                                        <div class="thongsocaiquat">
+                                            <h3>
+                                                Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                            <h4 class="color_red">439.000đ</h4>
+                                            <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                            <h5>Nhà sản xuất: Rapido</h5>
+                                            <h5>Xuất xứ: Việt Nam</h5>
+                                            <h5>Thời gian bảo hành: 12 tháng</h5>
+                                        </div>
+                                        <div class="sosanhcaiquat">
+                                            <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                        </div>
+                                        <div class="magiamgia">
+                                            <div class="magiamgia_content">
+                                                Nhập mã SNxx giảm đến 2.000.000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="sanpham.html">
+                                    <div class="itemscaiquat">
+                                        <div class="imgitemscaiquat">
+                                            <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                        </div>
+                                        <div class="thongsocaiquat">
+                                            <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                            <h4 class="color_red">1.990.000đ</h4>
+                                            <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                            <h5>Nhà sản xuất: Rapido</h5>
+                                            <h5>Xuất xứ: Việt Nam</h5>
+                                            <h5>Thời gian bảo hành: 12 tháng</h5>
+                                        </div>
+                                        <div class="sosanhcaiquat">
+                                            <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                        </div>
+                                        <div class="magiamgia">
+                                            <div class="magiamgia_content">
+                                                Nhập mã SNxx giảm đến 2.000.000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="sanpham.html">
+                                    <div class="itemscaiquat">
+                                        <div class="imgitemscaiquat">
+                                            <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                        </div>
+                                        <div class="thongsocaiquat">
+                                            <h3>Bình đun siêu tốc 1.7 lít</h3>
+                                            <h4 class="color_red">430.000đ</h4>
+                                            <h4><del class="modidel">889.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                            <h5>Nhà sản xuất: Rapido</h5>
+                                            <h5>Xuất xứ: Việt Nam</h5>
+                                            <h5>Thời gian bảo hành: 12 tháng</h5>
+                                        </div>
+                                        <div class="sosanhcaiquat">
+                                            <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                        </div>
+                                        <div class="magiamgia">
+                                            <div class="magiamgia_content">
+                                                Nhập mã SNxx giảm đến 2.000.000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="sanpham.html">
+                                    <div class="itemscaiquat">
+                                        <div class="imgitemscaiquat">
+                                            <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                        </div>
+                                        <div class="thongsocaiquat">
+                                            <h3>
+                                                Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                            <h4 class="color_red">439.000đ</h4>
+                                            <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                            <h5>Nhà sản xuất: Rapido</h5>
+                                            <h5>Xuất xứ: Việt Nam</h5>
+                                            <h5>Thời gian bảo hành: 12 tháng</h5>
+                                        </div>
+                                        <div class="sosanhcaiquat">
+                                            <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                        </div>
+                                        <div class="magiamgia">
+                                            <div class="magiamgia_content">
+                                                Nhập mã SNxx giảm đến 2.000.000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="sanpham.html">
+                                    <div class="itemscaiquat">
+                                        <div class="imgitemscaiquat">
+                                            <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                        </div>
+                                        <div class="thongsocaiquat">
+                                            <h3>
+                                                Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                            <h4 class="color_red">439.000đ</h4>
+                                            <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                            <h5>Nhà sản xuất: Rapido</h5>
+                                            <h5>Xuất xứ: Việt Nam</h5>
+                                            <h5>Thời gian bảo hành: 12 tháng</h5>
+                                        </div>
+                                        <div class="sosanhcaiquat">
+                                            <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                        </div>
+                                        <div class="magiamgia">
+                                            <div class="magiamgia_content">
+                                                Nhập mã SNxx giảm đến 2.000.000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="sanpham.html">
+                                    <div class="itemscaiquat">
+                                        <div class="imgitemscaiquat">
+                                            <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                        </div>
+                                        <div class="thongsocaiquat">
+                                            <h3>Bình đun siêu tốc 1.7 lít</h3>
+                                            <h4 class="color_red">430.000đ</h4>
+                                            <h4><del class="modidel">889.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                            <h5>Nhà sản xuất: Rapido</h5>
+                                            <h5>Xuất xứ: Việt Nam</h5>
+                                            <h5>Thời gian bảo hành: 12 tháng</h5>
+                                        </div>
+                                        <div class="sosanhcaiquat">
+                                            <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                        </div>
+                                        <div class="magiamgia">
+                                            <div class="magiamgia_content">
+                                                Nhập mã SNxx giảm đến 2.000.000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="sanpham.html">
+                                    <div class="itemscaiquat">
+                                        <div class="imgitemscaiquat">
+                                            <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                        </div>
+                                        <div class="thongsocaiquat">
+                                            <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                            <h4 class="color_red">1.990.000đ</h4>
+                                            <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                            <h5>Nhà sản xuất: Rapido</h5>
+                                            <h5>Xuất xứ: Việt Nam</h5>
+                                            <h5>Thời gian bảo hành: 12 tháng</h5>
+                                        </div>
+                                        <div class="sosanhcaiquat">
+                                            <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                        </div>
+                                        <div class="magiamgia">
+                                            <div class="magiamgia_content">
+                                                Nhập mã SNxx giảm đến 2.000.000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="sanpham.html">
+                                    <div class="itemscaiquat">
+                                        <div class="imgitemscaiquat">
+                                            <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                        </div>
+                                        <div class="thongsocaiquat">
+                                            <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                            <h4 class="color_red">1.990.000đ</h4>
+                                            <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                            <h5>Nhà sản xuất: Rapido</h5>
+                                            <h5>Xuất xứ: Việt Nam</h5>
+                                            <h5>Thời gian bảo hành: 12 tháng</h5>
+                                        </div>
+                                        <div class="sosanhcaiquat">
+                                            <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                        </div>
+                                        <div class="magiamgia">
+                                            <div class="magiamgia_content">
+                                                Nhập mã SNxx giảm đến 2.000.000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- uu dai noi bat -->
+            <div class="container__endow">
+                <div class="outstanding_baner">
+                    <img class="outstanding_baner-img" src="img/Title-San-Uu-Dai-Noi-Bat-WEB.png" alt="">
+                </div>
+                <div class="endow_content">
+                    <div class="uudai-top">
+                        <h3>
+                            <i class="fa-solid fa-credit-card"></i>
+                            Ưu đãi thanh toán
+                        </h3>
+                        <div class="uudai">
+                            <div class="slide3 owl-carousel owl-theme">
+                                <div class="item"><img src="img/ip16-936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/KV-T10-936x376.jpg" alt=""></div>
+                                <div class="item"><h4><img src="img/KV-VNPay-936x376.jpg" alt=""></h4></div>
+                                <div class="item"><img src="img/Be-936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/Iphone-16-936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/ip16-936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/KV-T10-936x376.jpg" alt=""></div>
+                                <div class="item"><h4><img src="img/KV-VNPay-936x376.jpg" alt=""></h4></div>
+                                <div class="item"><img src="img/Be-936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/Iphone-16-936x376.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uudai-bottom">
+                        <h3>
+                            <i class="fa-solid fa-medal"></i>
+                            Ưu đãi thương hiệu
+                        </h3>
+                        <div class="uudai">
+                            <div class="slide3 owl-carousel owl-theme">
+                                <div class="item"><img src="img/partnership_banner_936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/Partnership banner 936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/Thang-Panasonic-SDA-936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/partnership_banner_936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/Partnership banner 936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/Thang-Panasonic-SDA-936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/partnership_banner_936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/Partnership banner 936x376.jpg" alt=""></div>
+                                <div class="item"><img src="img/Thang-Panasonic-SDA-936x376.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top ban chay -->
+            <div class="container__top-sell-well">
+                <div class="outstanding_baner">
+                    <img class="outstanding_baner-img" src="/img/topsanpham.png" alt="">
+                </div>
+                <div class="baner_danhmuc">
+                    <div class="baner_danhmuc-items"><a href="#">Nổi bật</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Máy lạnh</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Quạt</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Tủ lạnh</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Máy giặt</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Gia dụng</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Nồi cơm điện</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Máy xay sinh tố</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Máy lọc nước</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Tivi</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Laptop</a></div>
+                    <div class="baner_danhmuc-items"><a href="#">Phụ kiện</a></div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>      
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Bình đun siêu tốc 1.7 lít</h3>
+                                    <h4 class="color_red">430.000đ</h4>
+                                    <h4><del class="modidel">889.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Bình đun siêu tốc 1.7 lít</h3>
+                                    <h4 class="color_red">430.000đ</h4>
+                                    <h4><del class="modidel">889.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Bình đun siêu tốc 1.7 lít</h3>
+                                    <h4 class="color_red">430.000đ</h4>
+                                    <h4><del class="modidel">889.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- thong tin huu ich -->
+            <div class="container__useful-information">
+                <div class="banner_inf">
+                    <div class="banner-inf_left">
+                        <span>THÔNG TIN HỮU ÍCH - MUA SẮM THÔNG MINH</span>
+                    </div>
+                    <div class="banner-inf_right">
+                        <a href="#"><span>Xem thêm</span></a>
+                    </div>
+                </div>
+                <div class="content_inf">
+                    <div class="content_inf-left">
+                        <a href="#">
+                            <img src="img/giatot.jpg" alt="">
+                            <h3>HƠN CẢ GIÁ RẺ LÀ GIÁ TỐT - GIÁ TỐT ĐẾN NGUYỄN KIM</h3>
+                            <span>Vũ Thị Ngọc Thi</span>
+                        </a>
+                    </div>
+                    <div class="content_inf-right">
+                        <div class="content_inf-right-item">
+                            <img src="img/nkcunggo.jpg" alt="">
+                            <div>
+                                <h3>Nguyễn Kim và Big! tặng thêm ưu đãi cho khách hàng</h3>
+                                <span>Vũ Ngọc Thi</span>
+                            </div>
+                        </div>
+                        <div class="content_inf-right-item">
+                            <img src="img/nkcunggo.jpg" alt="">
+                            <div>
+                                <h3>Nguyễn Kim và Big! tặng thêm ưu đãi cho khách hàng</h3>
+                                <span>Vũ Ngọc Thi</span>
+                            </div>
+                        </div>
+                        <div class="content_inf-right-item">
+                            <img src="img/nkcunggo.jpg" alt="">
+                            <div>
+                                <h3>Nguyễn Kim và Big! tặng thêm ưu đãi cho khách hàng</h3>
+                                <span>Vũ Ngọc Thi</span>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- san pham da xem -->
+            <div class="container__watched">
+                <div class="watched_banner">
+                    SẢN PHẨM ĐÃ XEM
+                </div>
+                <div class="watched_content">
+                    <div class="slide5 owl-carousel owl-theme">
+                        <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>      
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Bình đun siêu tốc 1.7 lít</h3>
+                                    <h4 class="color_red">430.000đ</h4>
+                                    <h4><del class="modidel">889.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>      
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                    <h4 class="color_red">1.990.000đ</h4>
+                                    <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>Bình đun siêu tốc 1.7 lít</h3>
+                                    <h4 class="color_red">430.000đ</h4>
+                                    <h4><del class="modidel">889.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">
+                            <div class="itemscaiquat">
+                                <div class="imgitemscaiquat">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                </div>
+                                <div class="thongsocaiquat">
+                                    <h3>
+                                        Máy xay thịt Bear 2 lít QSJ-C03B1</h3>
+                                    <h4 class="color_red">439.000đ</h4>
+                                    <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                    <h5>Nhà sản xuất: Rapido</h5>
+                                    <h5>Xuất xứ: Việt Nam</h5>
+                                    <h5>Thời gian bảo hành: 12 tháng</h5>
+                                </div>
+                                <div class="sosanhcaiquat">
+                                    <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                </div>
+                                <div class="magiamgia">
+                                    <div class="magiamgia_content">
+                                        Nhập mã SNxx giảm đến 2.000.000
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- danh muc noi bat -->
+            <div class="container__category-outstanding">
+                <div class="watched_banner">
+                    DANH MỤC NỔI BẬT
+                </div>
+                <div class="category-outstanding_content">
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/maylanh.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Máy lạnh
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/dienthoai.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Điện thoại
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/tulanh.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Tủ lạnh
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/tivi.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Tivi
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/laptop.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Laptop
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/may-giat.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Máy giặc
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/quat-hoi-nuoc.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Quạt hơi nước
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/may-nuoc-nong.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Máy nước nóng
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/may-in.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Máy in
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/noi-com-dien.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Nồi cơm điện
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/noi-chien-khong-dau.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Nồi chiên không dầu
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/may-loc-khong-khi.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Máy lọc không khí
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/man-hinh.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Màn hình
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/may-ep.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Máy ép
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/may-loc-nuoc.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Máy lọc nước
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/quat-dien.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Quạt điện
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/bep-dien.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Bếp điện
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/loa.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Loa
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/may-tinh-bang.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Máy tính bảng
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="outstanding_content_items">
+                            <div class="outstanding_content_items-img">
+                                <img src="img/may-say-toc.png" alt="">
+                            </div>
+                            <div class="outstanding_content_items-title">
+                                Máy sấy tóc
+                            </div>
+                        </div>
+                    </a>
+                                        
+                </div>
+            </div>
+            <!-- nhap email uu dai -->
+            <div class="email_uudai">
+                <div class="email_uudai_left">
+                    <ul>
+                        <li><img class="icon_fb-ytb-zl" src="img/facebook.png" alt=""></li>
+                        <li><img class="icon_fb-ytb-zl" src="img/you.png" alt=""></li>
+                        <li><img class="icon_fb-ytb-zl" src="img/zalo.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="email_uudai_mid">
+                    <div class="content_email_mid-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="content_email_mid-content">
+                        Bạn muốn là người sớm nhất nhận khuyến mãi đặc biệt?<br> Đăng ký ngay.
+                    </div>
+                </div>
+                <div class="content_email_right">
+                    <div class="content_email_right-input">
+                        <input type="email" id="Email" placeholder=" Thả Email Nhận Ưu Đãi" required onclick="hideAlert()">
+                        <div id="khonghople">Email không hợp lệ</div>
+                        <div id="khongdungdinhdang">Định dạng không đúng</div>
+                    </div>
+                    <button class="content_email_right-button" onclick="checkEmail()">Đăng kí</button>
+                </div>
+            </div>
+            <!-- thong tin lien he -->
+             <div class="contact_info">
+                <div class="contact_info_top">
+                    <ul class="contact_info_top-title">
+                        <li class="contact_info_top-title-b">Thông tin công ty</li>
+                        <ul class="contact_info_top-title-list">
+                            <li><a href="#">Giới thiệu công ty</a></li>
+                            <li><a href="#">Hệ thống cửa hàng</a></li>
+                            <li><a href="#">Mua hàng doanh nghiệp</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="contact_info_top-title">
+                        <li class="contact_info_top-title-b">Tìm kiếm hàng đầu</li>
+                        <ul class="contact_info_top-title-list">
+                            <li><a href="#">Máy lạnh</a></li>
+                            <li><a href="#">Máy giặt</a></li>
+                            <li><a href="#">Tủ lạnh</a></li>
+                            <li><a href="#">Tivi</a></li>
+                            <li><a href="#">Nồi cơm điện</a></li>
+                            <li><a href="#">Nồi chiên không dầu</a></li>
+                            <li><a href="#">Máy lọc không khí</a></li>
+                            <li><a href="#">Máy lọc nước</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="contact_info_top-title">
+                        <li class="contact_info_top-title-b">Chính sách</li>
+                        <ul class="contact_info_top-title-list">
+                            <li><a href="#">Chính sách bảo vệ dữ liệu Cá Nhân</a></li>
+                            <li><a href="#">Ưu đãi đối tác</a></li>
+                            <li><a href="#">Điều kiện giao dịch</a></li>
+                            <li><a href="#">Bảo mật giao dịch của khách hàng</a></li>
+                            <li><a href="#">Chính sách và quy định thanh toán</a></li>
+                            <li><a href="#">Chính sách bảo hành sản phẩm</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="contact_info_top-title">
+                        <li class="contact_info_top-title-b">Hỗ trợ khách hàng</li>
+                        <ul class="contact_info_top-title-list">
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Hóa đơn điện tử</a></li>
+                            <li><a href="#">Câu hỏi thường gặp</a></li>
+                            <li><a href="#">Vận chuyển và giao nhận</a></li>
+                            <li><a href="#">Phương thức thanh toán</a></li>
+                            <li><a href="#">Tra cứu đơn hàng</a></li>
+                            <li><a href="#">Bảng giá dịch vụ lắp đặt</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="contact_info_top-title">
+                        <li class="contact_info_top-title-b">Thông tin khác</li>
+                        <ul class="contact_info_top-title-list">
+                            <li>
+                                <a href="tel:18006800">Tổng đài hỗ trợ miễn phí (Gọi mua - Góp ý - Bảo hành): 1800.6800 (08:00 - 21:00)</a>
+                            </li>
+                            <li>
+                                <a href="mailto:NKare@nguyenkim.com">Email: NKare@nguyenkim.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:18001713">Kênh phản ánh vi phạm đạo đức kinh doanh - Đường dây nóng: 1800.1713 (08:00 - 21:00)</a>
+                            </li>
+                            <li>
+                                <a href="mailto:crv.whistleblower@vn.centralretail.com">Email: crv.whistleblower@vn.centralretail.com</a>
+                            </li>       
+                        </ul>
+                    </ul>
+                </div>
+                <hr style="margin-top: -40px;">
+                <div class="contact_info_bottom">
+                    <div class="contact_info_bottom-top">Danh Mục</div>
+                    <div class="contact_info_bottom-end">
+                        <div class="contact_info_bottom-end_list">
+                            <div class="list">
+                                <a href="#"><h2>TIVI</h2></a>
+                                <a href="#">Samsung</a> |
+                                <a href="#">Sony</a> |
+                                <a href="#">LG</a> |
+                                <a href="#">TCL</a> |
+                                <a href="#">Hisense</a> |
+                                <a href="#">Philips</a> |
+                                <a href="#">Sharp</a> |
+                                <a href="#">Casper</a> |
+                                <a href="#">Tivi QLED</a> |
+                                <a href="#">Tivi OLED</a> |
+                                <a href="#">Tivi Nanocell</a> |
+                                <a href="#">Tivi 8K</a> |
+                                <a href="#">Google/Android Tivi</a> |
+                                <a href="#">Giá treo Tivi</a>
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>LOA - ÂM THANH</h2></a>
+                                <a href="#">Loa</a> |
+                                <a href="#">Micro</a> |
+                                <a href="#">Amply</a> |
+                                <a href="#">Dàn karaoke</a> |
+                                <a href="#">Loa Thanh/Soundbar</a> |
+                                <a href="#">Loa kéo</a> |
+                                <a href="#">Loa bluetooth</a> |
+                                <a href="#">Cáp HDMI/ Cáp Tivi</a>
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>TỦ LẠNH</h2></a>
+                                <a href="#">Samsung</a> |
+                                <a href="#">Toshiba</a> |
+                                <a href="#">Panasonic</a> |
+                                <a href="#">Sharp</a> |
+                                <a href="#">AQUA</a> |
+                                <a href="#">LG</a> |
+                                <a href="#">Hitachi</a> |
+                                <a href="#">Electrolux</a> |
+                                <a href="#">Mitsubishi</a> |
+                                <a href="#">Casper</a> |
+                                <a href="#">Multi doors</a> |
+                                <a href="#">Side by side</a> |
+                                <a href="#">Ngăn đá trên</a> |
+                                <a href="#">Ngăn đá dưới</a> |
+                                <a href="#">Mini</a>
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>TỦ ĐÔNG</h2></a>
+                                <a href="#">Sanaky</a> |
+                                <a href="#">Alaska</a> |
+                                <a href="#">Kangaroo</a> |
+                                <a href="#">LG</a> |
+                                <a href="#">AQUA</a>
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>MÁY GIẶT</h2></a>
+                                <a href="#">LG</a> |
+                                <a href="#">Electrolux</a> |
+                                <a href="#">Samsung</a> |
+                                <a href="#">Toshiba</a> |
+                                <a href="#">Panasonic</a> |
+                                <a href="#">AQUA</a> |
+                                <a href="#">Casper</a> |
+                                <a href="#">Sharp</a> |
+                                <a href="#">Hitachi</a> |
+                                <a href="#">Cửa trước</a> |
+                                <a href="#">Cửa trên</a> |
+                                <a href="#">Tủ chăm sóc quần áo</a>
+                            </div>
+                        </div>
+                        <div class="contact_info_bottom-end_list">
+                            <div class="list">
+                                <a href="#"><h2>MÁY SẤY</h2></a>
+                                <a href="#">Electrolux</a> |
+                                <a href="#">Samsung</a> |
+                                <a href="#">LG</a> |
+                                <a href="#">AQUA</a> |
+                                <a href="#">Casper</a> |
+                                <a href="#">Toshiba</a>
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>MÁY NƯỚC NÓNG</h2></a>
+                                <a href="#">Ariston</a> |
+                                <a href="#">Panasonic</a> |
+                                <a href="#">Ferroli</a> |
+                                <a href="#">Centon</a> |
+                                <a href="#">Electrolux</a> |
+                                <a href="#">Trực tiếp không bơm trợ lực</a> |
+                                <a href="#">Trực tiếp có bơm trợ lực</a> |
+                                <a href="#">Gián tiếp</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>MÁY LẠNH</h2></a>
+                                <a href="#">Panasonic</a> |
+                                <a href="#">Daikin</a> |
+                                <a href="#">Toshiba</a> |
+                                <a href="#">Casper</a> |
+                                <a href="#">LG</a> |
+                                <a href="#">Samsung</a> |
+                                <a href="#">Sharp</a> |
+                                <a href="#">Mitsubishi Electric</a> |
+                                <a href="#">AQUA</a> |
+                                <a href="#">Midea</a> |
+                                <a href="#">Reetech</a> |
+                                <a href="#">Carrier</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>QUẠT - SƯỞI</h2></a>
+                                <a href="#">Quạt điều hòa</a> |
+                                <a href="#">Quạt trần</a> |
+                                <a href="#">Quạt sạc</a> |
+                                <a href="#">Máy hút ẩm</a> |
+                                <a href="#">Máy sưởi - đèn sưởi</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>MÁY LỌC KHÔNG KHÍ</h2></a>
+                                <a href="#">LG</a> |
+                                <a href="#">Dyson</a> |
+                                <a href="#">Sharp</a> |
+                                <a href="#">Hitachi</a> |
+                                <a href="#">Coway</a> |
+                                <a href="#">Daikin</a> |
+                                <a href="#">Electrolux</a> |
+                                <a href="#">Philips</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>TỦ MÁT</h2></a>
+                                <a href="#">Sanaky</a> |
+                                <a href="#">Alaska</a> |
+                                <a href="#">Kangaroo</a> |
+                                <a href="#">AQUA</a>                                
+                            </div>
+                        </div>
+                        <div class="contact_info_bottom-end_list">
+                            <div class="list">
+                                <a href="#"><h2>ĐỒ DÙNG NHÀ BẾP</h2></a>
+                                <a href="#">Nồi cơm điện</a> |
+                                <a href="#">Lò vi sóng</a> |
+                                <a href="#">Nồi chiên không dầu</a> |
+                                <a href="#">Bếp từ/Bếp hồng ngoại</a> |
+                                <a href="#">Bếp gas</a> |
+                                <a href="#">Máy hút khói</a> |
+                                <a href="#">Nồi áp suất</a> |
+                                <a href="#">Thiết bị nướng</a> |
+                                <a href="#">Nồi chức năng</a> |
+                                <a href="#">Lẩu điện</a> |
+                                <a href="#">Bình đun siêu tốc</a> |
+                                <a href="#">Bình thủy điện</a> |
+                                <a href="#">Máy rửa chén</a> |
+                                <a href="#">Máy sấy chén</a> |
+                                <a href="#">Bộ nồi, nồi</a> |
+                                <a href="#">Chảo chống dính</a> |
+                                <a href="#">Bình giữ nhiệt/ cà mên</a> |
+                                <a href="#">Dụng cụ ăn</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>LỌC NƯỚC/ MÁY LỌC NƯỚC THƯỜNG</h2></a>
+                                <a href="#">Bình lọc nước</a> |
+                                <a href="#">Máy lọc nước nóng lạnh</a> |
+                                <a href="#">Máy lọc nước để bàn</a> |
+                                <a href="#">Cây nước nóng lạnh</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>MÁY XAY SINH TỐ/MÁY ÉP TRÁI CÂY</h2></a>
+                                <a href="#">Máy vắt cam</a> |
+                                <a href="#">Máy pha cà phê</a> |
+                                <a href="#">Máy đánh trứng</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>ĐIỆN GIA DỤNG</h2></a>
+                                <a href="#">Nồi chiên không dầu</a> |
+                                <a href="#">Hút bụi</a> |
+                                <a href="#">Bàn ủi</a> |
+                                <a href="#">Máy bơm nước</a> |
+                                <a href="#">Máy phát điện</a> |
+                                <a href="#">Đèn điện</a>                                
+                            </div>
+                        </div>
+                        <div class="contact_info_bottom-end_list">
+                            <div class="list">
+                                <a href="#"><h2>SỨC KHỎE VÀ LÀM ĐẸP</h2></a>
+                                <a href="#">Cân sức khỏe</a> |
+                                <a href="#">Đo huyết áp</a> |
+                                <a href="#">Máy tập thể dục</a> |
+                                <a href="#">Máy massage</a> |
+                                <a href="#">Máy sấy tóc</a> |
+                                <a href="#">Máy cạo râu</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>ĐIỆN THOẠI</h2></a>
+                                <a href="#">Samsung</a> |
+                                <a href="#">iPhone</a> |
+                                <a href="#">Oppo</a> |
+                                <a href="#">Vivo</a> |
+                                <a href="#">Realme</a> |
+                                <a href="#">Nokia</a> |
+                                <a href="#">Xiaomi</a> |
+                                <a href="#">Điện thoại 2 sim 2 sóng</a> |
+                                <a href="#">Màn hình tràn viền</a> |
+                                <a href="#">Camera kép</a> 
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>TABLET</h2></a>
+                                <a href="#">iPad</a> |
+                                <a href="#">Samsung</a> |
+                                <a href="#">Màn hình lớn</a> |
+                                <a href="#">Bộ nhớ khủng</a>
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>PHỤ KIỆN ĐIỆN THOẠI</h2></a>
+                                <a href="#">Bao da, ốp lưng</a> |
+                                <a href="#">Miếng dán điện thoại</a> |
+                                <a href="#">Cáp, cổng kết nối</a> |
+                                <a href="#">Pin sạc dự phòng</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>PHỤ KIỆN LAPTOP/ VĂN PHÒNG</h2></a>
+                                <a href="#">Chuột</a> |
+                                <a href="#">Bàn phím</a> |
+                                <a href="#">Đế laptop</a> |
+                                <a href="#">Loa vi tính</a> |
+                                <a href="#">Thiết bị mạng</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>THIẾT BỊ ÂM THANH</h2></a>
+                                <a href="#">Loa bluetooth</a> |
+                                <a href="#">Tai nghe</a>                                
+                            </div>
+                        </div>
+                        <div class="contact_info_bottom-end_list">
+                            <div class="list">
+                                <a href="#"><h2>ĐỒNG HỒ THÔNG MINH</h2></a>
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>THIẾT BỊ LƯU TRỮ</h2></a>
+                                <a href="#">USB</a> |
+                                <a href="#">Ổ cứng di động</a> |
+                                <a href="#">Thẻ nhớ</a>
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>LAPTOP</h2></a>
+                                <a href="#">ASUS</a> |
+                                <a href="#">HP</a> |
+                                <a href="#">Dell</a> |
+                                <a href="#">Apple</a> |
+                                <a href="#">Fujitsu</a> |
+                                <a href="#">Lenovo</a> |
+                                <a href="#">Acer</a> |
+                                <a href="#">MSI</a> |
+                                <a href="#">LG</a>
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>PC</h2></a>
+                                <a href="#">Dell</a> |
+                                <a href="#">ASUS</a> |
+                                <a href="#">HP</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>MÀN HÌNH LCD</h2></a>
+                                <a href="#">Dell</a> |
+                                <a href="#">HP</a> |
+                                <a href="#">ASUS</a> |
+                                <a href="#">LG</a> |
+                                <a href="#">Samsung</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>MÁY IN</h2></a>
+                                <a href="#">Canon</a> |
+                                <a href="#">HP</a> |
+                                <a href="#">Brother</a> |
+                                <a href="#">Epson</a> |
+                                <a href="#">Máy in laser</a> |
+                                <a href="#">Máy in phun</a> |
+                                <a href="#">Máy in 2 mặt tự động</a> |
+                                <a href="#">Máy in đa chức năng</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>PHẦN MỀM</h2></a>
+                                <a href="#">Microsoft Office</a> |
+                                <a href="#">Microsoft Windows</a>                                
+                            </div>
+                            <div class="list">
+                                <a href="#"><h2>PHỤ KIỆN APPLE</h2></a>
+                                <a href="#">Apple Watch</a> |
+                                <a href="#">Chuột Apple</a> |
+                                <a href="#">Bàn phím Apple</a> |
+                                <a href="#">Tai nghe iPhone</a> |
+                                <a href="#">Ốp lưng</a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <footer class="footer_end">
+            <div class="footer_end_nav-img">
+                <a href="#"><img src="img/central-logo.webp" alt=""></a>
+                <a href="#"><img src="img/GO.webp" alt=""></a>
+                <a href="#"><img src="img/go_.webp" alt=""></a>
+                <a href="#"><img src="img/Hyper.webp" alt=""></a>
+                <a href="#"><img src="img/Topmarket-logo.webp" alt=""></a>
+                <a href="#"><img src="img/Logo-BigC.webp" alt=""></a>
+                <a href="#"><img src="img/Lan-chi-logo.webp" alt=""></a>
+                <a href="#"><img src="img/NguyenKim.webp" alt=""></a>
+                <a href="#"><img src="img/logo-Kubo.webp" alt=""></a>
+                <a href="#"><img src="img/come-home-logo-w.png" alt=""></a>
+                <a href="#"><img src="img/Suppersports-white.webp" alt=""></a>
+                <a href="#"><img src="img/Logo-Robin.webp" alt=""></a>
+            </div>
+            <div class="footer_end-container">
+                <div class="footer_end-container-left">
+                    <span>
+                        NGUYENKIM.COM - KÊNH MUA SẮM TRỰC TUYẾN <br> UY TÍN GIÁ TỐT HÀNG ĐẦU VIỆT NAM
+                    </span>
+                </div>
+                <div class="footer_end-container-mid">
+                    <span>Phương thức thanh toán</span>
+                    <img src="img/visa.png" alt="">
+                </div>
+                <div class="footer_end-container-right">
+                    <span>Chứng nhận</span>
+                    <br>
+                    <img src="img/chungnhan.png" alt="">
+                </div>
+            </div>
+            <div class="foot-end">
+                <div class="content-end">Copyright © 1999 - 2024 Công ty Cổ phần Thương mại Nguyễn Kim.</div>
+            <div class="content-end">Giấy chứng nhận đăng ký kinh doanh số 0302286281, cấp ngày 22/06/2006 bởi Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh</div>
+            <div class="content-end">Địa chỉ đăng ký trụ sở chính: 63-65-67 Trần Hưng Đạo, P. Cầu Ông Lãnh, TP. Hồ Chí Minh</div>
+            </div>
+            <div class="footer__hotline">
+                <div class="footer_hotline_left">
+                    Gọi mua: 1800.6800
+                </div> 
+                <div class="footer_hotline_right">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/indexjs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
