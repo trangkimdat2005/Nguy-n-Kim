@@ -5,8 +5,8 @@ body{
     justify-content: center;
     }
 .app{
-        background-color: aliceblue;
-        height: auto;
+    background-color: aliceblue;
+    height: auto;
 }
 .classa{
     color: white !important;
@@ -838,12 +838,83 @@ ul .submenu_content li {
     z-index: 9;
 }
 .slidebig{
-    display: inline-block;
     height: 475px;
     width: 690px;
     margin-left: 10px;
     margin-top: 10px;
+    position: relative;
+    overflow: hidden;
 }
+.slidebig_top{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+ul{
+    list-style: none;
+}
+.slidebig_bottom ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slidebig_bottom ul li{
+    background-color: #888;
+    padding: 5px;
+    border-radius: 10px;
+    margin:0 10px 0 10px;
+    display: none;
+}
+.slidebig img{
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    position: absolute;
+}
+.slidebig-btn{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.slidebig-btn-left,
+.slidebig-btn-right{
+    font-size: 25px;
+    padding: 7px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.slidebig a:nth-child(2) img{
+    transform: translateX(100%);
+}
+.slidebig a:nth-child(3) img{
+    transform: translateX(200%);
+}
+.slidebig a:nth-child(4) img{
+    transform: translateX(300%);
+}
+.slidebig a:nth-child(5) img{
+    transform: translateX(400%);
+}
+.slidebig a:nth-child(6) img{
+    transform: translateX(500%);
+}
+.slidebig a:nth-child(7) img{
+    transform: translateX(600%);
+}
+
+
+
+
+
+
+
+
+
 .slidesmall{
     display: inline-block;
     height: 445px;
@@ -1672,7 +1743,7 @@ li .icon_fb-ytb-zl{
     font-size: 20px;
     font-weight: 600;
     line-height: 2.9em;
-    z-index: 19;
+    z-index: 10;
     text-align: left;
     width: 259px;
     padding-left: 20px;
