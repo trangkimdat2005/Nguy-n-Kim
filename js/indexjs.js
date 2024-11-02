@@ -52,6 +52,48 @@ function hideAlert(){
     document.getElementById('khongdungdinhdang').style.display='none';
     document.getElementById('khonghople').style.display='none';
 }
+// slide
+const rightbtn = document.querySelector('.fa-chevron-right');
+const leftbtn = document.querySelector('.fa-chevron-left');
+let index = 0;
+const imgNumber = document.querySelectorAll('.slidebig_top img');
+const slidebigTop = document.querySelector('.slidebig_top');
+
+function moveSlide() {
+    const width = slidebigTop.offsetWidth;
+    slidebigTop.style.right = `${width * index}px`;
+}
+
+
+function autoSlide() {
+    index = (index + 1) % imgNumber.length;
+    moveSlide();
+}
+
+let autoSlideInterval = setInterval(autoSlide, 4000);
+
+rightbtn.addEventListener("click", function() {
+    clearInterval(autoSlideInterval);
+    index = (index + 1) % imgNumber.length;
+    moveSlide();
+    autoSlideInterval = setInterval(autoSlide, 4000);
+});
+
+leftbtn.addEventListener("click", function() {
+    clearInterval(autoSlideInterval); 
+    index = index - 1 < 0 ? imgNumber.length - 1 : index - 1; 
+    moveSlide();
+    autoSlideInterval = setInterval(autoSlide, 4000);
+});
+
+
+
+
+
+
+
+
+
 $(document).ready(function(){
     $('.slide5').owlCarousel({
         loop: true,
