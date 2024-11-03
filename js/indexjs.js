@@ -90,10 +90,6 @@ leftbtn.addEventListener("click", function() {
 
 
 
-
-
-
-
 $(document).ready(function(){
     $('.slide5').owlCarousel({
         loop: true,

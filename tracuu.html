@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khuyến mãi hot 2024 tại Nguyễn Kim</title>
+    <title>Document</title>
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- file -->
-    <link rel="stylesheet" href="css/tonghopkhuyenmaicss.css">
+    <link rel="stylesheet" href="css/tracuucss.css">
     <link rel="stylesheet" href="css/base.css">
     <!-- font normal -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -13,6 +17,11 @@
     <script src="https://kit.fontawesome.com/db7ebb0f3d.js" crossorigin="anonymous"></script>
     <!-- icon nk -->
     <link rel="icon" href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png">
+    <!-- owl caurosel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="app">
@@ -29,251 +38,13 @@
                             <i class="header__navbar__located__point fa-solid fa-location-dot"></i>
                             <div class="header__navbar__located__content">
                                 <span class="header__navbar__located__TP">
-                                    Xem giá tại <br> <button class="choose-btn" onclick="openPopup()">TP.HCM  </button><i class="fa-solid fa-sort-down"></i>
+                                    Xem giá tại <br> <span>TP.HCM <i class="fa-solid fa-sort-down"></i> </span>
                                 </span>
-                            </div>
-                            <div class="popup" id="popup" onclick="closePopupOnOutsideClick(event)">
-                                <div class="header__navbar__located__address__content">
-                                    <div class="popup_title">
-                                        <div class="popup_title_left"><h2>Chọn tỉnh thành để xem đúng giá & khuyến mãi:</h2></div>
-                                        <button class="popup_title_right" onclick="closePopup()">X</button>
-                                    </div>
-                                    <div class="popup_find-locate">
-                                        <div>
-                                            <input type="text" placeholder=" Tìm kiếm tỉnh thành"> <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="popup_locate">
-                                        <button onclick="chooseOption('TP.HCM')">TP.HCM</button>
-                                        <button onclick="chooseOption('Hà Nội')">Hà Nội</button>
-                                        <button onclick="chooseOption('Đà Nẵng')">Đà Nẵng</button>
-                                        <button onclick="chooseOption('Hải Phòng')">Hải Phòng</button>
-                                        <button onclick="chooseOption('Cần Thơ')">Cần Thơ</button>
-                                        <button onclick="chooseOption('An Giang')">An Giang</button>
-                                        <button onclick="chooseOption('Bà Rịa - Vũng Tàu')">Bà Rịa - Vũng Tàu</button>
-                                        <button onclick="chooseOption('Bắc Giang')">Bắc Giang</button>
-                                        <button onclick="chooseOption('Bắc Kạn')">Bắc Kạn</button>
-                                        <button onclick="chooseOption('Bạc Liêu')">Bạc Liêu</button>
-                                        <button onclick="chooseOption('Bắc Ninh')">Bắc Ninh</button>
-                                        <button onclick="chooseOption('Bến Tre')">Bến Tre</button>
-                                        <button onclick="chooseOption('Bình Định')">Bình Định</button>
-                                        <button onclick="chooseOption('Bình Dương')">Bình Dương</button>
-                                        <button onclick="chooseOption('Bình Phước')">Bình Phước</button>
-                                        <button onclick="chooseOption('Bình Thuận')">Bình Thuận</button>
-                                        <button onclick="chooseOption('Cà Mau')">Cà Mau</button>
-                                        <button onclick="chooseOption('Cao Bằng')">Cao Bằng</button>
-                                        <button onclick="chooseOption('Đắk Lắk')">Đắk Lắk</button>
-                                        <button onclick="chooseOption('Đắk Nông')">Đắk Nông</button>
-                                        <button onclick="chooseOption('Điện Biên')">Điện Biên</button>
-                                        <button onclick="chooseOption('Đồng Nai')">Đồng Nai</button>
-                                        <button onclick="chooseOption('Đồng Tháp')">Đồng Tháp</button>
-                                        <button onclick="chooseOption('Gia Lai')">Gia Lai</button>
-                                        <button onclick="chooseOption('Hà Giang')">Hà Giang</button>
-                                        <button onclick="chooseOption('Hà Nam')">Hà Nam</button>
-                                        <button onclick="chooseOption('Hà Tĩnh')">Hà Tĩnh</button>
-                                        <button onclick="chooseOption('Hải Dương')">Hải Dương</button>
-                                        <button onclick="chooseOption('Hậu Giang')">Hậu Giang</button>
-                                        <button onclick="chooseOption('Hòa Bình')">Hòa Bình</button>
-                                        <button onclick="chooseOption('Hưng Yên')">Hưng Yên</button>
-                                        <button onclick="chooseOption('Khánh Hòa')">Khánh Hòa</button>
-                                        <button onclick="chooseOption('Kiên Giang')">Kiên Giang</button>
-                                        <button onclick="chooseOption('Kon Tum')">Kon Tum</button>
-                                        <button onclick="chooseOption('Lai Châu')">Lai Châu</button>
-                                        <button onclick="chooseOption('Lâm Đồng')">Lâm Đồng</button>
-                                        <button onclick="chooseOption('Lạng Sơn')">Lạng Sơn</button>
-                                        <button onclick="chooseOption('Lào Cai')">Lào Cai</button>
-                                        <button onclick="chooseOption('Long An')">Long An</button>
-                                        <button onclick="chooseOption('Nam Định')">Nam Định</button>
-                                        <button onclick="chooseOption('Nghệ An')">Nghệ An</button>
-                                        <button onclick="chooseOption('Ninh Bình')">Ninh Bình</button>
-                                        <button onclick="chooseOption('Ninh Thuận')">Ninh Thuận</button>
-                                        <button onclick="chooseOption('Phú Thọ')">Phú Thọ</button>
-                                        <button onclick="chooseOption('Quảng Bình')">Quảng Bình</button>
-                                        <button onclick="chooseOption('Quảng Nam')">Quảng Nam</button>
-                                        <button onclick="chooseOption('Quảng Ngãi')">Quảng Ngãi</button>
-                                        <button onclick="chooseOption('Quảng Ninh')">Quảng Ninh</button>
-                                        <button onclick="chooseOption('Quảng Trị')">Quảng Trị</button>
-                                        <button onclick="chooseOption('Sóc Trăng')">Sóc Trăng</button>
-                                        <button onclick="chooseOption('Sơn La')">Sơn La</button>
-                                        <button onclick="chooseOption('Tây Ninh')">Tây Ninh</button>
-                                        <button onclick="chooseOption('Thái Bình')">Thái Bình</button>
-                                        <button onclick="chooseOption('Thái Nguyên')">Thái Nguyên</button>
-                                        <button onclick="chooseOption('Thanh Hóa')">Thanh Hóa</button>
-                                        <button onclick="chooseOption('Thừa Thiên Huế')">Thừa Thiên Huế</button>
-                                        <button onclick="chooseOption('Tiền Giang')">Tiền Giang</button>
-                                        <button onclick="chooseOption('Trà Vinh')">Trà Vinh</button>
-                                        <button onclick="chooseOption('Tuyên Quang')">Tuyên Quang</button>
-                                        <button onclick="chooseOption('Vĩnh Long')">Vĩnh Long</button>
-                                        <button onclick="chooseOption('Vĩnh Phúc')">Vĩnh Phúc</button>
-                                        <button onclick="chooseOption('Yên Bái')">Yên Bái</button>
-                                    </div>
-                                </div>
                             </div>
                         </li>
                         <li class="header__navbar__find">
-                            <div class="header__navbar__find__input" onclick="showFind()">
-                                <input type="text" placeholder="  Bạn cần tìm gì hôm nay? ">
-                                </span>
-                                <div id="popup-find-all">
-                                    <div class="danhmuc-timkiem">
-                                        <div class="danhmuc-timkiem1">
-                                            <div class="danhmuc-timkiem1_title">
-                                                <h2>Từ khóa nổi bật</h2>
-                                            </div>
-                                            <ul class="danhmuc-timkiem1_list">
-                                                <li><a href="trangsanpham.html">Dyson</a></li>
-                                                <li><a href="trangsanpham.html">Samsung</a></li>
-                                                <li><a href="trangsanpham.html">Apple</a></li>
-                                                <li><a href="trangsanpham.html">LG</a></li>
-                                                <li><a href="trangsanpham.html">HP</a></li>
-                                                <li><a href="trangsanpham.html">Sony</a></li>
-                                                <li><a href="trangsanpham.html">Dell</a></li>
-                                                <li><a href="trangsanpham.html">Panasonic</a></li>
-                                                <li><a href="trangsanpham.html">iPhone</a></li>
-                                                <li><a href="trangsanpham.html">Asus</a></li>
-                                                <li><a href="trangsanpham.html">Philips</a></li>                                                
-                                            </ul>
-                                        </div>
-                                        <div class="danhmuc-timkiem1">
-                                            <div class="danhmuc-timkiem1_title">
-                                                <h2>Sản phẩm bán chạy nhất</h2>
-                                            </div>
-                                            <ul class="danhmuc-timkiem1_list-product">
-                                                <li>
-                                                    <div class="danhmuc-timkiem1_list-product_left">
-                                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1.jpg" alt="">
-                                                        <div class="giamgia">-45%</div>
-                                                    </div>
-                                                    <div class="danhmuc-timkiem1_list-product_right">
-                                                        <a href="sanphammayxay.html">
-                                                            <div class="danhmuc-timkiem1_list-product_right_tensp">
-                                                                Máy xay thịt Bear 2 lít QSJ-C03B1
-                                                            </div>
-                                                            <div class="danhmuc-timkiem1_list-product_right_gia">
-                                                                <span class="color_red">439.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">799.000đ</del>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="danhmuc-timkiem1_list-product_left">
-                                                        <img src="img/10055447-quat-dieu-hoa-rapido-lucky-6000m-1.jpg" alt="">
-                                                        <div class="giamgia">-59%</div>
-                                                    </div>
-                                                    <div class="danhmuc-timkiem1_list-product_right">
-                                                        <a href="sanpham.html">
-                                                            <div class="danhmuc-timkiem1_list-product_right_tensp">
-                                                                Quạt điều hòa Rapido Lucky 6000M
-                                                            </div>
-                                                            <div class="danhmuc-timkiem1_list-product_right_gia">
-                                                                <span class="color_red">1.990.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">4.990.000đ</del>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="danhmuc-timkiem1_list-product_left">
-                                                        <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1.jpg" alt="">
-                                                        <div class="giamgia">-30%</div>
-                                                    </div>
-                                                    <div class="danhmuc-timkiem1_list-product_right">
-                                                        <a href="sanphamamdunnuoc.html">
-                                                            <div class="danhmuc-timkiem1_list-product_right_tensp">
-                                                                Bình đun siêu tốc Elmich 1.7 lít KEE 1774 B
-                                                            </div>
-                                                            <div class="danhmuc-timkiem1_list-product_right_gia">
-                                                                <span class="color_red">619.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">889.000đ</del>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="danhmuc-timkiem1_list-product_left">
-                                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1.jpg" alt="">
-                                                        <div class="giamgia">-45%</div>
-                                                    </div>
-                                                    <div class="danhmuc-timkiem1_list-product_right">
-                                                        <a href="sanphammayxay.html">
-                                                            <div class="danhmuc-timkiem1_list-product_right_tensp">
-                                                                Máy xay thịt Bear 2 lít QSJ-C03B1
-                                                            </div>
-                                                            <div class="danhmuc-timkiem1_list-product_right_gia">
-                                                                <span class="color_red">439.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">799.000đ</del>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="danhmuc-timkiem1">
-                                            <div class="danhmuc-timkiem1_content">
-                                                <div class="danhmuc-timkiem1_title">
-                                                    <h2>Sản phẩm đã xem</h2>
-                                                </div>
-                                                <ul class="danhmuc-timkiem1_content_product">
-                                                    <li>
-                                                        <div class="danhmuc-timkiem1_list-product_left">
-                                                            <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1.jpg" alt="">
-                                                            <div class="giamgia">-30%</div>
-                                                        </div>
-                                                        <div class="danhmuc-timkiem1_list-product_right">
-                                                            <a href="sanphamamdunnuoc.html">
-                                                                <div class="danhmuc-timkiem1_list-product_right_tensp">
-                                                                    Bình đun siêu tốc Elmich 1.7 lít KEE 1774 B
-                                                                </div>
-                                                                <div class="danhmuc-timkiem1_list-product_right_gia">
-                                                                    <span class="color_red">619.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">889.000đ</del>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="danhmuc-timkiem1_list-product_left">
-                                                            <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1.jpg" alt="">
-                                                            <div class="giamgia">-45%</div>
-                                                        </div>
-                                                        <div class="danhmuc-timkiem1_list-product_right">
-                                                            <a href="sanphammayxay.html">
-                                                                <div class="danhmuc-timkiem1_list-product_right_tensp">
-                                                                    Máy xay thịt Bear 2 lít QSJ-C03B1
-                                                                </div>
-                                                                <div class="danhmuc-timkiem1_list-product_right_gia">
-                                                                    <span class="color_red">439.000đ</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<del class="font-14px">799.000đ</del>
-                                                                </div>
-                                                            </a>
-                                                        </div> 
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="danhmuc-timkiem1_content">
-                                                <div class="danhmuc-timkiem1_title">
-                                                    <h2>Bài viết gợi ý</h2>
-                                                </div>
-                                                <ul class="danhmuc-timkiem1_content_product">
-                                                    <li>
-                                                        <div class="danhmuc-timkiem1_content_product_left">
-                                                            <img src="img/KV-SN-28-1162x652.jpg" alt="">
-                                                        </div>
-                                                        <div class="danhmuc-timkiem1_content_product_right">
-                                                            <a href="#">NGUYỄN KIM MỪNG SINH NHẬT 28 NĂM - MỘT LẦN MUA SẮM VẠN LẦN TRI...</a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="danhmuc-timkiem1_content_product_left">
-                                                            <img src="img/Thang-Panasonic-MDA-1200x628__2_.jpg" alt="">
-                                                        </div>
-                                                        <div class="danhmuc-timkiem1_content_product_right">
-                                                            <a href="#">THÁNG PANASONIC SĂN GIÁ TỐT - TRÚNG QUÀ TO...</a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button onclick="hideFind()"><i class="header__navbar__find__seach fa-solid fa-magnifying-glass"></i></button>
+                            <input class="header__navbar__find__input" type="text" placeholder="  Bạn cần tìm gì hôm nay? ">
+                            <i class="header__navbar__find__seach fa-solid fa-magnifying-glass"></i>
                         </li>
                         <li class="header__navbar__shoppingcart">
                             <div class="header__cart">
@@ -286,12 +57,12 @@
                         <li class="header__navbar__ordertracking">
                             <i class="header__navbar__ordertracking__clock fa-solid fa-clock-rotate-left"></i>
                             <div class="header__navbar__ordertracking__content">
-                                <a href="tracuu.html" class="classa">Tra cứu <br> đơn hàng</a>
+                                <a href="#" class="classa">Tra cứu <br> đơn hàng</a>
                             </div>
                         </li>
                         <li class="header__navbar__account">
                             <i class="header__navbar__account__icon fa-solid fa-user"></i>
-                            <a href="nguyenKimSignIn.html" class="classa">Tài khoản</a>
+                            <a href="#" class="classa">Tài khoản</a>
                         </li>
                         <li class="header__navbar__hotline">
                             <i class="header__navbar__hotline__phone fa-solid fa-phone-volume"></i>
@@ -1182,13 +953,13 @@
                     </a>
                 </li>
                 <li class="nav_book-ship-promote-sell">
-                    <a href="giaolapbaohanh.html">
+                    <a href="#">
                         <i class="fa-solid fa-truck"></i>
                         Giao lắp, bảo hành chuyên nghiệp
                     </a>
                 </li>
                 <li class="nav_book-ship-promote-sell">
-                    <a href="tonghopkhuyenmai.html">
+                    <a href="#">
                         <i class="fa-solid fa-book-bookmark"></i>
                         Tổng hợp khuyến mãi
                     </a>
@@ -1202,182 +973,60 @@
                 
             </ul>
         </div>
-        <h1 class="title-slide-full br-white">Khuyến mãi mới</h1>
-        <div class="slide-khuyenmai">
-            <div class="slide-khuyenmai_center">
-                <div class="slide-khuyenmai_item">
-                    <a href="#">
-                        <img src="img/xã-kho-1200x628.png" alt="">
-                        <div class="slide-khuyenmai_center-content">
-                            <h3>XẢ HÀNG GIÁ VỐN [MUA NGAY]</h3>
-                            <h4>Chương trình diễn ra đến 12/12/2024</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide-khuyenmai_item">
-                    <a href="#">
-                        <img src="img/1200x628.jpg" alt="">
-                        <div class="slide-khuyenmai_center-content">
-                            <h3>PHỤ KIỆN SIÊU HOT - KHUYẾN MÃI SIÊU SÂU</h3>
-                            <h4>Chương trình diễn ra đến 12/12/2024</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide-khuyenmai_item">
-                    <a href="#">
-                        <img src="img/1200x628_lcvy-69.jpg" alt="">
-                        <div class="slide-khuyenmai_center-content">
-                            <h3>GỌI NGAY HOTLINE - NẮM TRỌN ƯU ĐÃI</h3>
-                            <h4>Chương trình diễn ra đến 12/12/2024</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide-khuyenmai_item">
-                    <a href="#">
-                        <img src="img/xã-kho-1200x628.png" alt="">
-                        <div class="slide-khuyenmai_center-content">
-                            <h3>XẢ HÀNG GIÁ VỐN [MUA NGAY]</h3>
-                            <h4>Chương trình diễn ra đến 12/12/2024</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide-khuyenmai_item">
-                    <a href="#">
-                        <img src="img/1200x628.jpg" alt="">
-                        <div class="slide-khuyenmai_center-content">
-                            <h3>PHỤ KIỆN SIÊU HOT - KHUYẾN MÃI SIÊU SÂU</h3>
-                            <h4>Chương trình diễn ra đến 12/12/2024</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide-khuyenmai_item">
-                    <a href="#">
-                        <img src="img/1200x628_lcvy-69.jpg" alt="">
-                        <div class="slide-khuyenmai_center-content">
-                            <h3>GỌI NGAY HOTLINE - NẮM TRỌN ƯU ĐÃI</h3>
-                            <h4>Chương trình diễn ra đến 12/12/2024</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide-khuyenmai_item">
-                    <a href="#">
-                        <img src="img/xã-kho-1200x628.png" alt="">
-                        <div class="slide-khuyenmai_center-content">
-                            <h3>XẢ HÀNG GIÁ VỐN [MUA NGAY]</h3>
-                            <h4>Chương trình diễn ra đến 12/12/2024</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide-khuyenmai_item">
-                    <a href="#">
-                        <img src="img/1200x628.jpg" alt="">
-                        <div class="slide-khuyenmai_center-content">
-                            <h3>PHỤ KIỆN SIÊU HOT - KHUYẾN MÃI SIÊU SÂU</h3>
-                            <h4>Chương trình diễn ra đến 12/12/2024</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide-khuyenmai_item">
-                    <a href="#">
-                        <img src="img/1200x628_lcvy-69.jpg" alt="">
-                        <div class="slide-khuyenmai_center-content">
-                            <h3>GỌI NGAY HOTLINE - NẮM TRỌN ƯU ĐÃI</h3>
-                            <h4>Chương trình diễn ra đến 12/12/2024</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="slide-khuyenmai_item">
-                    <a href="#">
-                        <img src="img/xã-kho-1200x628.png" alt="">
-                        <div class="slide-khuyenmai_center-content">
-                            <h3>XẢ HÀNG GIÁ VỐN [MUA NGAY]</h3>
-                            <h4>Chương trình diễn ra đến 12/12/2024</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="button-next-prev">
-                <div class="btn-left btn"><i class="fa-solid fa-chevron-left"></i></div>
-                <div class="btn-right btn"><i class="fa-solid fa-chevron-right"></i></div>
-            </div>
-        </div>
-        
         <!-- phan than -->
-        <div class="full-container">
-            <div class="container">
-                <h1 class="title-slide-full" >Khuyến mãi Hot sắp hết hạn</h1>
-                <div class="khuyenMaiSapHetHan">
-                    <div class="khuyenMaiSapHetHan_item">
-                        <a href="#">
-                            <div class="img_khuyenMaiSapHetHan_item">
-                                <img src="img/KV-T11-707x504.jpg" alt="">
+        <div class="container">
+            <div class="full-tracuu">
+                <div class="full-tracuu_content">
+                    <div class="full-tracuu_content_left">
+                            <div class="full-tracuu_content_left_title">
+                                <h1>Tra cứu đơn hàng của bạn</h1>
                             </div>
-                            <div class="khuyenMaiSapHetHang_item_title">
-                                <h4>Ưu đãi thanh toán lên đến 1.000.000 đồng</h4>
-                                <h5>Chương trình diễn ra đến 31/11/2024</h5>
+                            <div class="full-tracuu_content_left_from">
+                                <fieldset>
+                                    <legend>
+                                        <form action="">
+                                            <div class="dien-sdt">
+                                                <label for="">Nhập số điện thoại<span class="colorred">*</span></label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="dien-madonhang">
+                                                <label for="">Nhập mã đơn hàng<span class="colorred">*</span></label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="tracuu_button">
+                                                <button>Tra cứu &nbsp; <i class="fa-solid fa-angle-right"></i></button>
+                                            </div>
+                                        </form>
+                                    </legend>
+                                </fieldset>
                             </div>
-                        </a>
                     </div>
-                    <div class="khuyenMaiSapHetHan_item">
-                        <a href="#">
-                            <div class="img_khuyenMaiSapHetHan_item">
-                                <img src="img/OCB-707x504.jpg" alt="">
-                            </div>
-                            <div class="khuyenMaiSapHetHang_item_title">
-                                <h4>Giảm ngya 500.000đ khi thanh toán bằng Thẻ OCB</h4>
-                                <h5>Chương trình diễn ra đến 31/11/2024</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="khuyenMaiSapHetHan_item">
-                        <a href="#">
-                            <div class="img_khuyenMaiSapHetHan_item">
-                                <img src="img/KV-VNPay-707x504.jpg" alt="">
-                            </div>
-                            <div class="khuyenMaiSapHetHang_item_title">
-                                <h4>Ưu đãi thanh toán lên đến 1.000.000 đồng</h4>
-                                <h5>Chương trình diễn ra đến 31/11/2024</h5>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="khuyenMaiSapHetHan_item">
-                        <a href="#">
-                            <div class="img_khuyenMaiSapHetHan_item">
-                                <img src="img/Iphone-16-707x504.jpg" alt="">
-                            </div>
-                            <div class="khuyenMaiSapHetHang_item_title">
-                                <h4>Giảm đến 1.000.000đ khi thanh toán qua Sacombank</h4>
-                                <h5>Chương trình diễn ra đến 31/11/2024</h5>
-                            </div>
-                        </a>
+                    <div class="full-tracuu_content_right">
+                        <img src="img/tracktrace.jpeg" alt="">
                     </div>
                 </div>
-                <!-- email uu dai -->
-                <div class="sanphamcunggia">
-                    <div class="email_uudai">
-                        <div class="email_uudai_left">
-                            <ul>
-                                <li><img class="icon_fb-ytb-zl" src="img/facebook.png" alt=""></li>
-                                <li><img class="icon_fb-ytb-zl" src="img/you.png" alt=""></li>
-                                <li><img class="icon_fb-ytb-zl" src="img/zalo.png" alt=""></li>
-                            </ul>
+            </div>
+            <!-- email uu dai -->
+            <div class="sanphamcunggia">
+                <div class="email_uudai">
+                    <div class="email_uudai_left">
+                        <ul>
+                            <li><img class="icon_fb-ytb-zl" src="img/facebook.png" alt=""></li>
+                            <li><img class="icon_fb-ytb-zl" src="img/you.png" alt=""></li>
+                            <li><img class="icon_fb-ytb-zl" src="img/zalo.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="email_uudai_mid">
+                        <div class="content_email_mid-icon">
+                            <i class="fa-regular fa-envelope"></i>
                         </div>
-                        <div class="email_uudai_mid">
-                            <div class="content_email_mid-icon">
-                                <i class="fa-regular fa-envelope"></i>
-                            </div>
-                            <div class="content_email_mid-content">
-                                Bạn muốn là người sớm nhất nhận khuyến mãi đặc biệt?<br> Đăng ký ngay.
-                            </div>
+                        <div class="content_email_mid-content">
+                            Bạn muốn là người sớm nhất nhận khuyến mãi đặc biệt?<br> Đăng ký ngay.
                         </div>
-                        <div class="content_email_right">
-                            <div class="content_email_right-input">
-                                <input type="email" id="Email" placeholder=" Thả Email Nhận Ưu Đãi" required onclick="hideAlert()">
-                                <div id="khonghople">Email không hợp lệ</div>
-                                <div id="khongdungdinhdang">Định dạng không đúng</div>
-                            </div>
-                            <button class="content_email_right-button" onclick="checkEmail()">Đăng kí</button>
-                        </div>
+                    </div>
+                    <div class="content_email_right">
+                        <input class="content_email_right-input" type="email" placeholder=" Thả Email Nhận Ưu Đãi" required>
+                        <button class="content_email_right-button">Đăng kí</button>
                     </div>
                 </div>
             </div>
@@ -1785,15 +1434,14 @@
             <div class="content-end">Địa chỉ đăng ký trụ sở chính: 63-65-67 Trần Hưng Đạo, P. Cầu Ông Lãnh, TP. Hồ Chí Minh</div>
             </div>
             <div class="footer__hotline">
-                <div class="footer_hotline_left">
-                    Gọi mua: 1800.6800
-                </div> 
-                <div class="footer_hotline_right">
-                    <i class="fa-solid fa-phone-volume"></i>
-                </div>
+                Gọi mua: 1800.6800 
+                <i class="fa-solid fa-phone-volume"></i>
             </div>
         </footer>
     </div>
-    <script src="js/tonghopkhuyenmaijs.js"></script>
+    <script src="js/trangsanphamjs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
