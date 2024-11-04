@@ -19,6 +19,9 @@ body{
     height: auto;
     width: 1160px;
 }
+.overflow-hidden{
+    overflow: hidden;
+}
 .header{
     height: 88px;
     background-color: #fe0000;
@@ -475,121 +478,75 @@ body{
 .header__navbar__account__icon{
     margin-right: 7px;
 }
-.title-slide-full{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-}
 .br-white{
     margin: 0;
     padding: 20px;
     background-color: #FFFFFF;
 }
-.slide-khuyenmai{
-    width: 100vw;
-    height: 60vh;
+/* slide */
+.slide{
+    width: 1160px;
+    height:733px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
     position: relative;
+    transition: all 0.5s ease;
 }
-.slide-khuyenmai_center{
-    height:60vh;
-    width: 50vw;
-    background-color: #FFFFFF;
-    position: relative;
-    display: flex;
-    transition: all 0.3s ease;
-
-}
-.slide-khuyenmai_item{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-.slide-khuyenmai_center img{
-    width: 100%;
-    height: 85%;
-}
-.slide-khuyenmai_item:nth-child(1){
-    transform: translateX(-100%);
-}
-.slide-khuyenmai_item:nth-child(2){
-    transform: translateX(0%);
-}
-.slide-khuyenmai_item:nth-child(3){
-    transform: translateX(100%);
-}
-.slide-khuyenmai_item:nth-child(4){
-    transform: translateX(200%);
-}
-.slide-khuyenmai_item:nth-child(5){
-    transform: translateX(300%);
-}
-.slide-khuyenmai_item:nth-child(6){
-    transform: translateX(400%);
-}
-.slide-khuyenmai_item:nth-child(7){
-    transform: translateX(500%);
-}
-.slide-khuyenmai_item:nth-child(8){
-    transform: translateX(600%);
-}
-.slide-khuyenmai_item:nth-child(9){
-    transform: translateX(700%);
-}
-.slide-khuyenmai_item:nth-child(10){
-    transform: translateX(800%);
-}
-.button-next-prev{
+.btn-next-prev{
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-    transform: translateY(-50%);
 }
 .btn{
-    font-size: 20px;
-    margin: 20px;
-    border-radius: 50%;
-    color: white;
-    background-color: #888;
+    font-size: 40px;
+    position: absolute;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: #ffffff;
 }
-.slide-khuyenmai_center-content h3,
-.slide-khuyenmai_center-content h4{
-    margin: 5px 10px;
+.btn-left{
+    left: 0;
 }
-/* khuyen mái ap het han */
-.kmhetHan-title{
-    font-weight: 600;
-    margin: 10px;
+.btn-right{
+    right: 0;
 }
-.khuyenMaiSapHetHan{
-    width: 1160px;
-    height: auto;
+.btn-left:hover{
+    background-color: #88888851;
+}
+.btn-right:hover{
+    background-color: #88888851;
+}
+.slide-img{
+    width: 99%;
+    height: 733px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color:#4e5565;
+    position: absolute;
 }
-.khuyenMaiSapHetHan_item{
-    width: 48%;
-    height: auto;
-    margin: 10px;
+.slide-img img{
+    width: auto;
+    height: 90%;
+    object-fit: contain;
 }
-.khuyenMaiSapHetHan_item img{
-    width: 100%;
-    border-radius: 5px 5px 0 0;
+.slide-img:nth-child(2){
+    transform: translateX(100%);
 }
-.khuyenMaiSapHetHang_item_title h4,
-.khuyenMaiSapHetHang_item_title h5{
-    margin: 5px 10px;
+.slide-img:nth-child(3){
+    transform: translateX(200%);
 }
-.khuyenMaiSapHetHang_item_title h5{
-    color:rgba(0,0,0,0.6);
+.slide-reliative{
+    position: relative;
+    overflow: hidden;
 }
+
+
 /* phan than */
 a{
     text-decoration: none;
@@ -1092,7 +1049,6 @@ fieldset input{
     align-items: center;
     margin-bottom: 0;
     background-color: #FFFFFF;
-
 }
 .nav_catelog,
 .nav_book-ship-promote-sell{
