@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán tại Điện Máy Nguyễn Kim</title>
+    <link rel="stylesheet" href="css/giohangcss.css">
+    <script src="https://kit.fontawesome.com/db7ebb0f3d.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png">
+</head>
+<body>
+    <div class="header">
+        <div class="header_left">
+            <div class="header_left_trove">
+                <a href="index.html"><i class="fa-solid fa-chevron-left"></i>&nbsp;&nbsp;&nbsp; Trở về</a>
+            </div>
+            <div class="located">
+                <div class="icon-locate">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="content-locate">
+                    Xem giá tại
+                    <br> TP HCM
+                </div>
+            </div>
+        </div>
+        <div class="header_right">
+            <a href="index.html"><img src="img/nguyenkimlogo.png" alt=""></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_left">
+            <div class="container_left_title">
+                <div class="left_title">
+                    <h3><span>Chọn địa chỉ nhận hàng</span><span class="font-15px"><a href="nguyenKimSignIn.html" class="color-blue">Đăng nhập</a> bằng SMS chỉ mất 30 giây!</span></h3>
+                    <div class="button-title">
+                        <div class="btn active" id="btn-left" onclick="thayDoiLeft()"><i class="fa-solid fa-truck"></i>&nbsp; NHẬN HÀNG TẠI NHÀ</div>
+                        <div class="btn" id="btn-right" onclick="thayDoiRight()"><i class="fa-solid fa-house"></i> &nbsp;NHẬN HÀNG TẠI TRUNG TÂM</div>
+                    </div>
+                </div>
+                <div class="dienthongtin">
+                    <div class="dienthongtin-an">
+                        <div class="form-input">
+                            <form action="">
+                                <fieldset>
+                                    <legend><span class="color-gray">Họ và tên</span> <span class="color-red">()*</span></legend>
+                                    <input type="text" id="HoTen">
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="form-input">
+                            <form action="">
+                                <fieldset>
+                                    <legend><span class="color-gray">Số điện thoại</span> <span class="color-red">()*</span></legend>
+                                    <input type="text" id="SoDienThoai">
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="form-input">
+                            <form action="">
+                                <fieldset>
+                                    <legend><span class="color-gray">Email</span></legend>
+                                    <input type="text" id="Email">
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="form-input">
+                            <form action="">
+                                <fieldset>
+                                    <legend><span class="color-gray">Tỉnh/Thành phố</span> <span class="color-red">()*</span></legend>
+                                    <select name="" id="">
+                                        <option value="">TP.HCM</option>
+                                        <option value="">An Giang</option>
+                                        <option value="">Bà Rịa - Vũng Tàu</option>
+                                        <option value="">Bắc Giang</option>
+                                        <option value="">Bắc Kạn</option>
+                                        <option value="">Bạc Liêu</option>
+                                        <option value="">Bắc Ninh</option>
+                                        <option value="">Bến Tre</option>
+                                        <option value="">Bình Định</option>
+                                        <option value="">Bình Dương</option>
+                                        <option value="">Bình Phước</option>
+                                        <option value="">Bình Thuận</option>
+                                        <option value="">Cà Mau</option>
+                                        <option value="">Cần Thơ</option>
+                                        <option value="">Cao Bằng</option>
+                                        <option value="">Đà Nẵng</option>
+                                        <option value="">Đắk Lắk</option>
+                                        <option value="">Đắk Nông</option>
+                                        <option value="">Điện Biên</option>
+                                        <option value="">Đồng Nai</option>
+                                        <option value="">Đồng Tháp</option>
+                                        <option value="">Gia Lai</option>
+                                        <option value="">Hà Giang</option>
+                                        <option value="">Hà Nam</option>
+                                        <option value="">Hà Nội</option>
+                                        <option value="">Hà Tĩnh</option>
+                                        <option value="">Hải Dương</option>
+                                        <option value="">Hải Phòng</option>
+                                        <option value="">Hậu Giang</option>
+                                        <option value="">Hòa Bình</option>
+                                        <option value="">Hưng Yên</option>
+                                        <option value="">Khánh Hòa</option>
+                                        <option value="">Kiên Giang</option>
+                                        <option value="">Kon Tum</option>
+                                        <option value="">Lai Châu</option>
+                                        <option value="">Lâm Đồng</option>
+                                        <option value="">Lạng Sơn</option>
+                                        <option value="">Lào Cai</option>
+                                        <option value="">Long An</option>
+                                        <option value="">Nam Định</option>
+                                        <option value="">Nghệ An</option>
+                                        <option value="">Ninh Bình</option>
+                                        <option value="">Ninh Thuận</option>
+                                        <option value="">Phú Thọ</option>
+                                        <option value="">Phú Yên</option>
+                                        <option value="">Quảng Bình</option>
+                                        <option value="">Quảng Nam</option>
+                                        <option value="">Quảng Ngãi</option>
+                                        <option value="">Quảng Ninh</option>
+                                        <option value="">Quảng Trị</option>
+                                        <option value="">Sóc Trăng</option>
+                                        <option value="">Sơn La</option>
+                                        <option value="">Tây Ninh</option>
+                                        <option value="">Thái Bình</option>
+                                        <option value="">Thái Nguyên</option>
+                                        <option value="">Thanh Hóa</option>
+                                        <option value="">Thừa Thiên Huế</option>
+                                        <option value="">Tiền Giang</option>
+                                        <option value="">Trà Vinh</option>
+                                        <option value="">Tuyên Quang</option>
+                                        <option value="">Vĩnh Long</option>
+                                        <option value="">Vĩnh Phúc</option>
+                                        <option value="">Yên Bái</option>                                    
+                                    </select>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="form-input">
+                            <form action="">
+                                <fieldset>
+                                    <legend><span class="color-gray">Quận/Huyện</span> <span class="color-red">()*</span></legend>
+                                    <select name="" id="">
+                                        <option value="">Chọn Quận/Huyện</option>
+                                        <option value="">Quận 1</option>
+                                        <option value="">Quận 3</option>
+                                        <option value="">Quận 4</option>
+                                        <option value="">Quận 5</option>
+                                        <option value="">Quận 6</option>
+                                        <option value="">Quận 7</option>
+                                        <option value="">Quận 8</option>
+                                        <option value="">Quận 10</option>
+                                        <option value="">Quận 11</option>
+                                        <option value="">Quận 12</option>
+                                        <option value="">Quận Bình Tân</option>
+                                        <option value="">Quận Bình Thạnh</option>
+                                        <option value="">Quận Gò Vấp</option>
+                                        <option value="">Quận Phú Nhuận</option>
+                                        <option value="">Quận Tân Bình</option>
+                                        <option value="">Quận Tân Phú</option>
+                                        <option value="">Quận Thủ Đức</option>
+                                        <option value="">Thành phố Thủ Đức</option>
+                                        <option value="">Huyện Bình Chánh</option>
+                                        <option value="">Huyện Cần Giờ</option>
+                                        <option value="">Huyện Củ Chi</option>
+                                        <option value="">Huyện Hóc Môn</option>
+                                        <option value="">Huyện Nhà Bè</option>                                    
+                                    </select>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="form-input">
+                            <form action="">
+                                <fieldset>
+                                    <legend><span class="color-gray">Phường/Xã</span> <span class="color-red">()*</span></legend>
+                                    <select name="" id="">
+                                        <option value="">Chọn Phường Xã</option>
+                                        <option value="">Phường Bến Nghé</option>
+                                        <option value="">Phường Bến Thành</option>
+                                        <option value="">Phường Cầu Kho</option>
+                                        <option value="">Phường Cầu Ông Lãnh</option>
+                                        <option value="">Phường Đa Kao</option>
+                                        <option value="">Phường Nguyễn Cư Trinh</option>
+                                        <option value="">Phường Nguyễn Thái Bình</option>
+                                        <option value="">Phường Phạm Ngũ Lão</option>
+                                        <option value="">Phường Tân Định</option>
+                                        <option value="">Phường Cô Giang</option>
+                                    </select>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="form-input dacbiet">
+                            <form action="">
+                                <fieldset>
+                                    <legend><span class="color-gray">Số nhà/Tên đường</span> <span class="color-red">()*</span></legend>
+                                    <input type="text" id="sonha">
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="checkbox-margin">
+                            <input type="checkbox"> &nbsp;Sử dụng thông tin này để đăng ký tài khoản mua hàng tại &nbsp; <span class="color-red">Nguyễn Kim.</span>
+                        </div>
+                        <div class="loinhan">
+                            <form action="">
+                                <fieldset>
+                                    <legend>
+                                        <span class="color-gray">Để lại lời nhắn cho Nguyễn Kim</span>
+                                    </legend>
+                                    <input type="text">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="dienthongtin-hien">
+                        <div class="form-input">
+                            <select name="" id="">
+                                <option value="">Chọn Tỉnh/Thành Phố</option>
+                            </select>
+                        </div>
+                        <div class="form-input">
+                            <select name="" id="">
+                                <option value="">Chọn Quận/Huyện</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>
+                Chọn hình thức thanh toán
+            </h3>
+            <div class="dienthongtin">
+                <div class="hinhthuc-thanhtoan">
+                    <div>
+                        <i class="fa-solid fa-wallet"></i>&nbsp; Thanh toán khi nhận hàng
+                    </div>
+                    <div>
+                        <input type="radio" name="pay">
+                    </div> 
+                </div>
+                <div class="hinhthuc-thanhtoan">
+                    <div>
+                    <i class="fa-solid fa-credit-card"></i>&nbsp; Thẻ ATM/Internet Barking 
+                    </div>
+                    <div>
+                        <input type="radio" name="pay">
+                    </div>
+                </div>
+                <div class="hinhthuc-thanhtoan">
+                    <div>
+                        <i class="fa-brands fa-cc-visa"></i>&nbsp; Thanh toán bằng thẻ tín dụng
+                    </div>
+                    <div>
+                        <input type="radio" name="pay">
+                    </div> 
+                </div>
+                <div class="hinhthuc-thanhtoan">
+                    <div>
+                        <i class="fa-solid fa-qrcode"></i>&nbsp; Thanh toán bằng mã QR
+                    </div>
+                    <div>
+                        <input type="radio" name="pay">
+                    </div>
+                </div>
+                <div class="hinhthuc-thanhtoan">
+                    <div>
+                        <i class="fa-brands fa-cc-amazon-pay"></i></i>&nbsp; Thanh toán bằng ví MoMo
+                    </div>
+                    <div>
+                        <input type="radio" name="pay">
+                    </div>
+                </div>
+                <div class="hinhthuc-thanhtoan dacbiet">
+                    <div><input type="checkbox"> &nbsp; Tôi đồng ý&nbsp; <a href="https://www.nguyenkim.com/dam-bao-an-toan-giao-dich-khi-mua-sam-tai-nguyen-kim.html"><span class="color-red">thoả thuận bảo mật và chính sách mua hàng</span></a>&nbsp; của&nbsp; <a href="index.html"><span class="color-red">Nguyễn Kim</span></a></div>
+                </div>
+                <div class="hinhthuc-thanhtoan dacbiet">
+                    <div><button onclick="checkValue()"><input type="checkbox" id="checkdongy"></button> &nbsp; Yêu cầu xuất hoá đơn GTGT cho đơn hàng này</div>
+                </div>
+                <div class="xuathoadon">
+                    <div class="xuathoadon_input">
+                        <input type="text" placeholder="Mã số thuế">
+                    </div>
+                    <div class="xuathoadon_input">
+                        <input type="text" placeholder="Tên công ty">
+                    </div>
+                    <div class="xuathoadon_input">
+                        <input type="text" placeholder="Địa chỉ công ty">
+                    </div>
+                    <div class="xuathoadon_input">
+                        <input type="text" placeholder="Người đại diện công ty">
+                    </div>
+                </div>
+                <div class="luuy">
+                    <b><i>"Lưu ý: Nguyễn Kim chỉ giao hàng đối với các địa chỉ giao hàng có khoảng cách ít hơn hoặc bằng 500km tính từ trung tâm tiếp nhận đơn hàng và đáp ứng đủ điều kiện vận chuyển của Nguyễn Kim. Trường hợp sản phẩm bạn chọn không có sẵn hàng tại khu vực gần bạn, việc giao hàng sẽ được thực hiện bởi đối tác của Nguyễn Kim và không hỗ trợ lắp đặt (nếu có)."</i></b>
+                </div>
+                <div class="thanhtoan_button" onclick="CheckThongTin()">
+                    <div>THANH TOÁN &nbsp;<i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="container_right">
+            <div class="giohangtrong">
+                <h3>Giỏ hàng của bạn</h3>
+                <div>
+                    <img src="img/xegiohang.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Bạn gặp khó khăn khi đăng nhập, đăng ký? Gọi <span class="color-red">&nbsp;1800 6800&nbsp;</span> để được hỗ trợ tốt nhất.
+    </div>
+    <script src="js/giohangjs.js"></script>
+</body>
+</html>
