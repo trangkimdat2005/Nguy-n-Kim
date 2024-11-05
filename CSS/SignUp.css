@@ -86,6 +86,51 @@
     padding: 10px 24px;
     box-sizing: border-box;
 }
+
+
+.errol{
+    border: 1px red solid !important;
+    border: 10px;
+}
+.errol:focus{
+    outline: none;
+    border: 1px red solid;
+}
+#errol_Name,
+#errol_SDT,
+#errol_Email,
+#errol_MK,
+#errol_MKL{
+    font-size: 10px;
+    margin-top: -15px;
+    padding: 5px;
+    display: none;
+    color: #ec2127;
+    justify-content: left;
+}
+.baner-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.baner-left-located{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    color: white;
+}
+.icon-located{
+    margin: 10px;
+    font-size: 25px;
+}
+.content-located{
+    width: 80px;
+    font-size: 14px;
+}
+
+
+
 .container__banner__img{
     width: 242px;
     margin-left: auto;

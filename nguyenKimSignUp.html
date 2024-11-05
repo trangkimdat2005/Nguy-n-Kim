@@ -6,10 +6,21 @@
     <title>Đăng ký</title>
     <link rel="stylesheet" href="CSS/SignUp.css">
     <link rel="icon" href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png">
+    <script src="https://kit.fontawesome.com/db7ebb0f3d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container__banner">
-        <a href="index.html" class="container__banner__link">  Trở về</a>
+        <div class="baner-left">
+            <a href="index.html" class="container__banner__link">  Trở về</a>
+            <div class="baner-left-located">
+                <div class="icon-located">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="content-located">
+                    Xem giá tại TP. HCM
+                </div>
+            </div>
+        </div>
         <div class="container__banner__img">
             <a href="index.html">
                 <img src="https://cdn.nguyenkimmall.com/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" alt="">
@@ -31,12 +42,17 @@
                 </li>
             </ul>
             <form class="container__form__signUp">
-                <input class="container__form__text" type="text" placeholder="Họ và Tên" required><br>
-                <input class="container__form__text" type="tel" placeholder="Số điện thoại" required><br>
-                <input class="container__form__text" type="email" placeholder="Email" required><br>
-                <input class="container__form__text" type="password" placeholder="Mật khẩu" required><br>
-                <input class="container__form__text" type="password" placeholder="Nhập lại mật khẩu" required><br>
-                <button type="submit" class="container__form__button">
+                <input class="container__form__text" type="text" placeholder="Họ và Tên" id="HoTen" required><br>
+                <div id="errol_Name"><i>Tên không được để trống</i></div>
+                <input class="container__form__text" type="tel" placeholder="Số điện thoại" id="SoDienThoai" required><br>
+                <div id="errol_SDT"><i>Số điện thoại không được để trống</i></div>
+                <input class="container__form__text" type="email" placeholder="Email" id="Email" required><br>
+                <div id="errol_Email"><i>Email không được để trống</i></div>
+                <input class="container__form__text" type="password" placeholder="Mật khẩu" id="MatKhau" required><br>
+                <div id="errol_MK"><i>Mật khẩu không được để trống</i></div>
+                <input class="container__form__text" type="password" placeholder="Nhập lại mật khẩu" id="MatKhauLai" required><br>
+                <div id="errol_MKL"><i>Nhập lại mật khẩu sai</i></div>
+                <button type="submit" class="container__form__button" onclick="CheckThongTin()">
                     <span>
                         ĐĂNG KÝ
                     </span>
@@ -52,5 +68,6 @@
              để được hỗ trợ tốt nhất.
         </span>
     </div>
+    <script src="js/SignUp.js"></script>
 </body>
 </html>

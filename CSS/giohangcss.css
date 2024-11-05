@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0;
 }
 a{
@@ -73,6 +73,10 @@ a{
 .container_left{
     width: 65%;
     background-color: #ffffff;
+}
+.container_left h3{
+    font-weight: 400;
+    color: rgba(0,0,0,0.8);
 }
 .container_right{
     width: 30%;
@@ -152,6 +156,9 @@ a{
     margin: 10px 5px;
     background-color: #ffffff;
     border-radius: 5px;
+}
+.form-input input:focus{
+    background-color: transparent;
 }
 .form-input fieldset{
     height: 45px;

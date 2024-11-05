@@ -296,6 +296,10 @@ body{
     align-items: center;
     margin: 10px;
 }
+.popup_title_left h5{
+    font-size: 15px;
+    font-weight: 500;
+}
 .popup_find-locate{
     display: flex;
     justify-content: center;
@@ -409,7 +413,7 @@ body{
 .header__navbar__located__address__content{
     width: 505px;
     height: 505px;
-    background-color: whitesmoke;
+    background-color: #ffffff;
     color: black;
     border-radius: 5px;
 }
@@ -773,18 +777,22 @@ a{
     color: black !important;
     text-decoration: none !important;
 }
-
-
-
-
 /* dinh nghia lai */
-.nav_catelory-book-ship-promote-sel_list{
-    list-style: none;
+.nav_catelog-book-ship-promote-sell{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.nav_catelory-book-ship-promote-sel_list{
+    list-style: none;
+    display: flex;
+    width: 1160px;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 0;
-    background-color: #FFFFFF;
+    margin-top: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 .nav_catelog,
 .nav_book-ship-promote-sell{
@@ -795,6 +803,10 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;    
+}
+.nav_book-ship-promote-sell{
+    background-color: #ffffff;
+    width: auto;
 }
 .nav_catelog i,
 .nav_book-ship-promote-sell i{
@@ -882,7 +894,7 @@ a{
 .road{
     position: absolute;
     width: 98%;
-    height: 1074px;
+    height: 1263px;
     top: 340px;
 }
 .buoc1{
@@ -905,13 +917,13 @@ a{
 }
 .img-step3{
     position: absolute;
-    top:930px;
+    top:1030px;
     left: 410px;
     width: 320px;
 }
 .img-step4{
     position: absolute;
-    top:1470px;
+    top:1680px;
     left: 270px;
     width: 440px;
 }

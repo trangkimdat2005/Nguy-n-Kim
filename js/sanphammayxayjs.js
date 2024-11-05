@@ -1,3 +1,57 @@
+// slide1
+const rightbtn = document.querySelector('#btn-right1');
+const leftbtn = document.querySelector('#btn-left1');
+const imgNumber = document.querySelectorAll('.items_product .khoi5');
+let current = 0;
+
+function moveRight() {
+    current++;
+    if (current > imgNumber.length * 5 - 20) {
+        current = 0;
+    }
+    document.querySelector(".cacDanhSachSanPham").style.right = current * 20 + "%";
+}
+function moveLeft() {
+    current--;
+    if (current < 0) {
+        current = imgNumber.length * 5 - 20;
+    }
+    document.querySelector(".cacDanhSachSanPham").style.right = current * 20 + "%";
+}
+
+rightbtn.addEventListener("click", moveRight);
+leftbtn.addEventListener("click", moveLeft);
+setInterval(moveRight, 4000);
+
+// slide2
+const rightbtn2 = document.querySelector('#btn-right2');
+const leftbtn2 = document.querySelector('#btn-left2');
+let current2 = 0;
+
+function moveRight2() {
+    current2++;
+    if (current2 > imgNumber.length * 5 - 20) {
+        current2 = 0;
+    }
+    document.getElementsByClassName('cacDanhSachSanPham')[1].style.right = current2 * 20 + "%";
+}
+
+function moveLeft2() {
+    current2--;
+    if (current2 < 0) {
+        current2 = imgNumber.length * 5 - 20;
+    }
+    document.getElementsByClassName('cacDanhSachSanPham')[1].style.right = current2 * 20 + "%";
+}
+
+rightbtn2.addEventListener("click", moveRight2);
+leftbtn2.addEventListener("click", moveLeft2);
+
+setInterval(moveRight2, 4000);
+
+
+
+
 function openPopup() {
     document.getElementById('popup').style.display = 'flex';
     document.body.classList.add("overflow-hidden");

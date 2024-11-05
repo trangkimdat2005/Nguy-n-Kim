@@ -5,9 +5,12 @@ body{
     justify-content: center;
 }
 .app{
-        background-color: aliceblue;
-        height: auto;
-    }
+    background-color: aliceblue;
+    height: auto;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
 .header{
     height: 88px;
     background-color: #fe0000;
@@ -158,6 +161,9 @@ body{
     border: 0;
     outline: none;
     border-radius: 0 15px 15px 0;
+}
+.header__navbar__find button:focus{
+    outline: none;
 }
 .header__navbar__find button i{
     font-size: 20px;
@@ -1565,6 +1571,75 @@ table tr td{
     border-radius: 15px 15px 0 0;
     background-color: #fe0000;
 }
+/* them vao */
+del{
+    color: rgba(0, 0, 0, 0.5);
+}
+.sanpham_title h3{
+    color: rgba(0, 0, 0, 0.7);
+}
+.items_product{
+    width: 1160px;
+    height: 420px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.item{
+    width: 21%;
+    height: 100%;
+    padding-left: 10px;
+}
+.cacDanhSachSanPham{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+.khoi5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.btn-next-prev{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-left{
+    left: 0;
+}
+.btn-right{
+    right: 0;
+}
+.btn i{
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: #888;
+}
+.khoi5:nth-child(2){
+    transform: translateX(100%);
+}
+.khoi5:nth-child(3){
+    transform: translateX(200%);
+}
+
+
 .items_product{
     width: 1160px;
     height: 420px;
@@ -1846,7 +1921,8 @@ li .icon_fb-ytb-zl{
     padding: 0;
 }
 .contact_info_top-title-b{
-    font-weight: 800;
+    font-weight: 600;
+    font-size: 14px;
 }
 .contact_info_top-title-list li{
     font-weight: 400;
@@ -1970,7 +2046,7 @@ li .icon_fb-ytb-zl{
     font-size: 20px;
     font-weight: 600;
     line-height: 2.9em;
-    z-index: 19;
+    z-index: 10;
     text-align: left;
     width: 259px;
     padding-left: 20px;
