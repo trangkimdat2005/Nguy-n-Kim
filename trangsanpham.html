@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguyễn Kim - Trung tâm mua sắm</title>
-    <!-- bootstrap 4 -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- file -->
@@ -17,10 +15,6 @@
     <script src="https://kit.fontawesome.com/db7ebb0f3d.js" crossorigin="anonymous"></script>
     <!-- icon nk -->
     <link rel="icon" href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png">
-    <!-- owl caurosel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -44,7 +38,7 @@
                             <div class="popup" id="popup" onclick="closePopupOnOutsideClick(event)">
                                 <div class="header__navbar__located__address__content">
                                     <div class="popup_title">
-                                        <div class="popup_title_left"><h2>Chọn tỉnh thành để xem đúng giá & khuyến mãi:</h2></div>
+                                        <div class="popup_title_left"><h5>Chọn tỉnh thành để xem đúng giá & khuyến mãi:</h5></div>
                                         <button class="popup_title_right" onclick="closePopup()">X</button>
                                     </div>
                                     <div class="popup_find-locate">
@@ -121,7 +115,7 @@
                         </li>
                         <li class="header__navbar__find">
                             <div class="header__navbar__find__input" onclick="showFind()">
-                                <input type="text" placeholder="  Bạn cần tìm gì hôm nay? ">
+                                <input type="text" placeholder=" Bạn tìm gì hôm nay? ">
                                 </span>
                                 <div id="popup-find-all">
                                     <div class="danhmuc-timkiem">
@@ -1771,8 +1765,8 @@
                             </div>y
                         </div>
                         <div class="button-next-prev">
-                            <div class="btn-left2 btn"><i class="fa-solid fa-chevron-left"></i></div>
-                            <div class="btn-right2 btn"><i class="fa-solid fa-chevron-right"></i></div>
+                            <div class="btn-left2 btn" ><i class="fa-solid fa-chevron-left" id="btn2-left"></i></div>
+                            <div class="btn-right2 btn" ><i class="fa-solid fa-chevron-right" id="btn2-right"></i></div>
                         </div>
                     </div>
                 </div>
@@ -1848,13 +1842,38 @@
                             </a>
                         </div>
                         <div class="items_quat20cai">
-                            <a href="sanpham.html">
+                            <a href="sanphammayxay.html">
                                 <div class="itemscaiquat">
                                     <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
                                     </div>
                                     <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                        <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                        <h4 class="color_red">439.000đ</h4>
+                                        <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                        <h5>Nhà sản xuất: Modife</h5>
+                                        <h5>Xuất xứ: Việt Nam</h5>
+                                        <h5>Thời gian bảo hành: 12 tháng</h5>
+                                    </div>
+                                    <div class="sosanhcaiquat">
+                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                    </div>
+                                    <div class="magiamgia">
+                                        <div class="magiamgia_content">
+                                            Nhập mã SNxx giảm đến 2.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items_quat20cai">
+                            <a href="sanphamamdunnuoc.html">
+                                <div class="itemscaiquat">
+                                    <div class="imgitemscaiquat">
+                                        <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                    </div>
+                                    <div class="thongsocaiquat">
+                                        <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
                                         <h4 class="color_red">1.990.000đ</h4>
                                         <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
                                         <h5>Nhà sản xuất: Rapido</h5>
@@ -1898,6 +1917,31 @@
                             </a>
                         </div>
                         <div class="items_quat20cai">
+                            <a href="sanphammayxay.html">
+                                <div class="itemscaiquat">
+                                    <div class="imgitemscaiquat">
+                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                    </div>
+                                    <div class="thongsocaiquat">
+                                        <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                        <h4 class="color_red">439.000đ</h4>
+                                        <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                        <h5>Nhà sản xuất: Modife</h5>
+                                        <h5>Xuất xứ: Việt Nam</h5>
+                                        <h5>Thời gian bảo hành: 12 tháng</h5>
+                                    </div>
+                                    <div class="sosanhcaiquat">
+                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                    </div>
+                                    <div class="magiamgia">
+                                        <div class="magiamgia_content">
+                                            Nhập mã SNxx giảm đến 2.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items_quat20cai">
                             <a href="sanpham.html">
                                 <div class="itemscaiquat">
                                     <div class="imgitemscaiquat">
@@ -1905,6 +1949,56 @@
                                     </div>
                                     <div class="thongsocaiquat">
                                         <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                        <h4 class="color_red">1.990.000đ</h4>
+                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                        <h5>Nhà sản xuất: Rapido</h5>
+                                        <h5>Xuất xứ: Việt Nam</h5>
+                                        <h5>Thời gian bảo hành: 12 tháng</h5>
+                                    </div>
+                                    <div class="sosanhcaiquat">
+                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                    </div>
+                                    <div class="magiamgia">
+                                        <div class="magiamgia_content">
+                                            Nhập mã SNxx giảm đến 2.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items_quat20cai">
+                            <a href="sanphammayxay.html">
+                                <div class="itemscaiquat">
+                                    <div class="imgitemscaiquat">
+                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                    </div>
+                                    <div class="thongsocaiquat">
+                                        <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                        <h4 class="color_red">439.000đ</h4>
+                                        <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                        <h5>Nhà sản xuất: Modife</h5>
+                                        <h5>Xuất xứ: Việt Nam</h5>
+                                        <h5>Thời gian bảo hành: 12 tháng</h5>
+                                    </div>
+                                    <div class="sosanhcaiquat">
+                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                    </div>
+                                    <div class="magiamgia">
+                                        <div class="magiamgia_content">
+                                            Nhập mã SNxx giảm đến 2.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items_quat20cai">
+                            <a href="sanphamamdunnuoc.html">
+                                <div class="itemscaiquat">
+                                    <div class="imgitemscaiquat">
+                                        <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                    </div>
+                                    <div class="thongsocaiquat">
+                                        <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
                                         <h4 class="color_red">1.990.000đ</h4>
                                         <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
                                         <h5>Nhà sản xuất: Rapido</h5>
@@ -1948,6 +2042,31 @@
                             </a>
                         </div>
                         <div class="items_quat20cai">
+                            <a href="sanphammayxay.html">
+                                <div class="itemscaiquat">
+                                    <div class="imgitemscaiquat">
+                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                    </div>
+                                    <div class="thongsocaiquat">
+                                        <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                        <h4 class="color_red">439.000đ</h4>
+                                        <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                        <h5>Nhà sản xuất: Modife</h5>
+                                        <h5>Xuất xứ: Việt Nam</h5>
+                                        <h5>Thời gian bảo hành: 12 tháng</h5>
+                                    </div>
+                                    <div class="sosanhcaiquat">
+                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                    </div>
+                                    <div class="magiamgia">
+                                        <div class="magiamgia_content">
+                                            Nhập mã SNxx giảm đến 2.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items_quat20cai">
                             <a href="sanpham.html">
                                 <div class="itemscaiquat">
                                     <div class="imgitemscaiquat">
@@ -1955,6 +2074,56 @@
                                     </div>
                                     <div class="thongsocaiquat">
                                         <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                        <h4 class="color_red">1.990.000đ</h4>
+                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                        <h5>Nhà sản xuất: Rapido</h5>
+                                        <h5>Xuất xứ: Việt Nam</h5>
+                                        <h5>Thời gian bảo hành: 12 tháng</h5>
+                                    </div>
+                                    <div class="sosanhcaiquat">
+                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                    </div>
+                                    <div class="magiamgia">
+                                        <div class="magiamgia_content">
+                                            Nhập mã SNxx giảm đến 2.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items_quat20cai">
+                            <a href="sanphammayxay.html">
+                                <div class="itemscaiquat">
+                                    <div class="imgitemscaiquat">
+                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                    </div>
+                                    <div class="thongsocaiquat">
+                                        <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                        <h4 class="color_red">439.000đ</h4>
+                                        <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                        <h5>Nhà sản xuất: Modife</h5>
+                                        <h5>Xuất xứ: Việt Nam</h5>
+                                        <h5>Thời gian bảo hành: 12 tháng</h5>
+                                    </div>
+                                    <div class="sosanhcaiquat">
+                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                    </div>
+                                    <div class="magiamgia">
+                                        <div class="magiamgia_content">
+                                            Nhập mã SNxx giảm đến 2.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items_quat20cai">
+                            <a href="sanphamamdunnuoc.html">
+                                <div class="itemscaiquat">
+                                    <div class="imgitemscaiquat">
+                                        <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                    </div>
+                                    <div class="thongsocaiquat">
+                                        <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
                                         <h4 class="color_red">1.990.000đ</h4>
                                         <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
                                         <h5>Nhà sản xuất: Rapido</h5>
@@ -1998,6 +2167,31 @@
                             </a>
                         </div>
                         <div class="items_quat20cai">
+                            <a href="sanphammayxay.html">
+                                <div class="itemscaiquat">
+                                    <div class="imgitemscaiquat">
+                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                    </div>
+                                    <div class="thongsocaiquat">
+                                        <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                        <h4 class="color_red">439.000đ</h4>
+                                        <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                        <h5>Nhà sản xuất: Modife</h5>
+                                        <h5>Xuất xứ: Việt Nam</h5>
+                                        <h5>Thời gian bảo hành: 12 tháng</h5>
+                                    </div>
+                                    <div class="sosanhcaiquat">
+                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                    </div>
+                                    <div class="magiamgia">
+                                        <div class="magiamgia_content">
+                                            Nhập mã SNxx giảm đến 2.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items_quat20cai">
                             <a href="sanpham.html">
                                 <div class="itemscaiquat">
                                     <div class="imgitemscaiquat">
@@ -2005,6 +2199,56 @@
                                     </div>
                                     <div class="thongsocaiquat">
                                         <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                        <h4 class="color_red">1.990.000đ</h4>
+                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                        <h5>Nhà sản xuất: Rapido</h5>
+                                        <h5>Xuất xứ: Việt Nam</h5>
+                                        <h5>Thời gian bảo hành: 12 tháng</h5>
+                                    </div>
+                                    <div class="sosanhcaiquat">
+                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                    </div>
+                                    <div class="magiamgia">
+                                        <div class="magiamgia_content">
+                                            Nhập mã SNxx giảm đến 2.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items_quat20cai">
+                            <a href="sanphammayxay.html">
+                                <div class="itemscaiquat">
+                                    <div class="imgitemscaiquat">
+                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                    </div>
+                                    <div class="thongsocaiquat">
+                                        <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                        <h4 class="color_red">439.000đ</h4>
+                                        <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                        <h5>Nhà sản xuất: Modife</h5>
+                                        <h5>Xuất xứ: Việt Nam</h5>
+                                        <h5>Thời gian bảo hành: 12 tháng</h5>
+                                    </div>
+                                    <div class="sosanhcaiquat">
+                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                    </div>
+                                    <div class="magiamgia">
+                                        <div class="magiamgia_content">
+                                            Nhập mã SNxx giảm đến 2.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="items_quat20cai">
+                            <a href="sanphamamdunnuoc.html">
+                                <div class="itemscaiquat">
+                                    <div class="imgitemscaiquat">
+                                        <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                    </div>
+                                    <div class="thongsocaiquat">
+                                        <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
                                         <h4 class="color_red">1.990.000đ</h4>
                                         <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
                                         <h5>Nhà sản xuất: Rapido</h5>
@@ -2046,258 +2290,18 @@
                                     </div>
                                 </div>
                             </a>
-                        </div><div class="items_quat20cai">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div><div class="items_quat20cai">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div><div class="items_quat20cai">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div><div class="items_quat20cai">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div><div class="items_quat20cai">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div><div class="items_quat20cai">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div><div class="items_quat20cai">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div><div class="items_quat20cai">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div><div class="items_quat20cai">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div><div class="items_quat20cai">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
                         </div>
                         <div class="items_quat20cai">
-                            <a href="sanpham.html">
+                            <a href="sanphammayxay.html">
                                 <div class="itemscaiquat">
                                     <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                        <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
                                     </div>
                                     <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
+                                        <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                        <h4 class="color_red">439.000đ</h4>
+                                        <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                        <h5>Nhà sản xuất: Modife</h5>
                                         <h5>Xuất xứ: Việt Nam</h5>
                                         <h5>Thời gian bảo hành: 12 tháng</h5>
                                     </div>
@@ -2319,406 +2323,520 @@
                     <div class="sanphamdanhrieng_title">
                         <h2>SẢN PHẨM DÀNH RIÊNG CHO BẠN</h2>
                     </div>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
+                    <div class="slide5">
+                        <div class="slide5-item">
+                            <div class="slide-item-khoi5">
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphamamdunnuoc.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide-item-khoi5">
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphamamdunnuoc.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide-item-khoi5">
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphamamdunnuoc.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide-item-khoi5">
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphamamdunnuoc.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>y
                         </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                        <div class="button-next-prev">
+                            <div class="btn-left2 btn" ><i class="fa-solid fa-chevron-left" id="btn3-left"></i></div>
+                            <div class="btn-right2 btn" ><i class="fa-solid fa-chevron-right" id="btn3-right"></i></div>
                         </div>
                     </div>
                 </div>
@@ -2727,406 +2845,520 @@
                     <div class="sanphamdanhrieng_title">
                         <h2>SẢN PHẨM BẠN ĐÃ XEM</h2>
                     </div>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
+                    <div class="slide5">
+                        <div class="slide5-item">
+                            <div class="slide-item-khoi5">
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphamamdunnuoc.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide-item-khoi5">
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphamamdunnuoc.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide-item-khoi5">
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphamamdunnuoc.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slide-item-khoi5">
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphamamdunnuoc.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057060-am-dun-nuoc-sieu-toc-elmich-kee-1774-xanh-mint-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Bình đun siêu tốc Elmit 1.7 lít KEE 1774 B</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanpham.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
+                                                <h4 class="color_red">1.990.000đ</h4>
+                                                <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
+                                                <h5>Nhà sản xuất: Rapido</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="items_quat20cai">
+                                    <a href="sanphammayxay.html">
+                                        <div class="itemscaiquat">
+                                            <div class="imgitemscaiquat">
+                                                <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                            </div>
+                                            <div class="thongsocaiquat">
+                                                <h3>Máy xay thịt Bear QSL - C03B1</h3>
+                                                <h4 class="color_red">439.000đ</h4>
+                                                <h4><del class="modidel">799.000đ</del>&nbsp;<span class="giam59">-45%</span></h4>
+                                                <h5>Nhà sản xuất: Modife</h5>
+                                                <h5>Xuất xứ: Việt Nam</h5>
+                                                <h5>Thời gian bảo hành: 12 tháng</h5>
+                                            </div>
+                                            <div class="sosanhcaiquat">
+                                                <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
+                                            </div>
+                                            <div class="magiamgia">
+                                                <div class="magiamgia_content">
+                                                    Nhập mã SNxx giảm đến 2.000.000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>y
                         </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="sanpham.html">
-                                <div class="itemscaiquat">
-                                    <div class="imgitemscaiquat">
-                                        <img src="img/quatdieuhoatrangsanpham.jpg" alt="">
-                                    </div>
-                                    <div class="thongsocaiquat">
-                                        <h3>Quạt điều hòa Rapido Lucky 6000M</h3>
-                                        <h4 class="color_red">1.990.000đ</h4>
-                                        <h4><del class="modidel">4.900.000đ</del>&nbsp;<span class="giam59">-59%</span></h4>
-                                        <h5>Nhà sản xuất: Rapido</h5>
-                                        <h5>Xuất xứ: Việt Nam</h5>
-                                        <h5>Thời gian bảo hành: 12 tháng</h5>
-                                    </div>
-                                    <div class="sosanhcaiquat">
-                                        <h4><i class="fa-solid fa-plus"></i>&nbsp;Thêm vào so sánh</h4>
-                                    </div>
-                                    <div class="magiamgia">
-                                        <div class="magiamgia_content">
-                                            Nhập mã SNxx giảm đến 2.000.000
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                        <div class="button-next-prev">
+                            <div class="btn-left2 btn" ><i class="fa-solid fa-chevron-left" id="btn4-left"></i></div>
+                            <div class="btn-right2 btn" ><i class="fa-solid fa-chevron-right" id="btn4-right"></i></div>
                         </div>
                     </div>
                 </div>

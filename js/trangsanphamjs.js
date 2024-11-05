@@ -56,28 +56,81 @@ leftbtn.addEventListener("click", function() {
     moveSlide();
     autoSlideInterval = setInterval(autoSlide, 4000);
 });
-
-
-
-// slide
-const right2btn = document.querySelector('.btn .fa-chevron-right');
-const left2btn = document.querySelector('.btn .fa-chevron-left');
+// slide2
+const right2btn = document.querySelector('#btn2-right');
+const left2btn = document.querySelector('#btn2-left');
 const img2Number = document.querySelectorAll('.slide-item-khoi5 .items_quat20cai');
-let current=0;
-rightbtn.addEventListener("click",function(){
-    current++
-    if(current>imgNumber.length-1){
-        current=0
+let current2 = 0;
+function moveRight() {
+    current2++;
+    if (current2 > img2Number.length - 45) {
+        current2 = 0;
     }
-    document.querySelector(".slide5-item").style.right=current*100+"%"
-})
-leftbtn.addEventListener("click",function(){
-    current--
-    if(current<0){
-        current=imgNumber.length-1
+    document.querySelector(".slide5-item").style.right = current2 * 20 + "%";
+}
+function moveLeft() {
+    current2--;
+    if (current2 < 0) {
+        current2 = img2Number.length - 5;
     }
-    document.querySelector(".slide5-item").style.right=current*100+"%"
-})
+    document.querySelector(".slide5-item").style.right = current2 * 20 + "%";
+}
+right2btn.addEventListener("click", moveRight);
+left2btn.addEventListener("click", moveLeft);
+setInterval(moveRight, 4000);
+// slide3
+const right3btn = document.querySelector('#btn3-right');
+const left3btn = document.querySelector('#btn3-left');
+const img3Number = document.querySelectorAll('.sanphamdanhrieng .slide-item-khoi5 .items_quat20cai');
+let current3 = 0;
+console.log(img3Number)
+
+function moveRight3() {
+    current3++;
+    console.log(current3)
+    if (current3 > img3Number.length - 5) {
+        current3 = 0;
+    }
+    document.querySelector(".sanphamdanhrieng .slide5-item").style.right = current3 * 20 + "%";
+}
+
+function moveLeft3() {
+    current3--;
+    if (current3 < 0) {
+        current3 = img3Number.length - 5;
+    }
+    document.querySelector(".sanphamdanhrieng .slide5-item").style.right = current3 * 20 + "%";
+}
+
+right3btn.addEventListener("click", moveRight3);
+left3btn.addEventListener("click", moveLeft3);
+setInterval(moveRight3, 4000);
+
+// slide4
+const right4btn = document.querySelector('#btn4-right');
+const left4btn = document.querySelector('#btn4-left');
+const img4Number = document.querySelectorAll('.sanphamdaxem .slide-item-khoi5 .items_quat20cai');
+let current4 = 0;
+
+function moveRight4() {
+    current4++;
+    if (current4 > img4Number.length - 5) {
+        current4 = 0;
+    }
+    document.querySelector(".sanphamdaxem .slide5-item").style.right = current4 * 20 + "%";
+}
+
+function moveLeft4() {
+    current4--;
+    if (current4 < 0) {
+        current4 = img4Number.length -5;
+    }
+    document.querySelector(".sanphamdaxem .slide5-item").style.right = current4 * 20 + "%";
+}
+right4btn.addEventListener("click", moveRight4);
+left4btn.addEventListener("click", moveLeft4);
+setInterval(moveRight4, 4000);
+
 // dia chi
 function openPopup() {
     document.getElementById('popup').style.display = 'flex';

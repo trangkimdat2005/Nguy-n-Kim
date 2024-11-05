@@ -539,7 +539,11 @@ a{
     color: #fe0000 !important;
 }
 .changecolor{
-    color: black;
+    color:rgba(0,0,0,0.7);
+    font-weight: 400;
+}
+.changecolor a{
+    color:rgba(0,0,0,0.7) !important;
     font-weight: 400;
 }
 .changecolor:hover{
@@ -1622,7 +1626,8 @@ li .icon_fb-ytb-zl{
     padding: 0;
 }
 .contact_info_top-title-b{
-    font-weight: 800;
+    font-weight: 600;
+    font-size: 14px;
 }
 .contact_info_top-title-list li{
     font-weight: 400;
