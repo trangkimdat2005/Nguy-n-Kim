@@ -1,8 +1,4 @@
-:root{
-    --redcolor:#fe0000;
-    --whitecolor:#fff;
-    --blackcolor:#000;
-}
+
 *{
     box-sizing: inherit;
 }
@@ -24,8 +20,6 @@ html{
     display: flex;
     flex-wrap: wrap;
 }
-
-/* chinh base */
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
