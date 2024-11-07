@@ -78,63 +78,107 @@ leftbtn.addEventListener("click", function() {
     moveSlide();
     autoSlideInterval = setInterval(autoSlide, 4000);
 });
-
 // slide san pham
 const rightbtn2 = document.querySelector('#btn-right1');
 const leftbtn2 = document.querySelector('#btn-left1');
 const imgNumber2 = document.querySelectorAll('.slide-sanpham .sanpham-khoi5');
 let current2 = 0;
-console.log(rightbtn2)
-rightbtn2.addEventListener("click",function(){
-    current2++
-    if(current2>imgNumber2.length*5-5){
-        current2=0
+function moveSlide2() {
+    document.querySelector(".slide-sanpham").style.right = current2 * 20 + "%";
+}
+function autoSlide2() {
+    current2++;
+    if (current2 > imgNumber2.length * 5 - 5) {
+        current2 = 0;
     }
-    document.querySelector(".slide-sanpham").style.right=current2*20+"%"
-})
-leftbtn2.addEventListener("click",function(){
-    current2--
-    if(current2<0){
-        current2=imgNumber2.length*5-5
+    moveSlide2();
+}
+let autoSlideInterval2 = setInterval(autoSlide2, 4000);
+rightbtn2.addEventListener("click", function() {
+    clearInterval(autoSlideInterval2);
+    current2++;
+    if (current2 > imgNumber2.length * 5 - 5) {
+        current2 = 0;
     }
-    document.querySelector(".slide-sanpham").style.right=current2*20+"%"
-})
+    moveSlide2();
+    autoSlideInterval2 = setInterval(autoSlide2, 4000);
+});
+leftbtn2.addEventListener("click", function() {
+    clearInterval(autoSlideInterval2);
+    current2--;
+    if (current2 < 0) {
+        current2 = imgNumber2.length * 5 - 5;
+    }
+    moveSlide2();
+    autoSlideInterval2 = setInterval(autoSlide2, 4000);
+});
+
 // slide uu dai 1
 const rightbtn3 = document.querySelector('#btn-right2');
 const leftbtn3 = document.querySelector('#btn-left2');
 const imgNumber3 = document.querySelectorAll('.uudai-hinhanh .uudai-hinhanh-3');
 let current3 = 0;
-rightbtn3.addEventListener("click",function(){
-    current3++
-    if(current3>imgNumber3.length*3-12){
-        current3=0
+function moveSlide3() {
+    document.querySelector(".uudai-hinhanh").style.right = current3 * 32 + "%";
+}
+function autoSlide3() {
+    current3++;
+    if (current3 > imgNumber3.length * 3 - 12) {
+        current3 = 0;
     }
-    document.querySelector(".uudai-hinhanh").style.right=current3*32+"%"
-})
-leftbtn3.addEventListener("click",function(){
-    current3--
-    if(current3<0){
-        current3=imgNumber3.length*3-12
+    moveSlide3();
+}
+let autoSlideInterval3 = setInterval(autoSlide3, 4000);
+rightbtn3.addEventListener("click", function() {
+    clearInterval(autoSlideInterval3);
+    current3++;
+    if (current3 > imgNumber3.length * 3 - 12) {
+        current3 = 0;
     }
-    document.querySelector(".uudai-hinhanh").style.right=current3*32+"%"
-})
+    moveSlide3();
+    autoSlideInterval3 = setInterval(autoSlide3, 4000);
+});
+leftbtn3.addEventListener("click", function() {
+    clearInterval(autoSlideInterval3);
+    current3--;
+    if (current3 < 0) {
+        current3 = imgNumber3.length * 3 - 12;
+    }
+    moveSlide3();
+    autoSlideInterval3 = setInterval(autoSlide3, 4000);
+});
+
 // slide uu dai 2
 const rightbtn4 = document.querySelector('#btn-right3');
 const leftbtn4 = document.querySelector('#btn-left3');
 const imgNumber4 = document.querySelectorAll('.uudai-hinhanh .uudai-hinhanh-3');
 let current4 = 0;
-rightbtn4.addEventListener("click",function(){
-    current4++
-    console.log("ok")
-    if(current4>imgNumber4.length*3-12){
-        current4=0
+function moveSlide4() {
+    document.querySelector(".uudai-bottom .uudai-hinhanh").style.right = current4 * 32 + "%";
+}
+function autoSlide4() {
+    current4++;
+    if (current4 > imgNumber4.length * 3 - 12) {
+        current4 = 0;
     }
-    document.querySelector(".uudai-bottom .uudai-hinhanh").style.right=current4*32+"%"
-})
-leftbtn4.addEventListener("click",function(){
-    current4--
-    if(current4<0){
-        current4=imgNumber4.length*3-12
+    moveSlide4();
+}
+let autoSlideInterval4 = setInterval(autoSlide4, 4000);
+rightbtn4.addEventListener("click", function() {
+    clearInterval(autoSlideInterval4);
+    current4++;
+    if (current4 > imgNumber4.length * 3 - 12) {
+        current4 = 0;
     }
-    document.querySelector(".uudai-bottom .uudai-hinhanh").style.right=current4*32+"%"
-})
+    moveSlide4();
+    autoSlideInterval4 = setInterval(autoSlide4, 4000);
+});
+leftbtn4.addEventListener("click", function() {
+    clearInterval(autoSlideInterval4);
+    current4--;
+    if (current4 < 0) {
+        current4 = imgNumber4.length * 3 - 12;
+    }
+    moveSlide4();
+    autoSlideInterval4 = setInterval(autoSlide4, 4000);
+});
