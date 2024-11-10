@@ -9,14 +9,22 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- awesomfont -->
     <script src="https://kit.fontawesome.com/db7ebb0f3d.js" crossorigin="anonymous"></script>
     <!-- icon nk -->
-    <link rel="icon" href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png">
-    
+    <link rel="icon" href="https://cdn.nguyenkimmall.com/images/favicon/icon803.png">  
 </head>
 <body>
     <div class="app">
+        <!-- // -->
+        <!-- <div class="quangcao2ben">
+            <div><img src="img/KV-SN-28-v2-120x450.png" alt=""></div>
+            <div><img src="img/KV-SN-28-v2-120x450.png" alt=""></div>
+        </div> -->
+        <!-- // -->
         <header class="header">
             <div class="grid">
                 <nav class="header__navbar">
@@ -27,7 +35,11 @@
                             </a>
                         </li>
                         <li class="header__navbar__located">
-                            <i class="header__navbar__located__point fa-solid fa-location-dot"></i>
+                            <!-- // -->
+                            <div class="icon-located">
+                                <i class="header__navbar__located__point fa-solid fa-location-dot"></i>
+                            </div>
+                            <!-- // -->
                             <div class="header__navbar__located__content">
                                 <span class="header__navbar__located__TP">
                                     Xem giá tại <br> <button class="choose-btn" onclick="openPopup()">TP.HCM  </button><i class="fa-solid fa-sort-down"></i>
@@ -278,24 +290,38 @@
                         </li>
                         <li class="header__navbar__shoppingcart">
                             <div class="header__cart">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                                <!-- // -->
+                                <div class="icon-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <!-- // -->
                                 <span class="header__cart__cartshopping">
                                     <a href="giohang.html" class="classa">Giỏ hàng</a>
                                 </span>
                             </div>
                         </li>
                         <li class="header__navbar__ordertracking">
-                            <i class="header__navbar__ordertracking__clock fa-solid fa-clock-rotate-left"></i>
+                            <!-- // -->
+                            <div class="icon-ordertracking">
+                                <i class="header__navbar__ordertracking__clock fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <!-- // -->
                             <div class="header__navbar__ordertracking__content">
                                 <a href="tracuu.html" class="classa">Tra cứu <br> đơn hàng</a>
                             </div>
                         </li>
                         <li class="header__navbar__account">
-                            <i class="header__navbar__account__icon fa-solid fa-user"></i>
+                            <div class="icon-account">
+                                <i class="header__navbar__account__icon fa-solid fa-user"></i>
+                            </div>
                             <a href="nguyenKimSignIn.html" class="classa">Tài khoản</a>
                         </li>
                         <li class="header__navbar__hotline">
-                            <i class="header__navbar__hotline__phone fa-solid fa-phone-volume"></i>
+                            <!-- // -->
+                            <div class="icon-hotline">
+                                <i class="header__navbar__hotline__phone fa-solid fa-phone-volume"></i>
+                            </div>
+                            <!-- // -->
                             <div class="header__navbar__hotline__content" onclick="alertCall()">
                                 Gọi mua 1800.6800 <br> (Miễn phí)
                             </div>
@@ -2035,7 +2061,7 @@
                         <a href="sanphammayxay.html">
                             <div class="itemscaiquat">
                                 <div class="imgitemscaiquat">
-                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1 (1).jpg" alt="">
+                                    <img src="img/10057885-Máy_xay_thịt_Bear_QSJ-C03B1-1.jpg" alt="">
                                 </div>
                                 <div class="thongsocaiquat">
                                     <h3>
@@ -2760,7 +2786,7 @@
                         </ul>
                     </ul>
                 </div>
-                <hr style="margin-top: -40px;">
+                <hr style="margin-top: -40px;height: 10px;">
                 <div class="contact_info_bottom">
                     <div class="contact_info_bottom-top">Danh Mục</div>
                     <div class="contact_info_bottom-end">
@@ -3095,7 +3121,7 @@
             <div class="content-end">Giấy chứng nhận đăng ký kinh doanh số 0302286281, cấp ngày 22/06/2006 bởi Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh</div>
             <div class="content-end">Địa chỉ đăng ký trụ sở chính: 63-65-67 Trần Hưng Đạo, P. Cầu Ông Lãnh, TP. Hồ Chí Minh</div>
             </div>
-            <div class="footer__hotline">
+            <div class="footer__hotline" onclick="alertCall()">
                 <div class="footer_hotline_left">
                     Gọi mua: 1800.6800
                 </div> 

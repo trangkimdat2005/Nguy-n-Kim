@@ -1,6 +1,6 @@
 body{
     height:auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', Arial, Helvetica, sans-serif !important;
     display: flex;
     justify-content: center;
 }
@@ -44,8 +44,11 @@ body{
     font-size: 13px;
     margin-top: 10px;
 }
+.header__navbar__list i{
+    font-size: 25px;
+}
 .header__navbar__list li{
-    font-size: 17px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -71,7 +74,7 @@ body{
     align-items: center;
 }
 .header__navbar__located__point{
-    font-size: 30px;
+    font-size: 30px !important;
     margin-top: 5px;
     margin-right: 10px;
 }
@@ -92,6 +95,8 @@ body{
     display: flex;
 }
 .header__cart{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .header__navbar__find,
@@ -332,6 +337,7 @@ body{
     justify-content: space-between;
     border: 1px rgba(0,0,0,0.1) solid;
     border-radius: 5px;
+    background-color: #ffffff;
 }
 .popup_find-locate input{
     width: 85%;
@@ -792,13 +798,14 @@ ul{
     font-size: 16px;
     font-weight: 500;
     margin-left: 5px;
+    color: rgba(0,0,0,0.7);
 }
 .thongsocaiquat h4,
 .thongsocaiquat h5{
     margin-left: 5px;
     font-size: 17px;
     font-weight: 600;
-    color: rgba(0,0,0,0.8);
+    color: rgba(0,0,0,0.6);
 }
 .color_red{
     color: #fe0000 !important;
@@ -1582,6 +1589,7 @@ a{
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
+    margin-top: 0;
     background-color: #FFFFFF;
 }
 .nav_catelog,

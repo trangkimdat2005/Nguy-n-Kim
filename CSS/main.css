@@ -1,13 +1,33 @@
 body{
     height:auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
 }
 .app{
     background-color: aliceblue;
     height: auto;
+    position: relative;
 }
+/* // */
+/* .quangcao2ben{
+    width: 1000px;
+    height: 100px;
+    display: none;
+    position: fixed;
+    justify-content: space-between;
+    top: 50vh;
+    left: 30vw;
+    transform: translateY(-50%);
+}
+@media (min-width:1800px){
+    .quangcao2ben{
+        display: flex;
+        background-color: #70affd;
+    }
+} */
+
+/* // */
 .classa{
     color: white !important;
 }
@@ -26,12 +46,14 @@ body{
     display: flex;
     position: absolute;
     color: white;
+    /* justify-content: center; */
     align-items: center;
     white-space: nowrap;
     grid-template-columns:auto auto; 
     column-gap: 20px;
     font-size: 13px;
     margin-top: 13px;
+    padding-left: 0;
 }
 .header__navbar__logo{
     width: 40px; 
@@ -42,8 +64,11 @@ body{
 }
 .header__navbar__located{
     display:flex;
+    /* // */
+    justify-content: center;
+    align-items: center;
+    /* // */
     width: 140px;
-    margin-top: 12px;
     cursor: pointer;
 }
 .fa-location-dot{
@@ -75,6 +100,9 @@ body{
     display: flex;
 }
 .header__cart{
+    align-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .header__navbar__find,
@@ -410,7 +438,8 @@ body{
 }
 .header__navbar__ordertracking{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .header__navbar__ordertracking__clock{
@@ -424,7 +453,8 @@ body{
 }
 .header__navbar__hotline{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__hotline__phone{
     margin-top: 8px;
@@ -437,12 +467,13 @@ body{
 }
 .header__navbar__account{
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .header__navbar__account__icon{
     margin-right: 7px;
 }
-
-
 /* phan than */
 a{
     text-decoration: none;
@@ -1720,9 +1751,10 @@ li .icon_fb-ytb-zl{
 }
 .contact_info_bottom-top{
     height: 40px;
-    width: 1300px;
+    width: auto;
     font-size: 20px;
     font-weight: 500;
+    margin-left: 20px;
     background-color: white;
 }
 .contact_info_bottom-end{

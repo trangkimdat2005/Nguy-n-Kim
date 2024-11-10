@@ -1,6 +1,6 @@
 body{
     height:auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', Arial, Helvetica, sans-serif !important;
     display: flex;
     justify-content: center;
     }
@@ -57,7 +57,8 @@ body{
 .header__navbar__located{
     display:flex;
     width: 140px;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .fa-location-dot{
@@ -92,6 +93,9 @@ body{
     display: flex;
 }
 .header__cart{
+    align-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .header__navbar__find,
@@ -425,8 +429,9 @@ body{
 }
 .header__navbar__ordertracking{
     display: flex;
-    margin-top: 12px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__ordertracking__clock{
     margin-top: 8px;
@@ -439,7 +444,8 @@ body{
 }
 .header__navbar__hotline{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__hotline__phone{
     margin-top: 8px;
@@ -452,6 +458,9 @@ body{
 }
 .header__navbar__account{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__account__icon{
     margin-right: 7px;
@@ -902,6 +911,8 @@ a{
     height: 540px;
     width: 1160px;
     display: flex;
+    border-radius: 10px;
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
@@ -999,6 +1010,7 @@ fieldset input{
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
+    margin-top: 0;
     background-color: #FFFFFF;
 }
 .nav_catelog,

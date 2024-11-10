@@ -119,7 +119,7 @@ const leftbtn3 = document.querySelector('#btn-left2');
 const imgNumber3 = document.querySelectorAll('.uudai-hinhanh .uudai-hinhanh-3');
 let current3 = 0;
 function moveSlide3() {
-    document.querySelector(".uudai-hinhanh").style.right = current3 * 32 + "%";
+    document.querySelector(".uudai-hinhanh").style.right = current3 * 33 + "%";
 }
 function autoSlide3() {
     current3++;
@@ -154,7 +154,7 @@ const leftbtn4 = document.querySelector('#btn-left3');
 const imgNumber4 = document.querySelectorAll('.uudai-hinhanh .uudai-hinhanh-3');
 let current4 = 0;
 function moveSlide4() {
-    document.querySelector(".uudai-bottom .uudai-hinhanh").style.right = current4 * 32 + "%";
+    document.querySelector(".uudai-bottom .uudai-hinhanh").style.right = current4 * 33 + "%";
 }
 function autoSlide4() {
     current4++;
@@ -182,3 +182,6 @@ leftbtn4.addEventListener("click", function() {
     moveSlide4();
     autoSlideInterval4 = setInterval(autoSlide4, 4000);
 });
+function alertCall(){
+    alert("Vui lòng mở ứng dụng trên điện thoại")
+}
