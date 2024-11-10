@@ -1,9 +1,9 @@
 body{
     height:auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', Arial, Helvetica, sans-serif !important;
     display: flex;
     justify-content: center;
-    }
+}
 .app{
     background-color: aliceblue;
     height: auto;
@@ -41,8 +41,12 @@ body{
     white-space: nowrap;
     grid-template-columns:auto auto; 
     column-gap: 20px;
-    font-size: 13px;
+    font-size: 16px;
     margin-top: 10px;
+    padding-left: 0;
+}
+.header__navbar__list i{
+    font-size: 20px;
 }
 .header__navbar__logo{
     width: 40px; 
@@ -54,7 +58,8 @@ body{
 .header__navbar__located{
     display:flex;
     width: 140px;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .header__navbar__located__point{
@@ -77,6 +82,8 @@ body{
 }
 .header__cart{
     align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .header__navbar__find,
 .header__navbar__findlocated{
@@ -436,7 +443,8 @@ body{
 }
 .header__navbar__ordertracking{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .header__navbar__ordertracking__clock{
@@ -450,7 +458,8 @@ body{
 }
 .header__navbar__hotline{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__hotline__phone{
     margin-top: 8px;
@@ -463,6 +472,9 @@ body{
 }
 .header__navbar__account{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__account__icon{
     margin-right: 7px;
@@ -782,6 +794,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
 }
 .nav_catelory-book-ship-promote-sel_list{
     list-style: none;
@@ -894,7 +907,7 @@ a{
 .road{
     position: absolute;
     width: 98%;
-    height: 1263px;
+    height: 1280px;
     top: 340px;
 }
 .buoc1{
@@ -905,7 +918,7 @@ a{
 }
 .img-step1{
     position: absolute;
-    top:100px;
+    top:90px;
     left: 430px;
     width: 300px;
 }
@@ -917,13 +930,13 @@ a{
 }
 .img-step3{
     position: absolute;
-    top:1030px;
+    top:1050px;
     left: 410px;
     width: 320px;
 }
 .img-step4{
     position: absolute;
-    top:1680px;
+    top:1700px;
     left: 270px;
     width: 440px;
 }

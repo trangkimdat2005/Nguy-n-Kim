@@ -173,3 +173,9 @@ function hideAlert(){
     document.getElementById('khongdungdinhdang').style.display='none';
     document.getElementById('khonghople').style.display='none';
 }
+
+function hienMucLuc(){
+    document.getElementsByClassName('thongtinmucluc_an')[0].style.display='block'
+    document.getElementsByClassName('thongtinmucluc_hien')[0].style.display='none'
+    document.getElementsByClassName('hienmucluc')[0].style.display='none'
+}
