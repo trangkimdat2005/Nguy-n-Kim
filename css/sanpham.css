@@ -16,7 +16,7 @@ body{
     background-color: #fe0000;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 .header__navbar__list{
     list-style: none;
@@ -237,7 +237,7 @@ body{
     justify-content: center;
 }
 .danhmuc-timkiem{
-    height: 450px;
+    height: 460px;
     width: 1200px;
     background-color: white;
     display: flex;
@@ -634,28 +634,28 @@ a{
 .submenu1{
     position: absolute;
     background-color: red;
+    font-weight: 500;
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -26px;
+    margin-top: -4px;
     display: none;
     font-size: 11px;
     z-index: 10;
     color: black;
-    font-weight: 400;
 }
 .submenu2{
+    font-weight: 500;
     position: absolute;
     background-color: white;
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -62px;
+    margin-top: -39px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
-
+    font-weight: 500;
 }
 .submenu3{
     position: absolute;
@@ -663,11 +663,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -98px;
+    margin-top: -74px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 }
 .submenu4{
     position: absolute;
@@ -675,11 +675,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -134px;
+    margin-top: -109px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu5{
@@ -688,11 +688,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -170px;
+    margin-top: -144px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu6{
@@ -701,11 +701,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -206px;
+    margin-top: -179px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu7{
@@ -714,11 +714,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -242px;
+    margin-top: -214px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu8{
@@ -727,11 +727,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -278px;
+    margin-top: -249px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu9{
@@ -740,11 +740,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -314px;
+    margin-top: -284px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu10{
@@ -753,11 +753,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -350px;
+    margin-top: -319px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu11{
@@ -766,11 +766,12 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -386px;
+    margin-top: -354px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
+
 }
 .submenu12{
     position: absolute;
@@ -778,13 +779,16 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -422px;
+    margin-top: -389px;
     display: none;
-    font-weight: 400;
     z-index: 10;
     font-size: 11px;
-}
+    font-weight: 500;
 
+}
+.hr-vertical{
+    color: rgba(0,0,0,0.3);
+}
 .catelog_hover li:hover .submenu1{
     display: flex;
 }
@@ -977,13 +981,22 @@ a{
     height: auto;   
 }
 /* dinh nghia lai */
+.nav_catelog-book-ship-promote-sell{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+}
 .nav_catelory-book-ship-promote-sel_list{
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
     margin-top: 0;
+    padding: 0;
+    width: 1160px;
     background-color: #FFFFFF;
 }
 .nav_catelog,
@@ -1037,12 +1050,21 @@ a{
 .catelog_hover li{
     height: 35px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .catelog_hover li i{
     color: rgba(0,0,0,0.6);
 }
+.catelog_hover .fa-chevron-right{
+    font-size: 15px;
+}
 .nav_catelog:hover .catelog_hover{
     display: block;
+}
+.nav_book-ship-promote-sell{
+    background-color: #ffffff;
+    width: auto;
 }
 /* product */
 .container_product{
@@ -1092,6 +1114,9 @@ a{
     height: 100%;
     padding-left: 30px;
     padding-top: 30px;   
+}
+.product_right_title h2{
+    font-size: 20px;
 }
 .product_right_title h6{
     font-size: 15px;
@@ -1352,7 +1377,7 @@ a{
     margin: 20px auto;
 }
 table{
-    font-size: 20px;
+    font-size: 16px;
 }
 table tr td{
     padding: 7px;
@@ -1601,9 +1626,13 @@ table tr td{
 /* them vao */
 del{
     color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    margin: 0;
 }
 .sanpham_title h3{
     color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    margin: 0;
 }
 .items_product{
     width: 1160px;
@@ -1697,10 +1726,17 @@ del{
 .colorred{
     color: red;
     font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+.color_red{
+    color:#fe0000;
+    font-weight: 600;
 }
 .backgroud_red{
     background-color: #fe0000;
     color: #ffffff;
+    font-size: 15px;
     border-radius: 5px;
 }
 .sanpham_img img:hover{
@@ -2111,4 +2147,26 @@ li .icon_fb-ytb-zl{
 .footer_hotline_right i{
     font-size: 40px;
     color: #fe0000;
+}
+.keolendautrang{
+    background-color: #b2b2b2;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    opacity: 2;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 70px;
+    bottom: 150px;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.keolendautrang:hover{
+    background-color: #fe0000;
+}
+.keolendautrang .fa-arrow-up{
+    font-size: 30px;
+    color: #ffffff;
 }

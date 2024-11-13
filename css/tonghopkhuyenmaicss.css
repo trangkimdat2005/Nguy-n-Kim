@@ -11,6 +11,10 @@ body{
 .colorred{
     color: red;
 }
+.color_red{
+    color: #fe0000;
+    font-weight: 600;
+}
 .overflow-hidden{
     overflow: hidden;
 }
@@ -27,7 +31,7 @@ body{
     background-color: #fe0000;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 .header__navbar__list{
     list-style: none;
@@ -253,7 +257,7 @@ body{
     justify-content: center;
 }
 .danhmuc-timkiem{
-    height: 450px;
+    height: 460px;
     width: 1200px;
     background-color: white;
     display: flex;
@@ -572,6 +576,7 @@ body{
 .btn{
     font-size: 20px;
     margin: 20px;
+    padding: 10px 15px;
     border-radius: 50%;
     color: white;
     background-color: #888;
@@ -720,7 +725,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -26px;
+    margin-top: -4px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -733,7 +738,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -62px;
+    margin-top: -39px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -745,7 +750,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -98px;
+    margin-top: -74px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -757,7 +762,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -134px;
+    margin-top: -109px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -770,7 +775,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -170px;
+    margin-top: -144px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -783,7 +788,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -206px;
+    margin-top: -179px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -796,7 +801,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -242px;
+    margin-top: -214px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -809,7 +814,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -278px;
+    margin-top: -249px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -822,7 +827,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -314px;
+    margin-top: -284px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -835,7 +840,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -350px;
+    margin-top: -319px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -848,7 +853,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -386px;
+    margin-top: -354px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -861,12 +866,18 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -422px;
+    margin-top: -389px;
     display: none;
     z-index: 10;
     font-size: 11px;
     font-weight: 500;
 
+}
+.hr-vertical{
+    color: rgba(0,0,0,0.3);
+}
+.catelog_hover .fa-chevron-right{
+    font-size: 15px;
 }
 .catelog_hover li:hover .submenu1{
     display: flex;
@@ -1104,13 +1115,21 @@ fieldset input{
     height: 41px;
 }
 /* dinh nghia lai */
-.nav_catelory-book-ship-promote-sel_list{
-    list-style: none;
+.nav_catelog-book-ship-promote-sell{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.nav_catelory-book-ship-promote-sel_list{
+    list-style: none;
+    display: flex;
+    width: 1160px;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 0;
     margin-top: 0;
+    padding: 0;
     background-color: #FFFFFF;
 }
 .nav_catelog,
@@ -1122,6 +1141,10 @@ fieldset input{
     display: flex;
     justify-content: center;
     align-items: center;    
+}
+.nav_book-ship-promote-sell{
+    width: auto;
+    background-color: #ffffff;
 }
 .nav_catelog i,
 .nav_book-ship-promote-sell i{
@@ -1165,6 +1188,8 @@ fieldset input{
 .catelog_hover li{
     height: 35px;
     width: 100%;
+    display: flex;
+    justify-content:space-between;
 }
 .catelog_hover li i{
     color: rgba(0,0,0,0.6);
@@ -1454,4 +1479,26 @@ li .icon_fb-ytb-zl{
 .footer_hotline_right i{
     font-size: 40px;
     color: #fe0000;
+}
+.keolendautrang{
+    background-color: #b2b2b2;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    opacity: 2;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 70px;
+    bottom: 150px;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.keolendautrang:hover{
+    background-color: #fe0000;
+}
+.keolendautrang .fa-arrow-up{
+    font-size: 30px;
+    color: #ffffff;
 }
