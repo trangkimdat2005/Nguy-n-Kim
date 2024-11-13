@@ -135,37 +135,32 @@ function hideAlert(){
     document.getElementById('khongdungdinhdang').style.display='none';
     document.getElementById('khonghople').style.display='none';
 }
-$(document).ready(function() {
-    $(document).ready(function() {
-        $('.thongso_right_bottom').click(function() {
-            $('#overlay').fadeIn();
-            $('#popupthongso').fadeIn();
-        });
-        $('#close-popup').click(function() {
-            $('#overlay').fadeOut();
-            $('#popupthongso').fadeOut();
-        });
-        $('#overlay').click(function() {
-            $('#overlay').fadeOut();
-            $('#popupthongso').fadeOut();
-        });
+
+function showThongSoKiThuat(){
+    document.getElementById('overlay').style.display='flex'
+    document.getElementById('popupthongso').style.display='block'
+    document.body.classList.add("overflow-hidden");
+}
+function hideThongSoKiThuat(){
+    document.getElementById('overlay').style.display='none'
+    document.getElementById('popupthongso').style.display='none'
+    document.body.classList.remove("overflow-hidden");
+}
+// nut tro len dau trang
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        autoplay:true,
-        nav:false,
-        dots:false,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:5
-            }
-        }
-    })
-});
+}
+function returnTop(){
+    const kiemtravitri=document.getElementById('trovedau');
+    if(window.scrollY===0){
+        kiemtravitri.style.display='none'
+    }
+    else{
+        kiemtravitri.style.display='flex'
+    }
+}
+window.addEventListener('scroll', returnTop);
+returnTop();

@@ -63,7 +63,6 @@ console.log(img3Number)
 
 function moveRight3() {
     current3++;
-    console.log(current3)
     if (current3 > img3Number.length - 5) {
         current3 = 0;
     }
@@ -179,3 +178,21 @@ function hienMucLuc(){
     document.getElementsByClassName('thongtinmucluc_hien')[0].style.display='none'
     document.getElementsByClassName('hienmucluc')[0].style.display='none'
 }
+// nut tro len dau trang
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+function returnTop(){
+    const kiemtravitri=document.getElementById('trovedau');
+    if(window.scrollY===0){
+        kiemtravitri.style.display='none'
+    }
+    else{
+        kiemtravitri.style.display='flex'
+    }
+}
+window.addEventListener('scroll', returnTop);
+returnTop();

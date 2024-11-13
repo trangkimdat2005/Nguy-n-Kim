@@ -19,12 +19,16 @@
 </head>
 <body>
     <div class="app">
-        <!-- // -->
-        <!-- <div class="quangcao2ben">
-            <div><img src="img/KV-SN-28-v2-120x450.png" alt=""></div>
-            <div><img src="img/KV-SN-28-v2-120x450.png" alt=""></div>
-        </div> -->
-        <!-- // -->
+        <div class="quangcao-header" id="close-quangcao">
+            <a href="#"><img src="img/KV-SN-28-v2-1920x45.jpg" alt=""></a>
+            <div class="close-quangcao"  onclick="close_quangcao()"><i class="fa-solid fa-x"></i></div>
+        </div>
+        <div class="img2ben-center">
+            <div class="quangcao2ben">
+                <div><img src="img/KV-SN-28-v2-120x450.png" alt=""></div>
+                <div><img src="img/KV-SN-28-v2-120x450.png" alt=""></div>
+            </div>
+        </div>
         <header class="header">
             <div class="grid">
                 <nav class="header__navbar">
@@ -35,11 +39,9 @@
                             </a>
                         </li>
                         <li class="header__navbar__located">
-                            <!-- // -->
                             <div class="icon-located">
                                 <i class="header__navbar__located__point fa-solid fa-location-dot"></i>
                             </div>
-                            <!-- // -->
                             <div class="header__navbar__located__content">
                                 <span class="header__navbar__located__TP">
                                     Xem giá tại <br> <button class="choose-btn" onclick="openPopup()">TP.HCM  </button><i class="fa-solid fa-sort-down"></i>
@@ -290,22 +292,18 @@
                         </li>
                         <li class="header__navbar__shoppingcart">
                             <div class="header__cart">
-                                <!-- // -->
                                 <div class="icon-cart">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
-                                <!-- // -->
                                 <span class="header__cart__cartshopping">
                                     <a href="giohang.html" class="classa">Giỏ hàng</a>
                                 </span>
                             </div>
                         </li>
                         <li class="header__navbar__ordertracking">
-                            <!-- // -->
                             <div class="icon-ordertracking">
                                 <i class="header__navbar__ordertracking__clock fa-solid fa-clock-rotate-left"></i>
                             </div>
-                            <!-- // -->
                             <div class="header__navbar__ordertracking__content">
                                 <a href="tracuu.html" class="classa">Tra cứu <br> đơn hàng</a>
                             </div>
@@ -317,11 +315,9 @@
                             <a href="nguyenKimSignIn.html" class="classa">Tài khoản</a>
                         </li>
                         <li class="header__navbar__hotline">
-                            <!-- // -->
                             <div class="icon-hotline">
                                 <i class="header__navbar__hotline__phone fa-solid fa-phone-volume"></i>
                             </div>
-                            <!-- // -->
                             <div class="header__navbar__hotline__content" onclick="alertCall()">
                                 Gọi mua 1800.6800 <br> (Miễn phí)
                             </div>
@@ -342,12 +338,15 @@
                             </div>
                         </li>
                         <li class="container__category__left__title__list fist">
-                            <i class="fa-solid fa-tv"></i>
-                            <a href="trangsanpham.html">
-                                <span class="changecolor">Ti vi,</span>
-                                <span class="changecolor">Loa,</span>
-                                <span class="changecolor">Karaoke</span>
-                            </a>
+                            <div>
+                                <i class="fa-solid fa-tv"></i>
+                                <a href="trangsanpham.html">
+                                    <span class="changecolor">Ti vi,</span>
+                                    <span class="changecolor">Loa,</span>
+                                    <span class="changecolor">Karaoke</span>
+                                </a>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu1">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -458,12 +457,15 @@
                             </div>
                         </li>
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-snowflake"></i>
-                            <a href="trangsanpham.html">
-                                <span class="changecolor">Tủ lạnh,</span>
-                                <span class="changecolor">Tủ đông,</span>
-                                <span class="changecolor">Tủ mát</span>
-                            </a>
+                            <div>
+                                <i class="fa-solid fa-snowflake"></i>
+                                <a href="trangsanpham.html">
+                                    <span class="changecolor">Tủ lạnh,</span>
+                                    <span class="changecolor">Tủ đông,</span>
+                                    <span class="changecolor">Tủ mát</span>
+                                </a>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu2">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -536,10 +538,13 @@
                             </div>
                         </li>                        
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-fan"></i>
-                            <span class="changecolor"><a href="trangsanpham.html">Máy giặt</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Máy sấy</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Máy nước nóng</a></span>
+                            <div>
+                                <i class="fa-solid fa-fan"></i>
+                                <span class="changecolor"><a href="trangsanpham.html">Máy giặt</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Máy sấy</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Máy nước nóng</a></span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu3">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -622,10 +627,13 @@
                             </div>
                         </li>                        
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-temperature-arrow-down"></i>
-                            <span class="changecolor"><a href="trangsanpham.html">Máy lạnh</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Quạt</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Lọc khí</a></span>
+                            <div>
+                                <i class="fa-solid fa-temperature-arrow-down"></i>
+                                <span class="changecolor"><a href="trangsanpham.html">Máy lạnh</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Quạt</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Lọc khí</a></span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu4">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -711,10 +719,13 @@
                         </li>
                         
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-broom"></i>
-                            <span class="changecolor"><a href="trangsanpham.html">Điện gia dụng</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Hút bụi</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Nồi chiên</a></span>
+                            <div>
+                                <i class="fa-solid fa-broom"></i>
+                                <span class="changecolor"><a href="trangsanpham.html">Điện gia dụng</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Hút bụi</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Nồi chiên</a></span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu5">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -764,10 +775,13 @@
                             </div>
                         </li>                        
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-kitchen-set"></i>
-                            <span class="changecolor"><a href="trangsanpham.html">Đồ dùng bếp</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Bếp điện</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Nồi cơm</a></span>
+                            <div>
+                                <i class="fa-solid fa-kitchen-set"></i>
+                                <span class="changecolor"><a href="trangsanpham.html">Đồ dùng bếp</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Bếp điện</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Nồi cơm</a></span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu6">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -824,10 +838,13 @@
                         </li>
                         
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-droplet"></i>
-                            <span class="changecolor"><a href="trangsanpham.html">Lọc nước</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Sinh tố</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Xay ép</a></span>
+                            <div>
+                                <i class="fa-solid fa-droplet"></i>
+                                <span class="changecolor"><a href="trangsanpham.html">Lọc nước</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Sinh tố</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Xay ép</a></span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu7">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -857,9 +874,12 @@
                         </li>
                         
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-heart"></i>
-                            <span class="changecolor"><a href="trangsanpham.html">Sức khỏe</a>,</span>
-                            <span class="changecolor"><a href="trangsanpham.html">Làm đẹp</a></span>
+                            <div>
+                                <i class="fa-solid fa-heart"></i>
+                                <span class="changecolor"><a href="trangsanpham.html">Sức khỏe</a>,</span>
+                                <span class="changecolor"><a href="trangsanpham.html">Làm đẹp</a></span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu8">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -886,10 +906,13 @@
                             </div>
                         </li>                        
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                            <span class="changecolor"><a href="trangsanpham.html">Điện thoại</a></span>,
-                            <span class="changecolor"><a href="trangsanpham.html">Tablet</a></span>,
-                            <span class="changecolor"><a href="trangsanpham.html">Phụ kiện</a></span>
+                            <div>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span class="changecolor"><a href="trangsanpham.html">Điện thoại</a></span>,
+                                <span class="changecolor"><a href="trangsanpham.html">Tablet</a></span>,
+                                <span class="changecolor"><a href="trangsanpham.html">Phụ kiện</a></span>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu9">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -987,10 +1010,13 @@
                             </div>
                         </li>                        
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-laptop"></i>
-                            <a href="trangsanpham.html"><span class="changecolor">Laptop,</span></a>
-                            <a href="trangsanpham.html"><span class="changecolor">PC,</span></a>
-                            <a href="trangsanpham.html"><span class="changecolor">Thiết bị văn phòng</span></a>
+                            <div>
+                                <i class="fa-solid fa-laptop"></i>
+                                <a href="trangsanpham.html"><span class="changecolor">Laptop,</span></a>
+                                <a href="trangsanpham.html"><span class="changecolor">PC,</span></a>
+                                <a href="trangsanpham.html"><span class="changecolor">Thiết bị văn phòng</span></a>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu10">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -1087,9 +1113,12 @@
                             </div>
                         </li>
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-gear"></i>
-                            <a href="#"><span class="changecolor">Dịch vụ hỗ trợ,</span></a>
-                            <a href="#"><span class="changecolor">Hệ thống siêu thị</span></a>
+                            <div>
+                                <i class="fa-solid fa-gear"></i>
+                                <a href="#"><span class="changecolor">Dịch vụ hỗ trợ,</span></a>
+                                <a href="#"><span class="changecolor">Hệ thống siêu thị</span></a>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu11">
                                 <div class="submenu_one">
                                     <ul class="submenu_title">
@@ -1120,8 +1149,11 @@
                             </div>
                         </li>
                         <li class="container__category__left__title__list">
-                            <i class="fa-regular fa-lightbulb"></i>
-                            <a href="#"><span class="changecolor">Thông tin hữu ích</span></a>
+                            <div>
+                                <i class="fa-regular fa-lightbulb"></i>
+                                <a href="#"><span class="changecolor">Thông tin hữu ích</span></a>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                             <div class="submenu12">
                                 <div class="submenu_left">
                                     <ul class="submenu_title">
@@ -1172,8 +1204,11 @@
                             </div>
                         </li>
                         <li class="container__category__left__title__list">
-                            <i class="fa-solid fa-gem"></i>
-                            <a href="#"><span class="changecolor">Bán hàng doanh nghiệp</span></a>
+                            <div>
+                                <i class="fa-solid fa-gem"></i>
+                                <a href="#"><span class="changecolor">Bán hàng doanh nghiệp</span></a>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </li>                        
                </div> 
                <div class="container__category__right">
@@ -1187,6 +1222,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <li class="hr-vertical">|</li>
                             <li class="container__category__right__list__content">
                                 <i class="container__category__right__list__content__icon fa-solid fa-truck-fast"></i>
                                 <div class="container__category__right__list__content__word">
@@ -1195,6 +1231,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <li class="hr-vertical">|</li>
                             <li class="container__category__right__list__content">
                                 <i class="container__category__right__list__content__icon fa-solid fa-book-bookmark"></i>
                                 <div class="container__category__right__list__content__word">
@@ -1203,6 +1240,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <li class="hr-vertical">|</li>
                             <li class="container__category__right__list__content">
                                 <i class="container__category__right__list__content__icon fa-solid fa-gem"></i>
                                 <div class="container__category__right__list__content__word">
@@ -1242,7 +1280,7 @@
                                     <div class="slidebig-btn-left">
                                         <i class="fa-solid fa-chevron-left"></i>
                                     </div>
-                                    <div class="slidebig-btn-left">
+                                    <div class="slidebig-btn-right">
                                         <i class="fa-solid fa-chevron-right"></i>
                                     </div>
                                 </div>
@@ -1536,15 +1574,20 @@
             <!-- deal ngon -->
             <div class="container__deal-very">
                 <div class="container__deal-very_banner">
-                    <div class="deal-very_banner_left">
-                        <div class="deal-very_banner_left-one">
-                            DEAL VERY NGON
+                    <div class="deal-very_baner">
+                        <div class="deal-very_banner_left">
+                            <div class="deal-very_banner_left-one">
+                                DEAL VERY NGON
+                            </div>
+                            <div class="deal-very_banner_left-two">
+                                <i class="fa-solid fa-bolt-lightning"></i>
+                            </div>
+                            <div class="deal-very_banner_left-three">
+                                HÔM NAY
+                            </div>
                         </div>
-                        <div class="deal-very_banner_left-two">
-                            <i class="fa-solid fa-bolt-lightning"></i>
-                        </div>
-                        <div class="deal-very_banner_left-three">
-                            HÔM NAY
+                        <div class="clock-deal-very">
+                            <span id="giophai">1</span><span id="giotrai">2</span>:<span id="phutphai">5</span><span id="phuttrai">9</span>:<span id="giayphai">5</span><span id="giaytrai">9</span>
                         </div>
                     </div>
                     <div class="container__deal-very_item">
@@ -3128,6 +3171,9 @@
                 <div class="footer_hotline_right">
                     <i class="fa-solid fa-phone-volume"></i>
                 </div>
+            </div>
+            <div class="keolendautrang" id="trovedau" onclick="scrollToTop()">
+                <i class="fa-solid fa-arrow-up"></i>
             </div>
         </footer>
     </div>
