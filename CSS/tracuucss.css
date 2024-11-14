@@ -1,6 +1,6 @@
 body{
     height:auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', Arial, Helvetica, sans-serif !important;
     display: flex;
     justify-content: center;
     }
@@ -10,6 +10,10 @@ body{
 }
 .colorred{
     color: red;
+}
+.color_red{
+    color: #fe0000;
+    font-weight: 600;
 }
 .overflow-hidden{
     overflow: hidden;
@@ -33,7 +37,7 @@ body{
     background-color: #fe0000;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 .header__navbar__list{
     list-style: none;
@@ -57,7 +61,8 @@ body{
 .header__navbar__located{
     display:flex;
     width: 140px;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .fa-location-dot{
@@ -92,6 +97,9 @@ body{
     display: flex;
 }
 .header__cart{
+    align-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .header__navbar__find,
@@ -425,8 +433,9 @@ body{
 }
 .header__navbar__ordertracking{
     display: flex;
-    margin-top: 12px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__ordertracking__clock{
     margin-top: 8px;
@@ -439,7 +448,8 @@ body{
 }
 .header__navbar__hotline{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__hotline__phone{
     margin-top: 8px;
@@ -452,6 +462,9 @@ body{
 }
 .header__navbar__account{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__account__icon{
     margin-right: 7px;
@@ -606,7 +619,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -26px;
+    margin-top: -4px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -619,7 +632,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -62px;
+    margin-top: -39px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -631,7 +644,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -98px;
+    margin-top: -74px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -643,7 +656,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -134px;
+    margin-top: -109px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -656,7 +669,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -170px;
+    margin-top: -144px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -669,7 +682,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -206px;
+    margin-top: -179px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -682,7 +695,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -242px;
+    margin-top: -214px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -695,7 +708,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -278px;
+    margin-top: -249px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -708,7 +721,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -314px;
+    margin-top: -284px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -721,7 +734,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -350px;
+    margin-top: -319px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -734,7 +747,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -386px;
+    margin-top: -354px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -747,12 +760,15 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -422px;
+    margin-top: -389px;
     display: none;
     z-index: 10;
     font-size: 11px;
     font-weight: 500;
 
+}
+.hr-vertical{
+    color: rgba(0,0,0,0.3);
 }
 .catelog_hover li:hover .submenu1{
     display: flex;
@@ -902,6 +918,8 @@ a{
     height: 540px;
     width: 1160px;
     display: flex;
+    border-radius: 10px;
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
@@ -993,12 +1011,22 @@ fieldset input{
     height: 41px;
 }
 /* dinh nghia lai */
-.nav_catelory-book-ship-promote-sel_list{
-    list-style: none;
+.nav_catelog-book-ship-promote-sell{
+    width: 100%;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.nav_catelory-book-ship-promote-sel_list{
+    list-style: none;
+    display: flex;
+    width: 1160px;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 0;
+    padding: 0;
+    margin-top: 0;
     background-color: #FFFFFF;
 }
 .nav_catelog,
@@ -1010,6 +1038,10 @@ fieldset input{
     display: flex;
     justify-content: center;
     align-items: center;    
+}
+.nav_book-ship-promote-sell{
+    width: auto;
+    color: #ffffff;
 }
 .nav_catelog i,
 .nav_book-ship-promote-sell i{
@@ -1052,17 +1084,18 @@ fieldset input{
 .catelog_hover li{
     height: 35px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .catelog_hover li i{
     color: rgba(0,0,0,0.6);
 }
+.catelog_hover .fa-chevron-right{
+    font-size: 15px;
+}
 .nav_catelog:hover .catelog_hover{
     display: block;
 }
-
-
-
-
 
 
 .email_uudai{

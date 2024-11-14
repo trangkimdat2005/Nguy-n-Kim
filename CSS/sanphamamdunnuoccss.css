@@ -1,13 +1,13 @@
 body{
     height:auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', Arial, Helvetica, sans-serif !important;
     display: flex;
     justify-content: center;
 }
 .app{
-        background-color: aliceblue;
-        height: auto;
-    }
+    background-color: aliceblue;
+    height: auto;
+}
 .overflow-hidden{
     overflow: hidden;
 }
@@ -16,7 +16,7 @@ body{
     background-color: #fe0000;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 .header__navbar__list{
     list-style: none;
@@ -29,6 +29,10 @@ body{
     column-gap: 20px;
     font-size: 13px;
     margin-top: 10px;
+    padding-left: 0;
+}
+.header__navbar__list i{
+    font-size: 22px;
 }
 .header__navbar__logo{
     width: 40px; 
@@ -39,8 +43,9 @@ body{
 }
 .header__navbar__located{
     display:flex;
+    justify-content: center;
+    align-items: center;
     width: 140px;
-    margin-top: 12px;
     cursor: pointer;
 }
 .header__navbar__located__point{
@@ -63,6 +68,8 @@ body{
 }
 .header__cart{
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .header__navbar__find,
 .header__navbar__findlocated{
@@ -479,7 +486,8 @@ body{
 }
 .header__navbar__ordertracking{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .header__navbar__ordertracking__clock{
@@ -493,7 +501,8 @@ body{
 }
 .header__navbar__hotline{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__hotline__phone{
     margin-top: 8px;
@@ -506,6 +515,9 @@ body{
 }
 .header__navbar__account{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__account__icon{
     margin-right: 7px;
@@ -620,28 +632,28 @@ a{
 .submenu1{
     position: absolute;
     background-color: red;
+    font-weight: 500;
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -26px;
+    margin-top: -4px;
     display: none;
     font-size: 11px;
     z-index: 10;
     color: black;
-    font-weight: 400;
 }
 .submenu2{
+    font-weight: 500;
     position: absolute;
     background-color: white;
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -62px;
+    margin-top: -39px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
-
+    font-weight: 500;
 }
 .submenu3{
     position: absolute;
@@ -649,11 +661,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -98px;
+    margin-top: -74px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 }
 .submenu4{
     position: absolute;
@@ -661,11 +673,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -134px;
+    margin-top: -109px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu5{
@@ -674,11 +686,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -170px;
+    margin-top: -144px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu6{
@@ -687,11 +699,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -206px;
+    margin-top: -179px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu7{
@@ -700,11 +712,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -242px;
+    margin-top: -214px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu8{
@@ -713,11 +725,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -278px;
+    margin-top: -249px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu9{
@@ -726,11 +738,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -314px;
+    margin-top: -284px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu10{
@@ -739,11 +751,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -350px;
+    margin-top: -319px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu11{
@@ -752,11 +764,12 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -386px;
+    margin-top: -354px;
     display: none;
     font-size: 11px;
-    font-weight: 400;
     z-index: 10;
+    font-weight: 500;
+
 }
 .submenu12{
     position: absolute;
@@ -764,11 +777,15 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -422px;
+    margin-top: -389px;
     display: none;
-    font-weight: 400;
     z-index: 10;
     font-size: 11px;
+    font-weight: 500;
+
+}
+.hr-vertical{
+    color: rgba(0,0,0,0.3);
 }
 
 .catelog_hover li:hover .submenu1{
@@ -963,13 +980,23 @@ a{
     height: auto;   
 }
 /* dinh nghia lai */
-.nav_catelory-book-ship-promote-sel_list{
-    list-style: none;
+.nav_catelog-book-ship-promote-sell{
+    background-color: #ffffff;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.nav_catelory-book-ship-promote-sel_list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 0;
+    padding: 0;
+    width: 1160px;
     background-color: #FFFFFF;
+    margin-top: 0;
 }
 .nav_catelog,
 .nav_book-ship-promote-sell{
@@ -980,6 +1007,10 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;    
+}
+.nav_book-ship-promote-sell{
+    background-color: #ffffff;
+    width: auto;
 }
 .nav_book-ship-promote-sell:hover a{
     color: #fe0000 !important;
@@ -1022,9 +1053,14 @@ a{
 .catelog_hover li{
     height: 35px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .catelog_hover li i{
     color: rgba(0,0,0,0.6);
+}
+.catelog_hover .fa-chevron-right{
+    font-size: 15px;
 }
 .nav_catelog:hover .catelog_hover{
     display: block;
@@ -1050,6 +1086,9 @@ a{
     justify-content: center;
     align-items: center;
 }
+.product_left_top img{
+    width: 50%;
+}
 .product_left_top div{
     height: 400px;
     width: 500px;
@@ -1074,6 +1113,9 @@ a{
     height: 100%;
     padding-left: 30px;
     padding-top: 30px;   
+}
+.product_right_title h2{
+    font-size: 20px;
 }
 .product_right_title h6{
     font-size: 15px;
@@ -1114,6 +1156,9 @@ a{
     background-color: white;
     border-right:1px #888 solid;
     font-size: 15px;
+}
+.product_right_cost_left h1{
+    margin: 0;
 }
  h1{
     font-size: 30px;
@@ -1157,6 +1202,7 @@ a{
 .product_right_button_left h1{
     margin-left: 80px;
     margin-top: 5px;
+    margin-bottom: 0;
 }
 .product_right_button_left div{
     font-size: 15px;
@@ -1240,6 +1286,10 @@ a{
     margin-top: 10px;
     width: 1160px;
     background-color: white;
+}
+.container_thongso h2{
+    font-size: 23px;
+    margin: 15px;
 }
 .thongso_img-content{
     width: 100%;
@@ -1334,7 +1384,7 @@ a{
     margin: 20px auto;
 }
 table{
-    font-size: 20px;
+    font-size: 16px;
 }
 table tr td{
     padding: 7px;
@@ -1584,9 +1634,13 @@ table tr td{
 /* themvao */
 del{
     color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    margin: 0;
 }
 .sanpham_title h3{
     color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    margin: 0;
 }
 .items_product{
     width: 1160px;
@@ -1681,10 +1735,17 @@ del{
 .colorred{
     color: red;
     font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+.color_red{
+    color:#fe0000;
+    font-weight: 600;
 }
 .backgroud_red{
     background-color: #fe0000;
     color: #ffffff;
+    font-size: 15px;
     border-radius: 5px;
 }
 .sanpham_img img:hover{
@@ -1948,6 +2009,7 @@ li .icon_fb-ytb-zl{
     font-size: 20px;
     font-weight: 500;
     background-color: white;
+    color: #413b49cf;
 }
 .contact_info_bottom-end{
     width: 1110px;
@@ -1960,7 +2022,9 @@ li .icon_fb-ytb-zl{
     height: 520px;
     background-color: white;
 }
-
+.contact_info_bottom-end_list *{
+    color: #413b49cf;
+}
 .list{
     background-color: white;
     width: 100%;
@@ -2091,4 +2155,27 @@ li .icon_fb-ytb-zl{
 .footer_hotline_right i{
     font-size: 40px;
     color: #fe0000;
+}
+
+.keolendautrang{
+    background-color: #b2b2b2;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    opacity: 2;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 70px;
+    bottom: 150px;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.keolendautrang:hover{
+    background-color: #fe0000;
+}
+.keolendautrang .fa-arrow-up{
+    font-size: 30px;
+    color: #ffffff;
 }

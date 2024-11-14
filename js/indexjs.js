@@ -1,3 +1,8 @@
+// an quang cao
+function close_quangcao(){
+    document.getElementById('close-quangcao').style.display='none'
+}
+// cho tinh thanh
 function openPopup() {
     document.getElementById('popup').style.display = 'flex';
     document.body.classList.add("overflow-hidden");
@@ -16,7 +21,7 @@ function closePopupOnOutsideClick(event) {
         closePopup();
     }
 }
-
+// tim kiem
 function showFind(){
     document.getElementById('popup-find-all').style.display='flex';
     document.body.classList.add("overflow-hidden");
@@ -31,6 +36,30 @@ function closePopupOnOutsideClickFind(event) {
         document.body.classList.remove("overflow-hidden");
     }
 }
+// clock
+let countdownTime = 3600*3;
+function startCountdown() {
+    setInterval(function() {
+        if (countdownTime <= 0) {
+            clearInterval();
+            return;
+        }
+
+        countdownTime--;
+        let hours = Math.floor(countdownTime / 3600);
+        let minutes = Math.floor((countdownTime % 3600) / 60);
+        let seconds = countdownTime % 60;
+
+        document.getElementById("giophai").textContent = Math.floor(hours / 10);
+        document.getElementById("giotrai").textContent = hours % 10;
+        document.getElementById("phutphai").textContent = Math.floor(minutes / 10);
+        document.getElementById("phuttrai").textContent = minutes % 10;
+        document.getElementById("giayphai").textContent = Math.floor(seconds / 10);
+        document.getElementById("giaytrai").textContent = seconds % 10;
+    }, 1000);
+}
+startCountdown();
+// check inf
 var testEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 var email = document.getElementById("Email").value;
 function checkEmail(){
@@ -52,7 +81,7 @@ function hideAlert(){
     document.getElementById('khonghople').style.display='none';
 }
 // slide img 1
-const rightbtn = document.querySelector('.fa-chevron-right');
+const rightbtn = document.querySelector('.slidebig-btn-right .fa-chevron-right');
 const leftbtn = document.querySelector('.fa-chevron-left');
 let index = 0;
 const imgNumber = document.querySelectorAll('.slidebig_top img');
@@ -119,7 +148,7 @@ const leftbtn3 = document.querySelector('#btn-left2');
 const imgNumber3 = document.querySelectorAll('.uudai-hinhanh .uudai-hinhanh-3');
 let current3 = 0;
 function moveSlide3() {
-    document.querySelector(".uudai-hinhanh").style.right = current3 * 32 + "%";
+    document.querySelector(".uudai-hinhanh").style.right = current3 * 33 + "%";
 }
 function autoSlide3() {
     current3++;
@@ -154,7 +183,7 @@ const leftbtn4 = document.querySelector('#btn-left3');
 const imgNumber4 = document.querySelectorAll('.uudai-hinhanh .uudai-hinhanh-3');
 let current4 = 0;
 function moveSlide4() {
-    document.querySelector(".uudai-bottom .uudai-hinhanh").style.right = current4 * 32 + "%";
+    document.querySelector(".uudai-bottom .uudai-hinhanh").style.right = current4 * 33 + "%";
 }
 function autoSlide4() {
     current4++;
@@ -182,3 +211,25 @@ leftbtn4.addEventListener("click", function() {
     moveSlide4();
     autoSlideInterval4 = setInterval(autoSlide4, 4000);
 });
+function alertCall(){
+    alert("Vui lòng mở ứng dụng trên điện thoại")
+}
+
+// nut tro len dau trang
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+function returnTop(){
+    const kiemtravitri=document.getElementById('trovedau');
+    if(window.scrollY===0){
+        kiemtravitri.style.display='none'
+    }
+    else{
+        kiemtravitri.style.display='flex'
+    }
+}
+window.addEventListener('scroll', returnTop);
+returnTop();

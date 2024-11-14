@@ -1,9 +1,9 @@
 body{
     height:auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', Arial, Helvetica, sans-serif !important;
     display: flex;
     justify-content: center;
-    }
+}
 .app{
     background-color: aliceblue;
     height: auto;
@@ -30,7 +30,7 @@ body{
     background-color: #fe0000;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 .header__navbar__list{
     list-style: none;
@@ -41,8 +41,12 @@ body{
     white-space: nowrap;
     grid-template-columns:auto auto; 
     column-gap: 20px;
-    font-size: 13px;
+    font-size: 16px;
     margin-top: 10px;
+    padding-left: 0;
+}
+.header__navbar__list i{
+    font-size: 20px;
 }
 .header__navbar__logo{
     width: 40px; 
@@ -54,7 +58,8 @@ body{
 .header__navbar__located{
     display:flex;
     width: 140px;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .header__navbar__located__point{
@@ -77,6 +82,8 @@ body{
 }
 .header__cart{
     align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .header__navbar__find,
 .header__navbar__findlocated{
@@ -436,7 +443,8 @@ body{
 }
 .header__navbar__ordertracking{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .header__navbar__ordertracking__clock{
@@ -450,7 +458,8 @@ body{
 }
 .header__navbar__hotline{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__hotline__phone{
     margin-top: 8px;
@@ -463,6 +472,9 @@ body{
 }
 .header__navbar__account{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__account__icon{
     margin-right: 7px;
@@ -474,35 +486,38 @@ a{
     text-decoration: none;
     color: black;
 }
+.changecolor{
+    color: #3f3f3f;
+    font-weight: 500;
+}
 .changecolor:hover{
     color: blue;
 }
 .submenu1{
     position: absolute;
     background-color: red;
+    font-weight: 500;
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -26px;
+    margin-top: -4px;
     display: none;
     font-size: 11px;
     z-index: 10;
     color: black;
-    font-weight: 500;
-
 }
 .submenu2{
+    font-weight: 500;
     position: absolute;
     background-color: white;
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -62px;
+    margin-top: -39px;
     display: none;
     font-size: 11px;
     z-index: 10;
     font-weight: 500;
-
 }
 .submenu3{
     position: absolute;
@@ -510,12 +525,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -98px;
+    margin-top: -74px;
     display: none;
     font-size: 11px;
     z-index: 10;
     font-weight: 500;
-
 }
 .submenu4{
     position: absolute;
@@ -523,11 +537,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -134px;
+    margin-top: -109px;
     display: none;
     font-size: 11px;
-    font-weight: 500;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu5{
@@ -536,11 +550,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -170px;
+    margin-top: -144px;
     display: none;
     font-size: 11px;
-    font-weight: 500;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu6{
@@ -549,11 +563,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -206px;
+    margin-top: -179px;
     display: none;
     font-size: 11px;
-    font-weight: 500;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu7{
@@ -562,11 +576,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -242px;
+    margin-top: -214px;
     display: none;
     font-size: 11px;
-    font-weight: 500;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu8{
@@ -575,11 +589,11 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -278px;
+    margin-top: -249px;
     display: none;
     font-size: 11px;
-    font-weight: 500;
     z-index: 10;
+    font-weight: 500;
 
 }
 .submenu9{
@@ -588,7 +602,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -314px;
+    margin-top: -284px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -601,7 +615,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -350px;
+    margin-top: -319px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -614,11 +628,12 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -386px;
+    margin-top: -354px;
     display: none;
     font-size: 11px;
-    font-weight: 500;
     z-index: 10;
+    font-weight: 500;
+
 }
 .submenu12{
     position: absolute;
@@ -626,13 +641,16 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -422px;
+    margin-top: -389px;
     display: none;
     z-index: 10;
-    font-weight: 500;
     font-size: 11px;
-}
+    font-weight: 500;
 
+}
+.hr-vertical{
+    color: rgba(0,0,0,0.3);
+}
 .catelog_hover li:hover .submenu1{
     display: flex;
 }
@@ -782,6 +800,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
 }
 .nav_catelory-book-ship-promote-sel_list{
     list-style: none;
@@ -849,6 +868,14 @@ a{
 .catelog_hover li{
     height: 35px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.catelog_hover .fa-chevron-right{
+    font-size: 15px;
+}
+.catelog_hover a{
+    color: gray;
 }
 .catelog_hover li i{
     color: rgba(0,0,0,0.6);
@@ -862,11 +889,13 @@ a{
     padding: 10px;
     width: 1160px;
     background-color: #ffffff;
+    padding-top: 0; 
 }
 .container_content_title{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px rgba(0,0,0,0.3) solid;
 }
 .container_content_title h1{
     text-align: center;
@@ -894,7 +923,7 @@ a{
 .road{
     position: absolute;
     width: 98%;
-    height: 1263px;
+    height: 1280px;
     top: 340px;
 }
 .buoc1{
@@ -905,7 +934,7 @@ a{
 }
 .img-step1{
     position: absolute;
-    top:100px;
+    top:90px;
     left: 430px;
     width: 300px;
 }
@@ -917,13 +946,13 @@ a{
 }
 .img-step3{
     position: absolute;
-    top:1030px;
+    top:1050px;
     left: 410px;
     width: 320px;
 }
 .img-step4{
     position: absolute;
-    top:1680px;
+    top:1700px;
     left: 270px;
     width: 440px;
 }
@@ -1315,4 +1344,26 @@ li .icon_fb-ytb-zl{
 .footer_hotline_right i{
     font-size: 40px;
     color: #fe0000;
+}
+.keolendautrang{
+    background-color: #b2b2b2;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    opacity: 2;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 70px;
+    bottom: 150px;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.keolendautrang:hover{
+    background-color: #fe0000;
+}
+.keolendautrang .fa-arrow-up{
+    font-size: 30px;
+    color: #ffffff;
 }

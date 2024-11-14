@@ -1,6 +1,6 @@
 body{
     height:auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', Arial, Helvetica, sans-serif !important;
     display: flex;
     justify-content: center;
     }
@@ -27,7 +27,7 @@ body{
     background-color: #fe0000;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 .header__navbar__list{
     list-style: none;
@@ -41,17 +41,23 @@ body{
     font-size: 13px;
     margin-top: 10px;
 }
+.header__navbar__list i{
+    font-size: 20px;
+}
+.fa-location-dot{
+    font-size: 25px !important;
+}
 .header__navbar__logo{
-    width: 40px; 
     padding-top: 15px;
-    width: 25%;
+    width: auto;
     cursor: pointer;
     display: inline;
 }
 .header__navbar__located{
     display:flex;
+    justify-content: center;
+    align-items: center;
     width: 140px;
-    margin-top: 12px;
     cursor: pointer;
 }
 .header__navbar__located__point{
@@ -72,8 +78,6 @@ body{
 .header__navbar__find{
     display: flex;
 }
-
-
 
 .header__navbar__findlocated__input{
     height: 40px;
@@ -441,13 +445,17 @@ body{
 }
 .header__cart{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__cart__cartshopping{
     margin-left: 7px;
 }
 .header__navbar__ordertracking{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .header__navbar__ordertracking__clock{
@@ -461,7 +469,8 @@ body{
 }
 .header__navbar__hotline{
     display: flex;
-    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__hotline__phone{
     margin-top: 8px;
@@ -474,6 +483,9 @@ body{
 }
 .header__navbar__account{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__navbar__account__icon{
     margin-right: 7px;
@@ -522,7 +534,7 @@ body{
     background-color: #88888851;
 }
 .slide-img{
-    width: 99%;
+    width: 100%;
     height: 733px;
     display: flex;
     justify-content: center;
@@ -658,7 +670,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -26px;
+    margin-top: -4px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -671,7 +683,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -62px;
+    margin-top: -39px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -683,7 +695,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -98px;
+    margin-top: -74px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -695,7 +707,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -134px;
+    margin-top: -109px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -708,7 +720,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -170px;
+    margin-top: -144px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -721,7 +733,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -206px;
+    margin-top: -179px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -734,7 +746,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -242px;
+    margin-top: -214px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -747,7 +759,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -278px;
+    margin-top: -249px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -760,7 +772,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -314px;
+    margin-top: -284px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -773,7 +785,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -350px;
+    margin-top: -319px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -786,7 +798,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -386px;
+    margin-top: -354px;
     display: none;
     font-size: 11px;
     z-index: 10;
@@ -799,7 +811,7 @@ a{
     width: 770px;
     height: 472px;
     margin-left:234px;
-    margin-top: -422px;
+    margin-top: -389px;
     display: none;
     z-index: 10;
     font-size: 11px;
@@ -1048,6 +1060,8 @@ fieldset input{
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
     background-color: #FFFFFF;
 }
 .nav_catelog,
@@ -1060,12 +1074,19 @@ fieldset input{
     justify-content: center;
     align-items: center;    
 }
+.nav_book-ship-promote-sell{
+    width: auto;
+    padding: 0 15px;
+}
 .nav_catelog i,
 .nav_book-ship-promote-sell i{
     padding-right: 10px;
     color: #fe0000;
     font-size: 20px;
     
+}
+.hr-vertical{
+    color: rgba(0,0,0,0.3);
 }
 .nav_catelog a i{
     color: #FFFFFF;
@@ -1102,6 +1123,11 @@ fieldset input{
 .catelog_hover li{
     height: 35px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.catelog_hover li .fa-chevron-right{
+    font-size: 10px;
 }
 .catelog_hover li i{
     color: rgba(0,0,0,0.6);
@@ -1391,4 +1417,26 @@ li .icon_fb-ytb-zl{
 .footer_hotline_right i{
     font-size: 40px;
     color: #fe0000;
+}
+.keolendautrang{
+    background-color: #b2b2b2;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    opacity: 2;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 70px;
+    bottom: 150px;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.keolendautrang:hover{
+    background-color: #fe0000;
+}
+.keolendautrang .fa-arrow-up{
+    font-size: 30px;
+    color: #ffffff;
 }
