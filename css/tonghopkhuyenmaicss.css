@@ -1120,8 +1120,10 @@ fieldset input{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px #413b4954 solid;
 }
-.nav_catelory-book-ship-promote-sel_list{
+.nav_catelory-book-ship-promote-sel_list{   
     list-style: none;
     display: flex;
     width: 1160px;
